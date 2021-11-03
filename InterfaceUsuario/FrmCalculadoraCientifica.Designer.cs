@@ -36,7 +36,6 @@ namespace InterfaceUsuario {
             this.optGrado = new System.Windows.Forms.RadioButton();
             this.optRadiano = new System.Windows.Forms.RadioButton();
             this.optGrau = new System.Windows.Forms.RadioButton();
-            this.txtVisor = new System.Windows.Forms.TextBox();
             this.lblEstatistica = new System.Windows.Forms.Label();
             this.btnApagarVisor = new System.Windows.Forms.Button();
             this.btnLogaritmoNeperiano = new System.Windows.Forms.Button();
@@ -90,6 +89,7 @@ namespace InterfaceUsuario {
             this.pcbTangenteInversa = new System.Windows.Forms.PictureBox();
             this.pcbPorcentagem = new System.Windows.Forms.PictureBox();
             this.pcbLimparTudo = new System.Windows.Forms.PictureBox();
+            this.lblVisor = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaSubtrair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaLimpar)).BeginInit();
@@ -257,21 +257,6 @@ namespace InterfaceUsuario {
             this.optGrau.TabStop = true;
             this.optGrau.Text = "Grau";
             this.optGrau.UseVisualStyleBackColor = true;
-            // 
-            // txtVisor
-            // 
-            this.txtVisor.BackColor = System.Drawing.Color.White;
-            this.txtVisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVisor.ForeColor = System.Drawing.Color.Black;
-            this.txtVisor.Location = new System.Drawing.Point(12, 38);
-            this.txtVisor.MaxLength = 10;
-            this.txtVisor.Name = "txtVisor";
-            this.txtVisor.ReadOnly = true;
-            this.txtVisor.Size = new System.Drawing.Size(366, 75);
-            this.txtVisor.TabIndex = 181;
-            this.txtVisor.TabStop = false;
-            this.txtVisor.Text = "0.123456789";
-            this.txtVisor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblEstatistica
             // 
@@ -1086,6 +1071,19 @@ namespace InterfaceUsuario {
             this.pcbLimparTudo.TabIndex = 204;
             this.pcbLimparTudo.TabStop = false;
             // 
+            // lblVisor
+            // 
+            this.lblVisor.BackColor = System.Drawing.Color.White;
+            this.lblVisor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblVisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVisor.Location = new System.Drawing.Point(12, 38);
+            this.lblVisor.Name = "lblVisor";
+            this.lblVisor.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblVisor.Size = new System.Drawing.Size(366, 75);
+            this.lblVisor.TabIndex = 100;
+            this.lblVisor.Text = "0.123456789";
+            this.lblVisor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // FrmCalculadoraCientifica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1116,7 +1114,6 @@ namespace InterfaceUsuario {
             this.Controls.Add(this.chk2Funcao);
             this.Controls.Add(this.lblAngulo);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.txtVisor);
             this.Controls.Add(this.lblEstatistica);
             this.Controls.Add(this.btnApagarVisor);
             this.Controls.Add(this.btnLogaritmoNeperiano);
@@ -1154,6 +1151,7 @@ namespace InterfaceUsuario {
             this.Controls.Add(this.mnsMenuPrincipal);
             this.Controls.Add(this.pcbMemoriaSubtrair);
             this.Controls.Add(this.pcbMemoriaLimpar);
+            this.Controls.Add(this.lblVisor);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mnsMenuPrincipal;
@@ -1200,7 +1198,6 @@ namespace InterfaceUsuario {
         private System.Windows.Forms.RadioButton optGrado;
         private System.Windows.Forms.RadioButton optRadiano;
         private System.Windows.Forms.RadioButton optGrau;
-        private System.Windows.Forms.TextBox txtVisor;
         private System.Windows.Forms.Label lblEstatistica;
         public System.Windows.Forms.Button btnApagarVisor;
         private System.Windows.Forms.Button btnLogaritmoNeperiano;
@@ -1254,6 +1251,7 @@ namespace InterfaceUsuario {
         private System.Windows.Forms.PictureBox pcbTangenteInversa;
         private System.Windows.Forms.PictureBox pcbPorcentagem;
         private System.Windows.Forms.PictureBox pcbLimparTudo;
+        private System.Windows.Forms.Label lblVisor;
     }
 }
 
