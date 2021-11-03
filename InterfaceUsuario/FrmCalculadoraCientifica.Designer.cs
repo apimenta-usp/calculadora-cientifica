@@ -39,42 +39,24 @@ namespace InterfaceUsuario {
             this.txtVisor = new System.Windows.Forms.TextBox();
             this.lblEstatistica = new System.Windows.Forms.Label();
             this.btnApagarVisor = new System.Windows.Forms.Button();
-            this.btnLimparTudo = new System.Windows.Forms.Button();
             this.btnLogaritmoNeperiano = new System.Windows.Forms.Button();
-            this.btnPotenciaNeperiana = new System.Windows.Forms.Button();
-            this.btnSomaValores = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
-            this.btnPorcentagem = new System.Windows.Forms.Button();
             this.btnLogaritmoDecimal = new System.Windows.Forms.Button();
-            this.btnPotenciaDecimal = new System.Windows.Forms.Button();
             this.btnMemoriaSubstituir = new System.Windows.Forms.Button();
-            this.btnRandom = new System.Windows.Forms.Button();
             this.btnTangente = new System.Windows.Forms.Button();
-            this.btnTangenteInversa = new System.Windows.Forms.Button();
             this.btnInversao = new System.Windows.Forms.Button();
-            this.btnRaizCubica = new System.Windows.Forms.Button();
             this.btnDivisao = new System.Windows.Forms.Button();
             this.btnCosseno = new System.Windows.Forms.Button();
-            this.btnCossenoInverso = new System.Windows.Forms.Button();
             this.btnRaizQuadrada = new System.Windows.Forms.Button();
-            this.btnXQuadrado = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.btnSeno = new System.Windows.Forms.Button();
-            this.btnSenoInverso = new System.Windows.Forms.Button();
             this.btnPotenciacao = new System.Windows.Forms.Button();
-            this.btnRadiciacao = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
             this.btnDecimalCientifico = new System.Windows.Forms.Button();
-            this.btnFatorial = new System.Windows.Forms.Button();
             this.btnExponencial = new System.Windows.Forms.Button();
-            this.btnPi = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
-            this.btnDesvioPopulacional = new System.Windows.Forms.Button();
-            this.btnLimparDados = new System.Windows.Forms.Button();
             this.btnMemoriaRecuperar = new System.Windows.Forms.Button();
-            this.btnMemoriaLimpar = new System.Windows.Forms.Button();
             this.btnMemoriaAdicionar = new System.Windows.Forms.Button();
-            this.btnMemoriaSubtrair = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
             this.btnMultiplicacao = new System.Windows.Forms.Button();
             this.btnSubtracao = new System.Windows.Forms.Button();
@@ -88,9 +70,46 @@ namespace InterfaceUsuario {
             this.btn4 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
-            this.btnSomaQuadradosValores = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pcbMemoriaSubtrair = new System.Windows.Forms.PictureBox();
+            this.pcbMemoriaLimpar = new System.Windows.Forms.PictureBox();
+            this.pcbRandom = new System.Windows.Forms.PictureBox();
+            this.pcbExcluirDados = new System.Windows.Forms.PictureBox();
+            this.pcbDesvioPopulacional = new System.Windows.Forms.PictureBox();
+            this.pcbSomaQuadradosValores = new System.Windows.Forms.PictureBox();
+            this.pcbSomaValores = new System.Windows.Forms.PictureBox();
+            this.pcbPotenciaNeperiana = new System.Windows.Forms.PictureBox();
+            this.pcbPotenciaDecimal = new System.Windows.Forms.PictureBox();
+            this.pcbRaizCubica = new System.Windows.Forms.PictureBox();
+            this.pcbXQuadrado = new System.Windows.Forms.PictureBox();
+            this.pcbRadiciacao = new System.Windows.Forms.PictureBox();
+            this.pcbPi = new System.Windows.Forms.PictureBox();
+            this.pcbFatorial = new System.Windows.Forms.PictureBox();
+            this.pcbSenoInverso = new System.Windows.Forms.PictureBox();
+            this.pcbCossenoInverso = new System.Windows.Forms.PictureBox();
+            this.pcbTangenteInversa = new System.Windows.Forms.PictureBox();
+            this.pcbPorcentagem = new System.Windows.Forms.PictureBox();
+            this.pcbLimparTudo = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaSubtrair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaLimpar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRandom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbExcluirDados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbDesvioPopulacional)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSomaQuadradosValores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSomaValores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPotenciaNeperiana)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPotenciaDecimal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRaizCubica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbXQuadrado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRadiciacao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFatorial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSenoInverso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCossenoInverso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTangenteInversa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPorcentagem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLimparTudo)).BeginInit();
             this.SuspendLayout();
             // 
             // mnsMenuPrincipal
@@ -284,24 +303,6 @@ namespace InterfaceUsuario {
             this.btnApagarVisor.TabIndex = 36;
             this.btnApagarVisor.UseVisualStyleBackColor = false;
             // 
-            // btnLimparTudo
-            // 
-            this.btnLimparTudo.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnLimparTudo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnLimparTudo.Enabled = false;
-            this.btnLimparTudo.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnLimparTudo.FlatAppearance.BorderSize = 0;
-            this.btnLimparTudo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnLimparTudo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnLimparTudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimparTudo.ForeColor = System.Drawing.Color.Transparent;
-            this.btnLimparTudo.Location = new System.Drawing.Point(336, 173);
-            this.btnLimparTudo.Name = "btnLimparTudo";
-            this.btnLimparTudo.Size = new System.Drawing.Size(28, 20);
-            this.btnLimparTudo.TabIndex = 180;
-            this.btnLimparTudo.TabStop = false;
-            this.btnLimparTudo.UseVisualStyleBackColor = false;
-            // 
             // btnLogaritmoNeperiano
             // 
             this.btnLogaritmoNeperiano.BackColor = System.Drawing.Color.Transparent;
@@ -318,42 +319,6 @@ namespace InterfaceUsuario {
             this.btnLogaritmoNeperiano.Size = new System.Drawing.Size(56, 40);
             this.btnLogaritmoNeperiano.TabIndex = 25;
             this.btnLogaritmoNeperiano.UseVisualStyleBackColor = false;
-            // 
-            // btnPotenciaNeperiana
-            // 
-            this.btnPotenciaNeperiana.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnPotenciaNeperiana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPotenciaNeperiana.Enabled = false;
-            this.btnPotenciaNeperiana.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnPotenciaNeperiana.FlatAppearance.BorderSize = 0;
-            this.btnPotenciaNeperiana.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnPotenciaNeperiana.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnPotenciaNeperiana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPotenciaNeperiana.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPotenciaNeperiana.Location = new System.Drawing.Point(336, 237);
-            this.btnPotenciaNeperiana.Name = "btnPotenciaNeperiana";
-            this.btnPotenciaNeperiana.Size = new System.Drawing.Size(28, 20);
-            this.btnPotenciaNeperiana.TabIndex = 169;
-            this.btnPotenciaNeperiana.TabStop = false;
-            this.btnPotenciaNeperiana.UseVisualStyleBackColor = false;
-            // 
-            // btnSomaValores
-            // 
-            this.btnSomaValores.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnSomaValores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSomaValores.Enabled = false;
-            this.btnSomaValores.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnSomaValores.FlatAppearance.BorderSize = 0;
-            this.btnSomaValores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSomaValores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSomaValores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSomaValores.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSomaValores.Location = new System.Drawing.Point(336, 301);
-            this.btnSomaValores.Name = "btnSomaValores";
-            this.btnSomaValores.Size = new System.Drawing.Size(28, 20);
-            this.btnSomaValores.TabIndex = 168;
-            this.btnSomaValores.TabStop = false;
-            this.btnSomaValores.UseVisualStyleBackColor = false;
             // 
             // btnRemover
             // 
@@ -372,24 +337,6 @@ namespace InterfaceUsuario {
             this.btnRemover.TabIndex = 35;
             this.btnRemover.UseVisualStyleBackColor = false;
             // 
-            // btnPorcentagem
-            // 
-            this.btnPorcentagem.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnPorcentagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPorcentagem.Enabled = false;
-            this.btnPorcentagem.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnPorcentagem.FlatAppearance.BorderSize = 0;
-            this.btnPorcentagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnPorcentagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnPorcentagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPorcentagem.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPorcentagem.Location = new System.Drawing.Point(274, 173);
-            this.btnPorcentagem.Name = "btnPorcentagem";
-            this.btnPorcentagem.Size = new System.Drawing.Size(28, 20);
-            this.btnPorcentagem.TabIndex = 179;
-            this.btnPorcentagem.TabStop = false;
-            this.btnPorcentagem.UseVisualStyleBackColor = false;
-            // 
             // btnLogaritmoDecimal
             // 
             this.btnLogaritmoDecimal.BackColor = System.Drawing.Color.Transparent;
@@ -406,24 +353,6 @@ namespace InterfaceUsuario {
             this.btnLogaritmoDecimal.Size = new System.Drawing.Size(56, 40);
             this.btnLogaritmoDecimal.TabIndex = 26;
             this.btnLogaritmoDecimal.UseVisualStyleBackColor = false;
-            // 
-            // btnPotenciaDecimal
-            // 
-            this.btnPotenciaDecimal.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnPotenciaDecimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPotenciaDecimal.Enabled = false;
-            this.btnPotenciaDecimal.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnPotenciaDecimal.FlatAppearance.BorderSize = 0;
-            this.btnPotenciaDecimal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnPotenciaDecimal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnPotenciaDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPotenciaDecimal.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPotenciaDecimal.Location = new System.Drawing.Point(274, 237);
-            this.btnPotenciaDecimal.Name = "btnPotenciaDecimal";
-            this.btnPotenciaDecimal.Size = new System.Drawing.Size(28, 20);
-            this.btnPotenciaDecimal.TabIndex = 170;
-            this.btnPotenciaDecimal.TabStop = false;
-            this.btnPotenciaDecimal.UseVisualStyleBackColor = false;
             // 
             // btnMemoriaSubstituir
             // 
@@ -442,24 +371,6 @@ namespace InterfaceUsuario {
             this.btnMemoriaSubstituir.TabIndex = 20;
             this.btnMemoriaSubstituir.UseVisualStyleBackColor = false;
             // 
-            // btnRandom
-            // 
-            this.btnRandom.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnRandom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRandom.Enabled = false;
-            this.btnRandom.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnRandom.FlatAppearance.BorderSize = 0;
-            this.btnRandom.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnRandom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnRandom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRandom.ForeColor = System.Drawing.Color.Transparent;
-            this.btnRandom.Location = new System.Drawing.Point(274, 301);
-            this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(28, 20);
-            this.btnRandom.TabIndex = 164;
-            this.btnRandom.TabStop = false;
-            this.btnRandom.UseVisualStyleBackColor = false;
-            // 
             // btnTangente
             // 
             this.btnTangente.BackColor = System.Drawing.Color.Transparent;
@@ -477,24 +388,6 @@ namespace InterfaceUsuario {
             this.btnTangente.TabIndex = 34;
             this.btnTangente.UseVisualStyleBackColor = false;
             // 
-            // btnTangenteInversa
-            // 
-            this.btnTangenteInversa.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnTangenteInversa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnTangenteInversa.Enabled = false;
-            this.btnTangenteInversa.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnTangenteInversa.FlatAppearance.BorderSize = 0;
-            this.btnTangenteInversa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnTangenteInversa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnTangenteInversa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTangenteInversa.ForeColor = System.Drawing.Color.Transparent;
-            this.btnTangenteInversa.Location = new System.Drawing.Point(212, 173);
-            this.btnTangenteInversa.Name = "btnTangenteInversa";
-            this.btnTangenteInversa.Size = new System.Drawing.Size(28, 20);
-            this.btnTangenteInversa.TabIndex = 178;
-            this.btnTangenteInversa.TabStop = false;
-            this.btnTangenteInversa.UseVisualStyleBackColor = false;
-            // 
             // btnInversao
             // 
             this.btnInversao.BackColor = System.Drawing.Color.Transparent;
@@ -511,24 +404,6 @@ namespace InterfaceUsuario {
             this.btnInversao.Size = new System.Drawing.Size(56, 40);
             this.btnInversao.TabIndex = 27;
             this.btnInversao.UseVisualStyleBackColor = false;
-            // 
-            // btnRaizCubica
-            // 
-            this.btnRaizCubica.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnRaizCubica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRaizCubica.Enabled = false;
-            this.btnRaizCubica.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnRaizCubica.FlatAppearance.BorderSize = 0;
-            this.btnRaizCubica.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnRaizCubica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnRaizCubica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRaizCubica.ForeColor = System.Drawing.Color.Transparent;
-            this.btnRaizCubica.Location = new System.Drawing.Point(212, 237);
-            this.btnRaizCubica.Name = "btnRaizCubica";
-            this.btnRaizCubica.Size = new System.Drawing.Size(28, 20);
-            this.btnRaizCubica.TabIndex = 171;
-            this.btnRaizCubica.TabStop = false;
-            this.btnRaizCubica.UseVisualStyleBackColor = false;
             // 
             // btnDivisao
             // 
@@ -564,24 +439,6 @@ namespace InterfaceUsuario {
             this.btnCosseno.TabIndex = 33;
             this.btnCosseno.UseVisualStyleBackColor = false;
             // 
-            // btnCossenoInverso
-            // 
-            this.btnCossenoInverso.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnCossenoInverso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCossenoInverso.Enabled = false;
-            this.btnCossenoInverso.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnCossenoInverso.FlatAppearance.BorderSize = 0;
-            this.btnCossenoInverso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCossenoInverso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCossenoInverso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCossenoInverso.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCossenoInverso.Location = new System.Drawing.Point(150, 173);
-            this.btnCossenoInverso.Name = "btnCossenoInverso";
-            this.btnCossenoInverso.Size = new System.Drawing.Size(28, 20);
-            this.btnCossenoInverso.TabIndex = 177;
-            this.btnCossenoInverso.TabStop = false;
-            this.btnCossenoInverso.UseVisualStyleBackColor = false;
-            // 
             // btnRaizQuadrada
             // 
             this.btnRaizQuadrada.BackColor = System.Drawing.Color.Transparent;
@@ -598,24 +455,6 @@ namespace InterfaceUsuario {
             this.btnRaizQuadrada.Size = new System.Drawing.Size(56, 40);
             this.btnRaizQuadrada.TabIndex = 28;
             this.btnRaizQuadrada.UseVisualStyleBackColor = false;
-            // 
-            // btnXQuadrado
-            // 
-            this.btnXQuadrado.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnXQuadrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnXQuadrado.Enabled = false;
-            this.btnXQuadrado.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnXQuadrado.FlatAppearance.BorderSize = 0;
-            this.btnXQuadrado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnXQuadrado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnXQuadrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXQuadrado.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXQuadrado.Location = new System.Drawing.Point(150, 237);
-            this.btnXQuadrado.Name = "btnXQuadrado";
-            this.btnXQuadrado.Size = new System.Drawing.Size(28, 20);
-            this.btnXQuadrado.TabIndex = 172;
-            this.btnXQuadrado.TabStop = false;
-            this.btnXQuadrado.UseVisualStyleBackColor = false;
             // 
             // btn9
             // 
@@ -651,24 +490,6 @@ namespace InterfaceUsuario {
             this.btnSeno.TabIndex = 32;
             this.btnSeno.UseVisualStyleBackColor = false;
             // 
-            // btnSenoInverso
-            // 
-            this.btnSenoInverso.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnSenoInverso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSenoInverso.Enabled = false;
-            this.btnSenoInverso.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnSenoInverso.FlatAppearance.BorderSize = 0;
-            this.btnSenoInverso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSenoInverso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSenoInverso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSenoInverso.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSenoInverso.Location = new System.Drawing.Point(88, 173);
-            this.btnSenoInverso.Name = "btnSenoInverso";
-            this.btnSenoInverso.Size = new System.Drawing.Size(28, 20);
-            this.btnSenoInverso.TabIndex = 176;
-            this.btnSenoInverso.TabStop = false;
-            this.btnSenoInverso.UseVisualStyleBackColor = false;
-            // 
             // btnPotenciacao
             // 
             this.btnPotenciacao.BackColor = System.Drawing.Color.Transparent;
@@ -685,24 +506,6 @@ namespace InterfaceUsuario {
             this.btnPotenciacao.Size = new System.Drawing.Size(56, 40);
             this.btnPotenciacao.TabIndex = 29;
             this.btnPotenciacao.UseVisualStyleBackColor = false;
-            // 
-            // btnRadiciacao
-            // 
-            this.btnRadiciacao.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnRadiciacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRadiciacao.Enabled = false;
-            this.btnRadiciacao.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnRadiciacao.FlatAppearance.BorderSize = 0;
-            this.btnRadiciacao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnRadiciacao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnRadiciacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRadiciacao.ForeColor = System.Drawing.Color.Transparent;
-            this.btnRadiciacao.Location = new System.Drawing.Point(88, 237);
-            this.btnRadiciacao.Name = "btnRadiciacao";
-            this.btnRadiciacao.Size = new System.Drawing.Size(28, 20);
-            this.btnRadiciacao.TabIndex = 173;
-            this.btnRadiciacao.TabStop = false;
-            this.btnRadiciacao.UseVisualStyleBackColor = false;
             // 
             // btn8
             // 
@@ -738,24 +541,6 @@ namespace InterfaceUsuario {
             this.btnDecimalCientifico.TabIndex = 31;
             this.btnDecimalCientifico.UseVisualStyleBackColor = false;
             // 
-            // btnFatorial
-            // 
-            this.btnFatorial.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnFatorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnFatorial.Enabled = false;
-            this.btnFatorial.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnFatorial.FlatAppearance.BorderSize = 0;
-            this.btnFatorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFatorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFatorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFatorial.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFatorial.Location = new System.Drawing.Point(26, 173);
-            this.btnFatorial.Name = "btnFatorial";
-            this.btnFatorial.Size = new System.Drawing.Size(28, 20);
-            this.btnFatorial.TabIndex = 175;
-            this.btnFatorial.TabStop = false;
-            this.btnFatorial.UseVisualStyleBackColor = false;
-            // 
             // btnExponencial
             // 
             this.btnExponencial.BackColor = System.Drawing.Color.Transparent;
@@ -772,24 +557,6 @@ namespace InterfaceUsuario {
             this.btnExponencial.Size = new System.Drawing.Size(56, 40);
             this.btnExponencial.TabIndex = 30;
             this.btnExponencial.UseVisualStyleBackColor = false;
-            // 
-            // btnPi
-            // 
-            this.btnPi.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnPi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPi.Enabled = false;
-            this.btnPi.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnPi.FlatAppearance.BorderSize = 0;
-            this.btnPi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnPi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnPi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPi.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPi.Location = new System.Drawing.Point(26, 237);
-            this.btnPi.Name = "btnPi";
-            this.btnPi.Size = new System.Drawing.Size(28, 20);
-            this.btnPi.TabIndex = 174;
-            this.btnPi.TabStop = false;
-            this.btnPi.UseVisualStyleBackColor = false;
             // 
             // btn7
             // 
@@ -808,42 +575,6 @@ namespace InterfaceUsuario {
             this.btn7.TabIndex = 7;
             this.btn7.UseVisualStyleBackColor = false;
             // 
-            // btnDesvioPopulacional
-            // 
-            this.btnDesvioPopulacional.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnDesvioPopulacional.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnDesvioPopulacional.Enabled = false;
-            this.btnDesvioPopulacional.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnDesvioPopulacional.FlatAppearance.BorderSize = 0;
-            this.btnDesvioPopulacional.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnDesvioPopulacional.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnDesvioPopulacional.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDesvioPopulacional.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDesvioPopulacional.Location = new System.Drawing.Point(336, 426);
-            this.btnDesvioPopulacional.Name = "btnDesvioPopulacional";
-            this.btnDesvioPopulacional.Size = new System.Drawing.Size(28, 20);
-            this.btnDesvioPopulacional.TabIndex = 166;
-            this.btnDesvioPopulacional.TabStop = false;
-            this.btnDesvioPopulacional.UseVisualStyleBackColor = false;
-            // 
-            // btnLimparDados
-            // 
-            this.btnLimparDados.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnLimparDados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnLimparDados.Enabled = false;
-            this.btnLimparDados.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnLimparDados.FlatAppearance.BorderSize = 0;
-            this.btnLimparDados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnLimparDados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnLimparDados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimparDados.ForeColor = System.Drawing.Color.Transparent;
-            this.btnLimparDados.Location = new System.Drawing.Point(336, 490);
-            this.btnLimparDados.Name = "btnLimparDados";
-            this.btnLimparDados.Size = new System.Drawing.Size(28, 20);
-            this.btnLimparDados.TabIndex = 165;
-            this.btnLimparDados.TabStop = false;
-            this.btnLimparDados.UseVisualStyleBackColor = false;
-            // 
             // btnMemoriaRecuperar
             // 
             this.btnMemoriaRecuperar.BackColor = System.Drawing.Color.Transparent;
@@ -861,24 +592,6 @@ namespace InterfaceUsuario {
             this.btnMemoriaRecuperar.TabIndex = 19;
             this.btnMemoriaRecuperar.UseVisualStyleBackColor = false;
             // 
-            // btnMemoriaLimpar
-            // 
-            this.btnMemoriaLimpar.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnMemoriaLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMemoriaLimpar.Enabled = false;
-            this.btnMemoriaLimpar.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnMemoriaLimpar.FlatAppearance.BorderSize = 0;
-            this.btnMemoriaLimpar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMemoriaLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMemoriaLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemoriaLimpar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnMemoriaLimpar.Location = new System.Drawing.Point(274, 362);
-            this.btnMemoriaLimpar.Name = "btnMemoriaLimpar";
-            this.btnMemoriaLimpar.Size = new System.Drawing.Size(28, 20);
-            this.btnMemoriaLimpar.TabIndex = 163;
-            this.btnMemoriaLimpar.TabStop = false;
-            this.btnMemoriaLimpar.UseVisualStyleBackColor = false;
-            // 
             // btnMemoriaAdicionar
             // 
             this.btnMemoriaAdicionar.BackColor = System.Drawing.Color.Transparent;
@@ -895,24 +608,6 @@ namespace InterfaceUsuario {
             this.btnMemoriaAdicionar.Size = new System.Drawing.Size(56, 40);
             this.btnMemoriaAdicionar.TabIndex = 18;
             this.btnMemoriaAdicionar.UseVisualStyleBackColor = false;
-            // 
-            // btnMemoriaSubtrair
-            // 
-            this.btnMemoriaSubtrair.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnMemoriaSubtrair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMemoriaSubtrair.Enabled = false;
-            this.btnMemoriaSubtrair.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnMemoriaSubtrair.FlatAppearance.BorderSize = 0;
-            this.btnMemoriaSubtrair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMemoriaSubtrair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMemoriaSubtrair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemoriaSubtrair.ForeColor = System.Drawing.Color.Transparent;
-            this.btnMemoriaSubtrair.Location = new System.Drawing.Point(274, 426);
-            this.btnMemoriaSubtrair.Name = "btnMemoriaSubtrair";
-            this.btnMemoriaSubtrair.Size = new System.Drawing.Size(28, 20);
-            this.btnMemoriaSubtrair.TabIndex = 162;
-            this.btnMemoriaSubtrair.TabStop = false;
-            this.btnMemoriaSubtrair.UseVisualStyleBackColor = false;
             // 
             // btnIgual
             // 
@@ -1135,24 +830,6 @@ namespace InterfaceUsuario {
             this.btn0.TabIndex = 10;
             this.btn0.UseVisualStyleBackColor = false;
             // 
-            // btnSomaQuadradosValores
-            // 
-            this.btnSomaQuadradosValores.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnSomaQuadradosValores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSomaQuadradosValores.Enabled = false;
-            this.btnSomaQuadradosValores.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
-            this.btnSomaQuadradosValores.FlatAppearance.BorderSize = 0;
-            this.btnSomaQuadradosValores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSomaQuadradosValores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSomaQuadradosValores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSomaQuadradosValores.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSomaQuadradosValores.Location = new System.Drawing.Point(336, 362);
-            this.btnSomaQuadradosValores.Name = "btnSomaQuadradosValores";
-            this.btnSomaQuadradosValores.Size = new System.Drawing.Size(28, 20);
-            this.btnSomaQuadradosValores.TabIndex = 167;
-            this.btnSomaQuadradosValores.TabStop = false;
-            this.btnSomaQuadradosValores.UseVisualStyleBackColor = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
@@ -1162,12 +839,276 @@ namespace InterfaceUsuario {
             this.panel2.Size = new System.Drawing.Size(64, 251);
             this.panel2.TabIndex = 184;
             // 
+            // pcbMemoriaSubtrair
+            // 
+            this.pcbMemoriaSubtrair.BackColor = System.Drawing.Color.Transparent;
+            this.pcbMemoriaSubtrair.BackgroundImage = global::InterfaceUsuario.Properties.Resources.MemoriaSubtrairTemaClaro;
+            this.pcbMemoriaSubtrair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbMemoriaSubtrair.ErrorImage = null;
+            this.pcbMemoriaSubtrair.InitialImage = null;
+            this.pcbMemoriaSubtrair.Location = new System.Drawing.Point(274, 426);
+            this.pcbMemoriaSubtrair.Name = "pcbMemoriaSubtrair";
+            this.pcbMemoriaSubtrair.Size = new System.Drawing.Size(28, 20);
+            this.pcbMemoriaSubtrair.TabIndex = 186;
+            this.pcbMemoriaSubtrair.TabStop = false;
+            // 
+            // pcbMemoriaLimpar
+            // 
+            this.pcbMemoriaLimpar.BackColor = System.Drawing.Color.Transparent;
+            this.pcbMemoriaLimpar.BackgroundImage = global::InterfaceUsuario.Properties.Resources.MemoriaLimparTemaClaro;
+            this.pcbMemoriaLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbMemoriaLimpar.ErrorImage = null;
+            this.pcbMemoriaLimpar.InitialImage = null;
+            this.pcbMemoriaLimpar.Location = new System.Drawing.Point(274, 362);
+            this.pcbMemoriaLimpar.Name = "pcbMemoriaLimpar";
+            this.pcbMemoriaLimpar.Size = new System.Drawing.Size(28, 20);
+            this.pcbMemoriaLimpar.TabIndex = 187;
+            this.pcbMemoriaLimpar.TabStop = false;
+            // 
+            // pcbRandom
+            // 
+            this.pcbRandom.BackColor = System.Drawing.Color.Transparent;
+            this.pcbRandom.BackgroundImage = global::InterfaceUsuario.Properties.Resources.RandomTemaClaro;
+            this.pcbRandom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbRandom.ErrorImage = null;
+            this.pcbRandom.InitialImage = null;
+            this.pcbRandom.Location = new System.Drawing.Point(274, 301);
+            this.pcbRandom.Name = "pcbRandom";
+            this.pcbRandom.Size = new System.Drawing.Size(28, 20);
+            this.pcbRandom.TabIndex = 188;
+            this.pcbRandom.TabStop = false;
+            // 
+            // pcbExcluirDados
+            // 
+            this.pcbExcluirDados.BackColor = System.Drawing.Color.Transparent;
+            this.pcbExcluirDados.BackgroundImage = global::InterfaceUsuario.Properties.Resources.ExcluirDadosTemaClaro;
+            this.pcbExcluirDados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbExcluirDados.ErrorImage = null;
+            this.pcbExcluirDados.InitialImage = null;
+            this.pcbExcluirDados.Location = new System.Drawing.Point(336, 490);
+            this.pcbExcluirDados.Name = "pcbExcluirDados";
+            this.pcbExcluirDados.Size = new System.Drawing.Size(28, 20);
+            this.pcbExcluirDados.TabIndex = 189;
+            this.pcbExcluirDados.TabStop = false;
+            // 
+            // pcbDesvioPopulacional
+            // 
+            this.pcbDesvioPopulacional.BackColor = System.Drawing.Color.Transparent;
+            this.pcbDesvioPopulacional.BackgroundImage = global::InterfaceUsuario.Properties.Resources.DesvioPopulacionalTemaClaro;
+            this.pcbDesvioPopulacional.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbDesvioPopulacional.ErrorImage = null;
+            this.pcbDesvioPopulacional.InitialImage = null;
+            this.pcbDesvioPopulacional.Location = new System.Drawing.Point(336, 426);
+            this.pcbDesvioPopulacional.Name = "pcbDesvioPopulacional";
+            this.pcbDesvioPopulacional.Size = new System.Drawing.Size(28, 20);
+            this.pcbDesvioPopulacional.TabIndex = 190;
+            this.pcbDesvioPopulacional.TabStop = false;
+            // 
+            // pcbSomaQuadradosValores
+            // 
+            this.pcbSomaQuadradosValores.BackColor = System.Drawing.Color.Transparent;
+            this.pcbSomaQuadradosValores.BackgroundImage = global::InterfaceUsuario.Properties.Resources.SomaQuadradosValoresTemaClaro;
+            this.pcbSomaQuadradosValores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbSomaQuadradosValores.ErrorImage = null;
+            this.pcbSomaQuadradosValores.InitialImage = null;
+            this.pcbSomaQuadradosValores.Location = new System.Drawing.Point(336, 362);
+            this.pcbSomaQuadradosValores.Name = "pcbSomaQuadradosValores";
+            this.pcbSomaQuadradosValores.Size = new System.Drawing.Size(28, 20);
+            this.pcbSomaQuadradosValores.TabIndex = 191;
+            this.pcbSomaQuadradosValores.TabStop = false;
+            // 
+            // pcbSomaValores
+            // 
+            this.pcbSomaValores.BackColor = System.Drawing.Color.Transparent;
+            this.pcbSomaValores.BackgroundImage = global::InterfaceUsuario.Properties.Resources.SomaValoresTemaClaro;
+            this.pcbSomaValores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbSomaValores.ErrorImage = null;
+            this.pcbSomaValores.InitialImage = null;
+            this.pcbSomaValores.Location = new System.Drawing.Point(336, 301);
+            this.pcbSomaValores.Name = "pcbSomaValores";
+            this.pcbSomaValores.Size = new System.Drawing.Size(28, 20);
+            this.pcbSomaValores.TabIndex = 192;
+            this.pcbSomaValores.TabStop = false;
+            // 
+            // pcbPotenciaNeperiana
+            // 
+            this.pcbPotenciaNeperiana.BackColor = System.Drawing.Color.Transparent;
+            this.pcbPotenciaNeperiana.BackgroundImage = global::InterfaceUsuario.Properties.Resources.PotenciaNeperianaTemaClaro;
+            this.pcbPotenciaNeperiana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbPotenciaNeperiana.ErrorImage = null;
+            this.pcbPotenciaNeperiana.InitialImage = null;
+            this.pcbPotenciaNeperiana.Location = new System.Drawing.Point(336, 237);
+            this.pcbPotenciaNeperiana.Name = "pcbPotenciaNeperiana";
+            this.pcbPotenciaNeperiana.Size = new System.Drawing.Size(28, 20);
+            this.pcbPotenciaNeperiana.TabIndex = 193;
+            this.pcbPotenciaNeperiana.TabStop = false;
+            // 
+            // pcbPotenciaDecimal
+            // 
+            this.pcbPotenciaDecimal.BackColor = System.Drawing.Color.Transparent;
+            this.pcbPotenciaDecimal.BackgroundImage = global::InterfaceUsuario.Properties.Resources.PotenciaDecimalTemaClaro;
+            this.pcbPotenciaDecimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbPotenciaDecimal.ErrorImage = null;
+            this.pcbPotenciaDecimal.InitialImage = null;
+            this.pcbPotenciaDecimal.Location = new System.Drawing.Point(274, 237);
+            this.pcbPotenciaDecimal.Name = "pcbPotenciaDecimal";
+            this.pcbPotenciaDecimal.Size = new System.Drawing.Size(28, 20);
+            this.pcbPotenciaDecimal.TabIndex = 194;
+            this.pcbPotenciaDecimal.TabStop = false;
+            // 
+            // pcbRaizCubica
+            // 
+            this.pcbRaizCubica.BackColor = System.Drawing.Color.Transparent;
+            this.pcbRaizCubica.BackgroundImage = global::InterfaceUsuario.Properties.Resources.RaizCubicaTemaClaro;
+            this.pcbRaizCubica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbRaizCubica.ErrorImage = null;
+            this.pcbRaizCubica.InitialImage = null;
+            this.pcbRaizCubica.Location = new System.Drawing.Point(212, 237);
+            this.pcbRaizCubica.Name = "pcbRaizCubica";
+            this.pcbRaizCubica.Size = new System.Drawing.Size(28, 20);
+            this.pcbRaizCubica.TabIndex = 195;
+            this.pcbRaizCubica.TabStop = false;
+            // 
+            // pcbXQuadrado
+            // 
+            this.pcbXQuadrado.BackColor = System.Drawing.Color.Transparent;
+            this.pcbXQuadrado.BackgroundImage = global::InterfaceUsuario.Properties.Resources.XQuadradoTemaClaro;
+            this.pcbXQuadrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbXQuadrado.ErrorImage = null;
+            this.pcbXQuadrado.InitialImage = null;
+            this.pcbXQuadrado.Location = new System.Drawing.Point(150, 237);
+            this.pcbXQuadrado.Name = "pcbXQuadrado";
+            this.pcbXQuadrado.Size = new System.Drawing.Size(28, 20);
+            this.pcbXQuadrado.TabIndex = 196;
+            this.pcbXQuadrado.TabStop = false;
+            // 
+            // pcbRadiciacao
+            // 
+            this.pcbRadiciacao.BackColor = System.Drawing.Color.Transparent;
+            this.pcbRadiciacao.BackgroundImage = global::InterfaceUsuario.Properties.Resources.RadiciacaoTemaClaro;
+            this.pcbRadiciacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbRadiciacao.ErrorImage = null;
+            this.pcbRadiciacao.InitialImage = null;
+            this.pcbRadiciacao.Location = new System.Drawing.Point(88, 237);
+            this.pcbRadiciacao.Name = "pcbRadiciacao";
+            this.pcbRadiciacao.Size = new System.Drawing.Size(28, 20);
+            this.pcbRadiciacao.TabIndex = 197;
+            this.pcbRadiciacao.TabStop = false;
+            // 
+            // pcbPi
+            // 
+            this.pcbPi.BackColor = System.Drawing.Color.Transparent;
+            this.pcbPi.BackgroundImage = global::InterfaceUsuario.Properties.Resources.PiTemaClaro;
+            this.pcbPi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbPi.ErrorImage = null;
+            this.pcbPi.InitialImage = null;
+            this.pcbPi.Location = new System.Drawing.Point(26, 237);
+            this.pcbPi.Name = "pcbPi";
+            this.pcbPi.Size = new System.Drawing.Size(28, 20);
+            this.pcbPi.TabIndex = 198;
+            this.pcbPi.TabStop = false;
+            // 
+            // pcbFatorial
+            // 
+            this.pcbFatorial.BackColor = System.Drawing.Color.Transparent;
+            this.pcbFatorial.BackgroundImage = global::InterfaceUsuario.Properties.Resources.FatorialTemaClaro;
+            this.pcbFatorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbFatorial.ErrorImage = null;
+            this.pcbFatorial.InitialImage = null;
+            this.pcbFatorial.Location = new System.Drawing.Point(26, 173);
+            this.pcbFatorial.Name = "pcbFatorial";
+            this.pcbFatorial.Size = new System.Drawing.Size(28, 20);
+            this.pcbFatorial.TabIndex = 199;
+            this.pcbFatorial.TabStop = false;
+            // 
+            // pcbSenoInverso
+            // 
+            this.pcbSenoInverso.BackColor = System.Drawing.Color.Transparent;
+            this.pcbSenoInverso.BackgroundImage = global::InterfaceUsuario.Properties.Resources.SenoInversoTemaClaro;
+            this.pcbSenoInverso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbSenoInverso.ErrorImage = null;
+            this.pcbSenoInverso.InitialImage = null;
+            this.pcbSenoInverso.Location = new System.Drawing.Point(88, 173);
+            this.pcbSenoInverso.Name = "pcbSenoInverso";
+            this.pcbSenoInverso.Size = new System.Drawing.Size(28, 20);
+            this.pcbSenoInverso.TabIndex = 200;
+            this.pcbSenoInverso.TabStop = false;
+            // 
+            // pcbCossenoInverso
+            // 
+            this.pcbCossenoInverso.BackColor = System.Drawing.Color.Transparent;
+            this.pcbCossenoInverso.BackgroundImage = global::InterfaceUsuario.Properties.Resources.CossenoInversoTemaClaro;
+            this.pcbCossenoInverso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbCossenoInverso.ErrorImage = null;
+            this.pcbCossenoInverso.InitialImage = null;
+            this.pcbCossenoInverso.Location = new System.Drawing.Point(150, 173);
+            this.pcbCossenoInverso.Name = "pcbCossenoInverso";
+            this.pcbCossenoInverso.Size = new System.Drawing.Size(28, 20);
+            this.pcbCossenoInverso.TabIndex = 201;
+            this.pcbCossenoInverso.TabStop = false;
+            // 
+            // pcbTangenteInversa
+            // 
+            this.pcbTangenteInversa.BackColor = System.Drawing.Color.Transparent;
+            this.pcbTangenteInversa.BackgroundImage = global::InterfaceUsuario.Properties.Resources.TangenteInversaTemaClaro;
+            this.pcbTangenteInversa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbTangenteInversa.ErrorImage = null;
+            this.pcbTangenteInversa.InitialImage = null;
+            this.pcbTangenteInversa.Location = new System.Drawing.Point(212, 173);
+            this.pcbTangenteInversa.Name = "pcbTangenteInversa";
+            this.pcbTangenteInversa.Size = new System.Drawing.Size(28, 20);
+            this.pcbTangenteInversa.TabIndex = 202;
+            this.pcbTangenteInversa.TabStop = false;
+            // 
+            // pcbPorcentagem
+            // 
+            this.pcbPorcentagem.BackColor = System.Drawing.Color.Transparent;
+            this.pcbPorcentagem.BackgroundImage = global::InterfaceUsuario.Properties.Resources.PorcentagemTemaClaro;
+            this.pcbPorcentagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbPorcentagem.ErrorImage = null;
+            this.pcbPorcentagem.InitialImage = null;
+            this.pcbPorcentagem.Location = new System.Drawing.Point(274, 173);
+            this.pcbPorcentagem.Name = "pcbPorcentagem";
+            this.pcbPorcentagem.Size = new System.Drawing.Size(28, 20);
+            this.pcbPorcentagem.TabIndex = 203;
+            this.pcbPorcentagem.TabStop = false;
+            // 
+            // pcbLimparTudo
+            // 
+            this.pcbLimparTudo.BackColor = System.Drawing.Color.Transparent;
+            this.pcbLimparTudo.BackgroundImage = global::InterfaceUsuario.Properties.Resources.LimparTudoTemaClaro;
+            this.pcbLimparTudo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pcbLimparTudo.ErrorImage = null;
+            this.pcbLimparTudo.InitialImage = null;
+            this.pcbLimparTudo.Location = new System.Drawing.Point(336, 173);
+            this.pcbLimparTudo.Name = "pcbLimparTudo";
+            this.pcbLimparTudo.Size = new System.Drawing.Size(28, 20);
+            this.pcbLimparTudo.TabIndex = 204;
+            this.pcbLimparTudo.TabStop = false;
+            // 
             // FrmCalculadoraCientifica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(391, 561);
+            this.Controls.Add(this.pcbLimparTudo);
+            this.Controls.Add(this.pcbPorcentagem);
+            this.Controls.Add(this.pcbTangenteInversa);
+            this.Controls.Add(this.pcbCossenoInverso);
+            this.Controls.Add(this.pcbSenoInverso);
+            this.Controls.Add(this.pcbFatorial);
+            this.Controls.Add(this.pcbPi);
+            this.Controls.Add(this.pcbRadiciacao);
+            this.Controls.Add(this.pcbXQuadrado);
+            this.Controls.Add(this.pcbRaizCubica);
+            this.Controls.Add(this.pcbPotenciaDecimal);
+            this.Controls.Add(this.pcbPotenciaNeperiana);
+            this.Controls.Add(this.pcbSomaValores);
+            this.Controls.Add(this.pcbSomaQuadradosValores);
+            this.Controls.Add(this.pcbDesvioPopulacional);
+            this.Controls.Add(this.pcbExcluirDados);
+            this.Controls.Add(this.pcbRandom);
             this.Controls.Add(this.btnInserirDados);
             this.Controls.Add(this.btnDesvioAmostral);
             this.Controls.Add(this.btnMediaAritmetica);
@@ -1178,42 +1119,24 @@ namespace InterfaceUsuario {
             this.Controls.Add(this.txtVisor);
             this.Controls.Add(this.lblEstatistica);
             this.Controls.Add(this.btnApagarVisor);
-            this.Controls.Add(this.btnLimparTudo);
             this.Controls.Add(this.btnLogaritmoNeperiano);
-            this.Controls.Add(this.btnPotenciaNeperiana);
-            this.Controls.Add(this.btnSomaValores);
             this.Controls.Add(this.btnRemover);
-            this.Controls.Add(this.btnPorcentagem);
             this.Controls.Add(this.btnLogaritmoDecimal);
-            this.Controls.Add(this.btnPotenciaDecimal);
             this.Controls.Add(this.btnMemoriaSubstituir);
-            this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.btnTangente);
-            this.Controls.Add(this.btnTangenteInversa);
             this.Controls.Add(this.btnInversao);
-            this.Controls.Add(this.btnRaizCubica);
             this.Controls.Add(this.btnDivisao);
             this.Controls.Add(this.btnCosseno);
-            this.Controls.Add(this.btnCossenoInverso);
             this.Controls.Add(this.btnRaizQuadrada);
-            this.Controls.Add(this.btnXQuadrado);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btnSeno);
-            this.Controls.Add(this.btnSenoInverso);
             this.Controls.Add(this.btnPotenciacao);
-            this.Controls.Add(this.btnRadiciacao);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btnDecimalCientifico);
-            this.Controls.Add(this.btnFatorial);
             this.Controls.Add(this.btnExponencial);
-            this.Controls.Add(this.btnPi);
             this.Controls.Add(this.btn7);
-            this.Controls.Add(this.btnDesvioPopulacional);
-            this.Controls.Add(this.btnLimparDados);
             this.Controls.Add(this.btnMemoriaRecuperar);
-            this.Controls.Add(this.btnMemoriaLimpar);
             this.Controls.Add(this.btnMemoriaAdicionar);
-            this.Controls.Add(this.btnMemoriaSubtrair);
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btnMultiplicacao);
             this.Controls.Add(this.btnSubtracao);
@@ -1227,9 +1150,10 @@ namespace InterfaceUsuario {
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn0);
-            this.Controls.Add(this.btnSomaQuadradosValores);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.mnsMenuPrincipal);
+            this.Controls.Add(this.pcbMemoriaSubtrair);
+            this.Controls.Add(this.pcbMemoriaLimpar);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mnsMenuPrincipal;
@@ -1239,6 +1163,25 @@ namespace InterfaceUsuario {
             this.Text = "Calculadora Científica by ACP";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaSubtrair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaLimpar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRandom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbExcluirDados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbDesvioPopulacional)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSomaQuadradosValores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSomaValores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPotenciaNeperiana)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPotenciaDecimal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRaizCubica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbXQuadrado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRadiciacao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFatorial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSenoInverso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCossenoInverso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTangenteInversa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPorcentagem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLimparTudo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1260,42 +1203,24 @@ namespace InterfaceUsuario {
         private System.Windows.Forms.TextBox txtVisor;
         private System.Windows.Forms.Label lblEstatistica;
         public System.Windows.Forms.Button btnApagarVisor;
-        public System.Windows.Forms.Button btnLimparTudo;
         private System.Windows.Forms.Button btnLogaritmoNeperiano;
-        private System.Windows.Forms.Button btnPotenciaNeperiana;
-        private System.Windows.Forms.Button btnSomaValores;
         private System.Windows.Forms.Button btnRemover;
-        private System.Windows.Forms.Button btnPorcentagem;
         private System.Windows.Forms.Button btnLogaritmoDecimal;
-        private System.Windows.Forms.Button btnPotenciaDecimal;
         private System.Windows.Forms.Button btnMemoriaSubstituir;
-        private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.Button btnTangente;
-        private System.Windows.Forms.Button btnTangenteInversa;
         private System.Windows.Forms.Button btnInversao;
-        private System.Windows.Forms.Button btnRaizCubica;
         private System.Windows.Forms.Button btnDivisao;
         private System.Windows.Forms.Button btnCosseno;
-        private System.Windows.Forms.Button btnCossenoInverso;
         private System.Windows.Forms.Button btnRaizQuadrada;
-        private System.Windows.Forms.Button btnXQuadrado;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btnSeno;
-        private System.Windows.Forms.Button btnSenoInverso;
         private System.Windows.Forms.Button btnPotenciacao;
-        private System.Windows.Forms.Button btnRadiciacao;
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btnDecimalCientifico;
-        private System.Windows.Forms.Button btnFatorial;
         private System.Windows.Forms.Button btnExponencial;
-        private System.Windows.Forms.Button btnPi;
         private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button btnDesvioPopulacional;
-        private System.Windows.Forms.Button btnLimparDados;
         private System.Windows.Forms.Button btnMemoriaRecuperar;
-        private System.Windows.Forms.Button btnMemoriaLimpar;
         private System.Windows.Forms.Button btnMemoriaAdicionar;
-        private System.Windows.Forms.Button btnMemoriaSubtrair;
         private System.Windows.Forms.Button btnIgual;
         private System.Windows.Forms.Button btnMultiplicacao;
         private System.Windows.Forms.Button btnSubtracao;
@@ -1309,8 +1234,26 @@ namespace InterfaceUsuario {
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn0;
-        private System.Windows.Forms.Button btnSomaQuadradosValores;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pcbMemoriaSubtrair;
+        private System.Windows.Forms.PictureBox pcbMemoriaLimpar;
+        private System.Windows.Forms.PictureBox pcbRandom;
+        private System.Windows.Forms.PictureBox pcbExcluirDados;
+        private System.Windows.Forms.PictureBox pcbDesvioPopulacional;
+        private System.Windows.Forms.PictureBox pcbSomaQuadradosValores;
+        private System.Windows.Forms.PictureBox pcbSomaValores;
+        private System.Windows.Forms.PictureBox pcbPotenciaNeperiana;
+        private System.Windows.Forms.PictureBox pcbPotenciaDecimal;
+        private System.Windows.Forms.PictureBox pcbRaizCubica;
+        private System.Windows.Forms.PictureBox pcbXQuadrado;
+        private System.Windows.Forms.PictureBox pcbRadiciacao;
+        private System.Windows.Forms.PictureBox pcbPi;
+        private System.Windows.Forms.PictureBox pcbFatorial;
+        private System.Windows.Forms.PictureBox pcbSenoInverso;
+        private System.Windows.Forms.PictureBox pcbCossenoInverso;
+        private System.Windows.Forms.PictureBox pcbTangenteInversa;
+        private System.Windows.Forms.PictureBox pcbPorcentagem;
+        private System.Windows.Forms.PictureBox pcbLimparTudo;
     }
 }
 
