@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,910 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ApagarVisorTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApagarVisorTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApagarVisorTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApagarVisorTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApagarVisorTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApagarVisorTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApagarVisorTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApagarVisorTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApagarVisorTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApagarVisorTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApagarVisorTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApagarVisorTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CincoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CincoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CincoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CincoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CincoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CincoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CincoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CincoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoInversoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoInversoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoInversoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoInversoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoInversoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoInversoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoInversoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoInversoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoInversoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoInversoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoInversoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoInversoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CossenoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CossenoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DecimalCientificoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DecimalCientificoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DecimalCientificoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DecimalCientificoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DecimalCientificoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DecimalCientificoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DecimalCientificoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DecimalCientificoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DecimalCientificoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DecimalCientificoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DecimalCientificoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DecimalCientificoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioAmostralTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioAmostralTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioAmostralTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioAmostralTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioAmostralTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioAmostralTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioAmostralTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioAmostralTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioAmostralTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioAmostralTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioAmostralTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioAmostralTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioPopulacionalTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioPopulacionalTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioPopulacionalTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioPopulacionalTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioPopulacionalTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioPopulacionalTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioPopulacionalTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioPopulacionalTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioPopulacionalTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioPopulacionalTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesvioPopulacionalTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesvioPopulacionalTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DivisaoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivisaoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DivisaoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivisaoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DivisaoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivisaoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DivisaoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivisaoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoisTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoisTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoisTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoisTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoisTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoisTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoisTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoisTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExcluirDadosTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcluirDadosTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExcluirDadosTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcluirDadosTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExcluirDadosTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcluirDadosTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExcluirDadosTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcluirDadosTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExcluirDadosTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcluirDadosTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExcluirDadosTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcluirDadosTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExponencialTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExponencialTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExponencialTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExponencialTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExponencialTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExponencialTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExponencialTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExponencialTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExponencialTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExponencialTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExponencialTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExponencialTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FatorialTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FatorialTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FatorialTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FatorialTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FatorialTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FatorialTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FatorialTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FatorialTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FatorialTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FatorialTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FatorialTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FatorialTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IgualTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IgualTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IgualTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IgualTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IgualTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IgualTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IgualTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IgualTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InserirDadosTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InserirDadosTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InserirDadosTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InserirDadosTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InserirDadosTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InserirDadosTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InserirDadosTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InserirDadosTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InserirDadosTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InserirDadosTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InserirDadosTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InserirDadosTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InversaoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InversaoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InversaoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InversaoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InversaoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InversaoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InversaoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InversaoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InversaoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InversaoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InversaoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InversaoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LimparTudoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LimparTudoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LimparTudoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LimparTudoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LimparTudoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LimparTudoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LimparTudoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LimparTudoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LimparTudoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LimparTudoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LimparTudoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LimparTudoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoDecimalTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoDecimalTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoDecimalTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoDecimalTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoDecimalTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoDecimalTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoDecimalTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoDecimalTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoDecimalTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoDecimalTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoDecimalTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoDecimalTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoNeperianoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoNeperianoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoNeperianoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoNeperianoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoNeperianoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoNeperianoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoNeperianoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoNeperianoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoNeperianoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoNeperianoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogaritmoNeperianoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogaritmoNeperianoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MediaAritmeticaTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MediaAritmeticaTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MediaAritmeticaTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MediaAritmeticaTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MediaAritmeticaTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MediaAritmeticaTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MediaAritmeticaTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MediaAritmeticaTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MediaAritmeticaTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MediaAritmeticaTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MediaAritmeticaTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MediaAritmeticaTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaAdicionarTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaAdicionarTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaAdicionarTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaAdicionarTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaAdicionarTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaAdicionarTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaAdicionarTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaAdicionarTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaAdicionarTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaAdicionarTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaAdicionarTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaAdicionarTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaLimparTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaLimparTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaLimparTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaLimparTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaLimparTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaLimparTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaLimparTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaLimparTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaLimparTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaLimparTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaLimparTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaLimparTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaRecuperarTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaRecuperarTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaRecuperarTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaRecuperarTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaRecuperarTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaRecuperarTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaRecuperarTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaRecuperarTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaRecuperarTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaRecuperarTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaRecuperarTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaRecuperarTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubstituirTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubstituirTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubstituirTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubstituirTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubstituirTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubstituirTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubstituirTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubstituirTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubstituirTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubstituirTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubstituirTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubstituirTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubtrairTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubtrairTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubtrairTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubtrairTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubtrairTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubtrairTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubtrairTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubtrairTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubtrairTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubtrairTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoriaSubtrairTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoriaSubtrairTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MultiplicacaoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MultiplicacaoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MultiplicacaoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MultiplicacaoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MultiplicacaoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MultiplicacaoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MultiplicacaoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MultiplicacaoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoveTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoveTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoveTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoveTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoveTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoveTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoveTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoveTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NumeroDadosTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NumeroDadosTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NumeroDadosTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NumeroDadosTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NumeroDadosTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NumeroDadosTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NumeroDadosTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NumeroDadosTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NumeroDadosTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NumeroDadosTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NumeroDadosTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NumeroDadosTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OitoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OitoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OitoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OitoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OitoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OitoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OitoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OitoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OposicaoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OposicaoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OposicaoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OposicaoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OposicaoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OposicaoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OposicaoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OposicaoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PiTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PiTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PiTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PiTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PiTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PiTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PiTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PiTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PiTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PiTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PiTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PiTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PontoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PontoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PontoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PontoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PontoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PontoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PontoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PontoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PorcentagemTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PorcentagemTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PorcentagemTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PorcentagemTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PorcentagemTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PorcentagemTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PorcentagemTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PorcentagemTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PorcentagemTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PorcentagemTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PorcentagemTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PorcentagemTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciacaoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciacaoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciacaoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciacaoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciacaoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciacaoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciacaoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciacaoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciacaoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciacaoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciacaoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciacaoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaDecimalTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaDecimalTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaDecimalTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaDecimalTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaDecimalTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaDecimalTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaDecimalTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaDecimalTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaDecimalTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaDecimalTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaDecimalTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaDecimalTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaNeperianaTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaNeperianaTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaNeperianaTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaNeperianaTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaNeperianaTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaNeperianaTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaNeperianaTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaNeperianaTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaNeperianaTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaNeperianaTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PotenciaNeperianaTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PotenciaNeperianaTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuatroTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuatroTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuatroTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuatroTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuatroTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuatroTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuatroTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuatroTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RadiciacaoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RadiciacaoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RadiciacaoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RadiciacaoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RadiciacaoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RadiciacaoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RadiciacaoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RadiciacaoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RadiciacaoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RadiciacaoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RadiciacaoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RadiciacaoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizCubicaTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizCubicaTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizCubicaTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizCubicaTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizCubicaTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizCubicaTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizCubicaTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizCubicaTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizCubicaTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizCubicaTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizCubicaTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizCubicaTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizQuadradaTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizQuadradaTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizQuadradaTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizQuadradaTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizQuadradaTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizQuadradaTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizQuadradaTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizQuadradaTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizQuadradaTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizQuadradaTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RaizQuadradaTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RaizQuadradaTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RandomTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RandomTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RandomTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RandomTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RandomTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RandomTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RandomTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RandomTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RandomTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RandomTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RandomTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RandomTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoverTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoverTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoverTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoverTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoverTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoverTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoverTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoverTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoverTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoverTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoverTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoverTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeisTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeisTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeisTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeisTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeisTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeisTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeisTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeisTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoInversoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoInversoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoInversoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoInversoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoInversoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoInversoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoInversoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoInversoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoInversoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoInversoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoInversoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoInversoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeteTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeteTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeteTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeteTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeteTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeteTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeteTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeteTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaQuadradosValoresTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaQuadradosValoresTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaQuadradosValoresTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaQuadradosValoresTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaQuadradosValoresTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaQuadradosValoresTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaQuadradosValoresTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaQuadradosValoresTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaQuadradosValoresTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaQuadradosValoresTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaQuadradosValoresTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaQuadradosValoresTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaValoresTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaValoresTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaValoresTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaValoresTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaValoresTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaValoresTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaValoresTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaValoresTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaValoresTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaValoresTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SomaValoresTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomaValoresTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SubtracaoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubtracaoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SubtracaoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubtracaoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SubtracaoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubtracaoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SubtracaoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubtracaoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteInversaTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteInversaTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteInversaTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteInversaTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteInversaTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteInversaTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteInversaTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteInversaTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteInversaTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteInversaTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteInversaTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteInversaTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TangenteTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TangenteTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TresTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TresTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TresTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TresTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TresTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TresTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TresTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TresTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UmTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UmTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UmTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UmTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UmTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UmTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UmTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UmTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VirgulaTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VirgulaTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VirgulaTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VirgulaTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VirgulaTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VirgulaTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VirgulaTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VirgulaTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XQuadradoTemaClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XQuadradoTemaClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XQuadradoTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XQuadradoTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XQuadradoTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XQuadradoTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XQuadradoTemaEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XQuadradoTemaEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XQuadradoTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XQuadradoTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XQuadradoTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XQuadradoTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZeroTemaClaroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZeroTemaClaroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZeroTemaClaroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZeroTemaClaroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZeroTemaEscuroNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZeroTemaEscuroNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZeroTemaEscuroRealce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZeroTemaEscuroRealce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

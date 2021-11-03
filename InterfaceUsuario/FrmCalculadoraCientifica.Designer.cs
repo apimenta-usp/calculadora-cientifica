@@ -104,6 +104,7 @@ namespace InterfaceUsuario {
             // btnInserirDados
             // 
             this.btnInserirDados.BackColor = System.Drawing.Color.Transparent;
+            this.btnInserirDados.BackgroundImage = global::InterfaceUsuario.Properties.Resources.InserirDadosTemaClaroNormal;
             this.btnInserirDados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnInserirDados.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnInserirDados.FlatAppearance.BorderSize = 0;
@@ -114,12 +115,13 @@ namespace InterfaceUsuario {
             this.btnInserirDados.Location = new System.Drawing.Point(322, 510);
             this.btnInserirDados.Name = "btnInserirDados";
             this.btnInserirDados.Size = new System.Drawing.Size(56, 40);
-            this.btnInserirDados.TabIndex = 145;
+            this.btnInserirDados.TabIndex = 21;
             this.btnInserirDados.UseVisualStyleBackColor = false;
             // 
             // btnDesvioAmostral
             // 
             this.btnDesvioAmostral.BackColor = System.Drawing.Color.Transparent;
+            this.btnDesvioAmostral.BackgroundImage = global::InterfaceUsuario.Properties.Resources.DesvioAmostralTemaClaroNormal;
             this.btnDesvioAmostral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDesvioAmostral.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnDesvioAmostral.FlatAppearance.BorderSize = 0;
@@ -130,12 +132,13 @@ namespace InterfaceUsuario {
             this.btnDesvioAmostral.Location = new System.Drawing.Point(322, 446);
             this.btnDesvioAmostral.Name = "btnDesvioAmostral";
             this.btnDesvioAmostral.Size = new System.Drawing.Size(56, 40);
-            this.btnDesvioAmostral.TabIndex = 146;
+            this.btnDesvioAmostral.TabIndex = 22;
             this.btnDesvioAmostral.UseVisualStyleBackColor = false;
             // 
             // btnMediaAritmetica
             // 
             this.btnMediaAritmetica.BackColor = System.Drawing.Color.Transparent;
+            this.btnMediaAritmetica.BackgroundImage = global::InterfaceUsuario.Properties.Resources.MediaAritmeticaTemaClaroNormal;
             this.btnMediaAritmetica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMediaAritmetica.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMediaAritmetica.FlatAppearance.BorderSize = 0;
@@ -146,12 +149,13 @@ namespace InterfaceUsuario {
             this.btnMediaAritmetica.Location = new System.Drawing.Point(322, 382);
             this.btnMediaAritmetica.Name = "btnMediaAritmetica";
             this.btnMediaAritmetica.Size = new System.Drawing.Size(56, 40);
-            this.btnMediaAritmetica.TabIndex = 147;
+            this.btnMediaAritmetica.TabIndex = 23;
             this.btnMediaAritmetica.UseVisualStyleBackColor = false;
             // 
             // btnNumeroDados
             // 
             this.btnNumeroDados.BackColor = System.Drawing.Color.Transparent;
+            this.btnNumeroDados.BackgroundImage = global::InterfaceUsuario.Properties.Resources.NumeroDadosTemaClaroNormal;
             this.btnNumeroDados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnNumeroDados.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnNumeroDados.FlatAppearance.BorderSize = 0;
@@ -162,7 +166,7 @@ namespace InterfaceUsuario {
             this.btnNumeroDados.Location = new System.Drawing.Point(322, 321);
             this.btnNumeroDados.Name = "btnNumeroDados";
             this.btnNumeroDados.Size = new System.Drawing.Size(56, 40);
-            this.btnNumeroDados.TabIndex = 148;
+            this.btnNumeroDados.TabIndex = 24;
             this.btnNumeroDados.UseVisualStyleBackColor = false;
             // 
             // chk2Funcao
@@ -266,6 +270,7 @@ namespace InterfaceUsuario {
             // btnApagarVisor
             // 
             this.btnApagarVisor.BackColor = System.Drawing.Color.Transparent;
+            this.btnApagarVisor.BackgroundImage = global::InterfaceUsuario.Properties.Resources.ApagarVisorTemaClaroNormal;
             this.btnApagarVisor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnApagarVisor.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnApagarVisor.FlatAppearance.BorderSize = 0;
@@ -276,12 +281,12 @@ namespace InterfaceUsuario {
             this.btnApagarVisor.Location = new System.Drawing.Point(322, 193);
             this.btnApagarVisor.Name = "btnApagarVisor";
             this.btnApagarVisor.Size = new System.Drawing.Size(56, 40);
-            this.btnApagarVisor.TabIndex = 160;
+            this.btnApagarVisor.TabIndex = 36;
             this.btnApagarVisor.UseVisualStyleBackColor = false;
             // 
             // btnLimparTudo
             // 
-            this.btnLimparTudo.BackColor = System.Drawing.Color.Transparent;
+            this.btnLimparTudo.BackColor = System.Drawing.Color.DarkBlue;
             this.btnLimparTudo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLimparTudo.Enabled = false;
             this.btnLimparTudo.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -300,6 +305,7 @@ namespace InterfaceUsuario {
             // btnLogaritmoNeperiano
             // 
             this.btnLogaritmoNeperiano.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogaritmoNeperiano.BackgroundImage = global::InterfaceUsuario.Properties.Resources.LogaritmoNeperianoTemaClaroNormal;
             this.btnLogaritmoNeperiano.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogaritmoNeperiano.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnLogaritmoNeperiano.FlatAppearance.BorderSize = 0;
@@ -310,12 +316,12 @@ namespace InterfaceUsuario {
             this.btnLogaritmoNeperiano.Location = new System.Drawing.Point(322, 257);
             this.btnLogaritmoNeperiano.Name = "btnLogaritmoNeperiano";
             this.btnLogaritmoNeperiano.Size = new System.Drawing.Size(56, 40);
-            this.btnLogaritmoNeperiano.TabIndex = 149;
+            this.btnLogaritmoNeperiano.TabIndex = 25;
             this.btnLogaritmoNeperiano.UseVisualStyleBackColor = false;
             // 
             // btnPotenciaNeperiana
             // 
-            this.btnPotenciaNeperiana.BackColor = System.Drawing.Color.Transparent;
+            this.btnPotenciaNeperiana.BackColor = System.Drawing.Color.DarkBlue;
             this.btnPotenciaNeperiana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPotenciaNeperiana.Enabled = false;
             this.btnPotenciaNeperiana.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -333,7 +339,7 @@ namespace InterfaceUsuario {
             // 
             // btnSomaValores
             // 
-            this.btnSomaValores.BackColor = System.Drawing.Color.Transparent;
+            this.btnSomaValores.BackColor = System.Drawing.Color.DarkBlue;
             this.btnSomaValores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSomaValores.Enabled = false;
             this.btnSomaValores.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -352,6 +358,7 @@ namespace InterfaceUsuario {
             // btnRemover
             // 
             this.btnRemover.BackColor = System.Drawing.Color.Transparent;
+            this.btnRemover.BackgroundImage = global::InterfaceUsuario.Properties.Resources.RemoverTemaClaroNormal;
             this.btnRemover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRemover.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRemover.FlatAppearance.BorderSize = 0;
@@ -362,12 +369,12 @@ namespace InterfaceUsuario {
             this.btnRemover.Location = new System.Drawing.Point(260, 193);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(56, 40);
-            this.btnRemover.TabIndex = 159;
+            this.btnRemover.TabIndex = 35;
             this.btnRemover.UseVisualStyleBackColor = false;
             // 
             // btnPorcentagem
             // 
-            this.btnPorcentagem.BackColor = System.Drawing.Color.Transparent;
+            this.btnPorcentagem.BackColor = System.Drawing.Color.DarkBlue;
             this.btnPorcentagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPorcentagem.Enabled = false;
             this.btnPorcentagem.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -386,6 +393,7 @@ namespace InterfaceUsuario {
             // btnLogaritmoDecimal
             // 
             this.btnLogaritmoDecimal.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogaritmoDecimal.BackgroundImage = global::InterfaceUsuario.Properties.Resources.LogaritmoDecimalTemaClaroNormal;
             this.btnLogaritmoDecimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogaritmoDecimal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnLogaritmoDecimal.FlatAppearance.BorderSize = 0;
@@ -396,12 +404,12 @@ namespace InterfaceUsuario {
             this.btnLogaritmoDecimal.Location = new System.Drawing.Point(260, 257);
             this.btnLogaritmoDecimal.Name = "btnLogaritmoDecimal";
             this.btnLogaritmoDecimal.Size = new System.Drawing.Size(56, 40);
-            this.btnLogaritmoDecimal.TabIndex = 150;
+            this.btnLogaritmoDecimal.TabIndex = 26;
             this.btnLogaritmoDecimal.UseVisualStyleBackColor = false;
             // 
             // btnPotenciaDecimal
             // 
-            this.btnPotenciaDecimal.BackColor = System.Drawing.Color.Transparent;
+            this.btnPotenciaDecimal.BackColor = System.Drawing.Color.DarkBlue;
             this.btnPotenciaDecimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPotenciaDecimal.Enabled = false;
             this.btnPotenciaDecimal.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -420,6 +428,7 @@ namespace InterfaceUsuario {
             // btnMemoriaSubstituir
             // 
             this.btnMemoriaSubstituir.BackColor = System.Drawing.Color.Transparent;
+            this.btnMemoriaSubstituir.BackgroundImage = global::InterfaceUsuario.Properties.Resources.MemoriaSubstituirTemaClaroNormal;
             this.btnMemoriaSubstituir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMemoriaSubstituir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMemoriaSubstituir.FlatAppearance.BorderSize = 0;
@@ -430,12 +439,12 @@ namespace InterfaceUsuario {
             this.btnMemoriaSubstituir.Location = new System.Drawing.Point(260, 321);
             this.btnMemoriaSubstituir.Name = "btnMemoriaSubstituir";
             this.btnMemoriaSubstituir.Size = new System.Drawing.Size(56, 40);
-            this.btnMemoriaSubstituir.TabIndex = 144;
+            this.btnMemoriaSubstituir.TabIndex = 20;
             this.btnMemoriaSubstituir.UseVisualStyleBackColor = false;
             // 
             // btnRandom
             // 
-            this.btnRandom.BackColor = System.Drawing.Color.Transparent;
+            this.btnRandom.BackColor = System.Drawing.Color.DarkBlue;
             this.btnRandom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRandom.Enabled = false;
             this.btnRandom.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -454,6 +463,7 @@ namespace InterfaceUsuario {
             // btnTangente
             // 
             this.btnTangente.BackColor = System.Drawing.Color.Transparent;
+            this.btnTangente.BackgroundImage = global::InterfaceUsuario.Properties.Resources.TangenteTemaClaroNormal;
             this.btnTangente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTangente.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnTangente.FlatAppearance.BorderSize = 0;
@@ -464,12 +474,12 @@ namespace InterfaceUsuario {
             this.btnTangente.Location = new System.Drawing.Point(198, 193);
             this.btnTangente.Name = "btnTangente";
             this.btnTangente.Size = new System.Drawing.Size(56, 40);
-            this.btnTangente.TabIndex = 158;
+            this.btnTangente.TabIndex = 34;
             this.btnTangente.UseVisualStyleBackColor = false;
             // 
             // btnTangenteInversa
             // 
-            this.btnTangenteInversa.BackColor = System.Drawing.Color.Transparent;
+            this.btnTangenteInversa.BackColor = System.Drawing.Color.DarkBlue;
             this.btnTangenteInversa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTangenteInversa.Enabled = false;
             this.btnTangenteInversa.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -488,6 +498,7 @@ namespace InterfaceUsuario {
             // btnInversao
             // 
             this.btnInversao.BackColor = System.Drawing.Color.Transparent;
+            this.btnInversao.BackgroundImage = global::InterfaceUsuario.Properties.Resources.InversaoTemaClaroNormal;
             this.btnInversao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnInversao.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnInversao.FlatAppearance.BorderSize = 0;
@@ -498,12 +509,12 @@ namespace InterfaceUsuario {
             this.btnInversao.Location = new System.Drawing.Point(198, 257);
             this.btnInversao.Name = "btnInversao";
             this.btnInversao.Size = new System.Drawing.Size(56, 40);
-            this.btnInversao.TabIndex = 151;
+            this.btnInversao.TabIndex = 27;
             this.btnInversao.UseVisualStyleBackColor = false;
             // 
             // btnRaizCubica
             // 
-            this.btnRaizCubica.BackColor = System.Drawing.Color.Transparent;
+            this.btnRaizCubica.BackColor = System.Drawing.Color.DarkBlue;
             this.btnRaizCubica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRaizCubica.Enabled = false;
             this.btnRaizCubica.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -522,6 +533,7 @@ namespace InterfaceUsuario {
             // btnDivisao
             // 
             this.btnDivisao.BackColor = System.Drawing.Color.Transparent;
+            this.btnDivisao.BackgroundImage = global::InterfaceUsuario.Properties.Resources.DivisaoTemaClaroNormal;
             this.btnDivisao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDivisao.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnDivisao.FlatAppearance.BorderSize = 0;
@@ -532,12 +544,13 @@ namespace InterfaceUsuario {
             this.btnDivisao.Location = new System.Drawing.Point(198, 321);
             this.btnDivisao.Name = "btnDivisao";
             this.btnDivisao.Size = new System.Drawing.Size(56, 40);
-            this.btnDivisao.TabIndex = 140;
+            this.btnDivisao.TabIndex = 16;
             this.btnDivisao.UseVisualStyleBackColor = false;
             // 
             // btnCosseno
             // 
             this.btnCosseno.BackColor = System.Drawing.Color.Transparent;
+            this.btnCosseno.BackgroundImage = global::InterfaceUsuario.Properties.Resources.CossenoTemaClaroNormal;
             this.btnCosseno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCosseno.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCosseno.FlatAppearance.BorderSize = 0;
@@ -548,12 +561,12 @@ namespace InterfaceUsuario {
             this.btnCosseno.Location = new System.Drawing.Point(136, 193);
             this.btnCosseno.Name = "btnCosseno";
             this.btnCosseno.Size = new System.Drawing.Size(56, 40);
-            this.btnCosseno.TabIndex = 157;
+            this.btnCosseno.TabIndex = 33;
             this.btnCosseno.UseVisualStyleBackColor = false;
             // 
             // btnCossenoInverso
             // 
-            this.btnCossenoInverso.BackColor = System.Drawing.Color.Transparent;
+            this.btnCossenoInverso.BackColor = System.Drawing.Color.DarkBlue;
             this.btnCossenoInverso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCossenoInverso.Enabled = false;
             this.btnCossenoInverso.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -572,6 +585,7 @@ namespace InterfaceUsuario {
             // btnRaizQuadrada
             // 
             this.btnRaizQuadrada.BackColor = System.Drawing.Color.Transparent;
+            this.btnRaizQuadrada.BackgroundImage = global::InterfaceUsuario.Properties.Resources.RaizQuadradaTemaClaroNormal;
             this.btnRaizQuadrada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRaizQuadrada.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRaizQuadrada.FlatAppearance.BorderSize = 0;
@@ -582,12 +596,12 @@ namespace InterfaceUsuario {
             this.btnRaizQuadrada.Location = new System.Drawing.Point(136, 257);
             this.btnRaizQuadrada.Name = "btnRaizQuadrada";
             this.btnRaizQuadrada.Size = new System.Drawing.Size(56, 40);
-            this.btnRaizQuadrada.TabIndex = 152;
+            this.btnRaizQuadrada.TabIndex = 28;
             this.btnRaizQuadrada.UseVisualStyleBackColor = false;
             // 
             // btnXQuadrado
             // 
-            this.btnXQuadrado.BackColor = System.Drawing.Color.Transparent;
+            this.btnXQuadrado.BackColor = System.Drawing.Color.DarkBlue;
             this.btnXQuadrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnXQuadrado.Enabled = false;
             this.btnXQuadrado.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -606,6 +620,7 @@ namespace InterfaceUsuario {
             // btn9
             // 
             this.btn9.BackColor = System.Drawing.Color.Transparent;
+            this.btn9.BackgroundImage = global::InterfaceUsuario.Properties.Resources.NoveTemaClaroNormal;
             this.btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn9.FlatAppearance.BorderSize = 0;
@@ -616,12 +631,13 @@ namespace InterfaceUsuario {
             this.btn9.Location = new System.Drawing.Point(136, 321);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(56, 40);
-            this.btn9.TabIndex = 133;
+            this.btn9.TabIndex = 9;
             this.btn9.UseVisualStyleBackColor = false;
             // 
             // btnSeno
             // 
             this.btnSeno.BackColor = System.Drawing.Color.Transparent;
+            this.btnSeno.BackgroundImage = global::InterfaceUsuario.Properties.Resources.SenoTemaClaroNormal;
             this.btnSeno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSeno.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSeno.FlatAppearance.BorderSize = 0;
@@ -632,12 +648,12 @@ namespace InterfaceUsuario {
             this.btnSeno.Location = new System.Drawing.Point(74, 193);
             this.btnSeno.Name = "btnSeno";
             this.btnSeno.Size = new System.Drawing.Size(56, 40);
-            this.btnSeno.TabIndex = 156;
+            this.btnSeno.TabIndex = 32;
             this.btnSeno.UseVisualStyleBackColor = false;
             // 
             // btnSenoInverso
             // 
-            this.btnSenoInverso.BackColor = System.Drawing.Color.Transparent;
+            this.btnSenoInverso.BackColor = System.Drawing.Color.DarkBlue;
             this.btnSenoInverso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSenoInverso.Enabled = false;
             this.btnSenoInverso.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -656,6 +672,7 @@ namespace InterfaceUsuario {
             // btnPotenciacao
             // 
             this.btnPotenciacao.BackColor = System.Drawing.Color.Transparent;
+            this.btnPotenciacao.BackgroundImage = global::InterfaceUsuario.Properties.Resources.PotenciacaoTemaClaroNormal;
             this.btnPotenciacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPotenciacao.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPotenciacao.FlatAppearance.BorderSize = 0;
@@ -666,12 +683,12 @@ namespace InterfaceUsuario {
             this.btnPotenciacao.Location = new System.Drawing.Point(74, 257);
             this.btnPotenciacao.Name = "btnPotenciacao";
             this.btnPotenciacao.Size = new System.Drawing.Size(56, 40);
-            this.btnPotenciacao.TabIndex = 153;
+            this.btnPotenciacao.TabIndex = 29;
             this.btnPotenciacao.UseVisualStyleBackColor = false;
             // 
             // btnRadiciacao
             // 
-            this.btnRadiciacao.BackColor = System.Drawing.Color.Transparent;
+            this.btnRadiciacao.BackColor = System.Drawing.Color.DarkBlue;
             this.btnRadiciacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRadiciacao.Enabled = false;
             this.btnRadiciacao.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -690,6 +707,7 @@ namespace InterfaceUsuario {
             // btn8
             // 
             this.btn8.BackColor = System.Drawing.Color.Transparent;
+            this.btn8.BackgroundImage = global::InterfaceUsuario.Properties.Resources.OitoTemaClaroNormal;
             this.btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn8.FlatAppearance.BorderSize = 0;
@@ -700,12 +718,13 @@ namespace InterfaceUsuario {
             this.btn8.Location = new System.Drawing.Point(74, 321);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(56, 40);
-            this.btn8.TabIndex = 132;
+            this.btn8.TabIndex = 8;
             this.btn8.UseVisualStyleBackColor = false;
             // 
             // btnDecimalCientifico
             // 
             this.btnDecimalCientifico.BackColor = System.Drawing.Color.Transparent;
+            this.btnDecimalCientifico.BackgroundImage = global::InterfaceUsuario.Properties.Resources.DecimalCientificoTemaClaroNormal;
             this.btnDecimalCientifico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDecimalCientifico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnDecimalCientifico.FlatAppearance.BorderSize = 0;
@@ -716,12 +735,12 @@ namespace InterfaceUsuario {
             this.btnDecimalCientifico.Location = new System.Drawing.Point(12, 193);
             this.btnDecimalCientifico.Name = "btnDecimalCientifico";
             this.btnDecimalCientifico.Size = new System.Drawing.Size(56, 40);
-            this.btnDecimalCientifico.TabIndex = 155;
+            this.btnDecimalCientifico.TabIndex = 31;
             this.btnDecimalCientifico.UseVisualStyleBackColor = false;
             // 
             // btnFatorial
             // 
-            this.btnFatorial.BackColor = System.Drawing.Color.Transparent;
+            this.btnFatorial.BackColor = System.Drawing.Color.DarkBlue;
             this.btnFatorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFatorial.Enabled = false;
             this.btnFatorial.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -740,6 +759,7 @@ namespace InterfaceUsuario {
             // btnExponencial
             // 
             this.btnExponencial.BackColor = System.Drawing.Color.Transparent;
+            this.btnExponencial.BackgroundImage = global::InterfaceUsuario.Properties.Resources.ExponencialTemaClaroNormal;
             this.btnExponencial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnExponencial.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnExponencial.FlatAppearance.BorderSize = 0;
@@ -750,12 +770,12 @@ namespace InterfaceUsuario {
             this.btnExponencial.Location = new System.Drawing.Point(12, 257);
             this.btnExponencial.Name = "btnExponencial";
             this.btnExponencial.Size = new System.Drawing.Size(56, 40);
-            this.btnExponencial.TabIndex = 154;
+            this.btnExponencial.TabIndex = 30;
             this.btnExponencial.UseVisualStyleBackColor = false;
             // 
             // btnPi
             // 
-            this.btnPi.BackColor = System.Drawing.Color.Transparent;
+            this.btnPi.BackColor = System.Drawing.Color.DarkBlue;
             this.btnPi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPi.Enabled = false;
             this.btnPi.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -774,6 +794,7 @@ namespace InterfaceUsuario {
             // btn7
             // 
             this.btn7.BackColor = System.Drawing.Color.Transparent;
+            this.btn7.BackgroundImage = global::InterfaceUsuario.Properties.Resources.SeteTemaClaroNormal;
             this.btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn7.FlatAppearance.BorderSize = 0;
@@ -784,12 +805,12 @@ namespace InterfaceUsuario {
             this.btn7.Location = new System.Drawing.Point(12, 321);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(56, 40);
-            this.btn7.TabIndex = 131;
+            this.btn7.TabIndex = 7;
             this.btn7.UseVisualStyleBackColor = false;
             // 
             // btnDesvioPopulacional
             // 
-            this.btnDesvioPopulacional.BackColor = System.Drawing.Color.Transparent;
+            this.btnDesvioPopulacional.BackColor = System.Drawing.Color.DarkBlue;
             this.btnDesvioPopulacional.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDesvioPopulacional.Enabled = false;
             this.btnDesvioPopulacional.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -807,7 +828,7 @@ namespace InterfaceUsuario {
             // 
             // btnLimparDados
             // 
-            this.btnLimparDados.BackColor = System.Drawing.Color.Transparent;
+            this.btnLimparDados.BackColor = System.Drawing.Color.DarkBlue;
             this.btnLimparDados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLimparDados.Enabled = false;
             this.btnLimparDados.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -826,6 +847,7 @@ namespace InterfaceUsuario {
             // btnMemoriaRecuperar
             // 
             this.btnMemoriaRecuperar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMemoriaRecuperar.BackgroundImage = global::InterfaceUsuario.Properties.Resources.MemoriaRecuperarTemaClaroNormal;
             this.btnMemoriaRecuperar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMemoriaRecuperar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMemoriaRecuperar.FlatAppearance.BorderSize = 0;
@@ -836,12 +858,12 @@ namespace InterfaceUsuario {
             this.btnMemoriaRecuperar.Location = new System.Drawing.Point(260, 382);
             this.btnMemoriaRecuperar.Name = "btnMemoriaRecuperar";
             this.btnMemoriaRecuperar.Size = new System.Drawing.Size(56, 40);
-            this.btnMemoriaRecuperar.TabIndex = 143;
+            this.btnMemoriaRecuperar.TabIndex = 19;
             this.btnMemoriaRecuperar.UseVisualStyleBackColor = false;
             // 
             // btnMemoriaLimpar
             // 
-            this.btnMemoriaLimpar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMemoriaLimpar.BackColor = System.Drawing.Color.DarkBlue;
             this.btnMemoriaLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMemoriaLimpar.Enabled = false;
             this.btnMemoriaLimpar.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -860,6 +882,7 @@ namespace InterfaceUsuario {
             // btnMemoriaAdicionar
             // 
             this.btnMemoriaAdicionar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMemoriaAdicionar.BackgroundImage = global::InterfaceUsuario.Properties.Resources.MemoriaAdicionarTemaClaroNormal;
             this.btnMemoriaAdicionar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMemoriaAdicionar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMemoriaAdicionar.FlatAppearance.BorderSize = 0;
@@ -870,12 +893,12 @@ namespace InterfaceUsuario {
             this.btnMemoriaAdicionar.Location = new System.Drawing.Point(260, 446);
             this.btnMemoriaAdicionar.Name = "btnMemoriaAdicionar";
             this.btnMemoriaAdicionar.Size = new System.Drawing.Size(56, 40);
-            this.btnMemoriaAdicionar.TabIndex = 142;
+            this.btnMemoriaAdicionar.TabIndex = 18;
             this.btnMemoriaAdicionar.UseVisualStyleBackColor = false;
             // 
             // btnMemoriaSubtrair
             // 
-            this.btnMemoriaSubtrair.BackColor = System.Drawing.Color.Transparent;
+            this.btnMemoriaSubtrair.BackColor = System.Drawing.Color.DarkBlue;
             this.btnMemoriaSubtrair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMemoriaSubtrair.Enabled = false;
             this.btnMemoriaSubtrair.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
@@ -894,6 +917,7 @@ namespace InterfaceUsuario {
             // btnIgual
             // 
             this.btnIgual.BackColor = System.Drawing.Color.Transparent;
+            this.btnIgual.BackgroundImage = global::InterfaceUsuario.Properties.Resources.IgualTemaClaroNormal;
             this.btnIgual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnIgual.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnIgual.FlatAppearance.BorderSize = 0;
@@ -904,12 +928,13 @@ namespace InterfaceUsuario {
             this.btnIgual.Location = new System.Drawing.Point(260, 510);
             this.btnIgual.Name = "btnIgual";
             this.btnIgual.Size = new System.Drawing.Size(56, 40);
-            this.btnIgual.TabIndex = 141;
+            this.btnIgual.TabIndex = 17;
             this.btnIgual.UseVisualStyleBackColor = false;
             // 
             // btnMultiplicacao
             // 
             this.btnMultiplicacao.BackColor = System.Drawing.Color.Transparent;
+            this.btnMultiplicacao.BackgroundImage = global::InterfaceUsuario.Properties.Resources.MultiplicacaoTemaClaroNormal;
             this.btnMultiplicacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMultiplicacao.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMultiplicacao.FlatAppearance.BorderSize = 0;
@@ -920,12 +945,13 @@ namespace InterfaceUsuario {
             this.btnMultiplicacao.Location = new System.Drawing.Point(198, 382);
             this.btnMultiplicacao.Name = "btnMultiplicacao";
             this.btnMultiplicacao.Size = new System.Drawing.Size(56, 40);
-            this.btnMultiplicacao.TabIndex = 139;
+            this.btnMultiplicacao.TabIndex = 15;
             this.btnMultiplicacao.UseVisualStyleBackColor = false;
             // 
             // btnSubtracao
             // 
             this.btnSubtracao.BackColor = System.Drawing.Color.Transparent;
+            this.btnSubtracao.BackgroundImage = global::InterfaceUsuario.Properties.Resources.SubtracaoTemaClaroNormal;
             this.btnSubtracao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSubtracao.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSubtracao.FlatAppearance.BorderSize = 0;
@@ -936,12 +962,13 @@ namespace InterfaceUsuario {
             this.btnSubtracao.Location = new System.Drawing.Point(198, 446);
             this.btnSubtracao.Name = "btnSubtracao";
             this.btnSubtracao.Size = new System.Drawing.Size(56, 40);
-            this.btnSubtracao.TabIndex = 138;
+            this.btnSubtracao.TabIndex = 14;
             this.btnSubtracao.UseVisualStyleBackColor = false;
             // 
             // btnSoma
             // 
             this.btnSoma.BackColor = System.Drawing.Color.Transparent;
+            this.btnSoma.BackgroundImage = global::InterfaceUsuario.Properties.Resources.SomaTemaClaroNormal;
             this.btnSoma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSoma.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSoma.FlatAppearance.BorderSize = 0;
@@ -952,12 +979,13 @@ namespace InterfaceUsuario {
             this.btnSoma.Location = new System.Drawing.Point(198, 510);
             this.btnSoma.Name = "btnSoma";
             this.btnSoma.Size = new System.Drawing.Size(56, 40);
-            this.btnSoma.TabIndex = 137;
+            this.btnSoma.TabIndex = 13;
             this.btnSoma.UseVisualStyleBackColor = false;
             // 
             // btn6
             // 
             this.btn6.BackColor = System.Drawing.Color.Transparent;
+            this.btn6.BackgroundImage = global::InterfaceUsuario.Properties.Resources.SeisTemaClaroNormal;
             this.btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn6.FlatAppearance.BorderSize = 0;
@@ -968,12 +996,13 @@ namespace InterfaceUsuario {
             this.btn6.Location = new System.Drawing.Point(136, 382);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(56, 40);
-            this.btn6.TabIndex = 130;
+            this.btn6.TabIndex = 6;
             this.btn6.UseVisualStyleBackColor = false;
             // 
             // btn3
             // 
             this.btn3.BackColor = System.Drawing.Color.Transparent;
+            this.btn3.BackgroundImage = global::InterfaceUsuario.Properties.Resources.TresTemaClaroNormal;
             this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn3.FlatAppearance.BorderSize = 0;
@@ -984,12 +1013,13 @@ namespace InterfaceUsuario {
             this.btn3.Location = new System.Drawing.Point(136, 446);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(56, 40);
-            this.btn3.TabIndex = 127;
+            this.btn3.TabIndex = 3;
             this.btn3.UseVisualStyleBackColor = false;
             // 
             // btnOposicao
             // 
             this.btnOposicao.BackColor = System.Drawing.Color.Transparent;
+            this.btnOposicao.BackgroundImage = global::InterfaceUsuario.Properties.Resources.OposicaoTemaClaroNormal;
             this.btnOposicao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnOposicao.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnOposicao.FlatAppearance.BorderSize = 0;
@@ -1000,12 +1030,13 @@ namespace InterfaceUsuario {
             this.btnOposicao.Location = new System.Drawing.Point(136, 510);
             this.btnOposicao.Name = "btnOposicao";
             this.btnOposicao.Size = new System.Drawing.Size(56, 40);
-            this.btnOposicao.TabIndex = 136;
+            this.btnOposicao.TabIndex = 12;
             this.btnOposicao.UseVisualStyleBackColor = false;
             // 
             // btn5
             // 
             this.btn5.BackColor = System.Drawing.Color.Transparent;
+            this.btn5.BackgroundImage = global::InterfaceUsuario.Properties.Resources.CincoTemaClaroNormal;
             this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn5.FlatAppearance.BorderSize = 0;
@@ -1016,12 +1047,13 @@ namespace InterfaceUsuario {
             this.btn5.Location = new System.Drawing.Point(74, 382);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(56, 40);
-            this.btn5.TabIndex = 129;
+            this.btn5.TabIndex = 5;
             this.btn5.UseVisualStyleBackColor = false;
             // 
             // btn2
             // 
             this.btn2.BackColor = System.Drawing.Color.Transparent;
+            this.btn2.BackgroundImage = global::InterfaceUsuario.Properties.Resources.DoisTemaClaroNormal;
             this.btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn2.FlatAppearance.BorderSize = 0;
@@ -1032,12 +1064,13 @@ namespace InterfaceUsuario {
             this.btn2.Location = new System.Drawing.Point(74, 446);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(56, 40);
-            this.btn2.TabIndex = 126;
+            this.btn2.TabIndex = 2;
             this.btn2.UseVisualStyleBackColor = false;
             // 
             // btnSeparadorDecimal
             // 
             this.btnSeparadorDecimal.BackColor = System.Drawing.Color.Transparent;
+            this.btnSeparadorDecimal.BackgroundImage = global::InterfaceUsuario.Properties.Resources.PontoTemaClaroNormal;
             this.btnSeparadorDecimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSeparadorDecimal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSeparadorDecimal.FlatAppearance.BorderSize = 0;
@@ -1048,12 +1081,13 @@ namespace InterfaceUsuario {
             this.btnSeparadorDecimal.Location = new System.Drawing.Point(74, 510);
             this.btnSeparadorDecimal.Name = "btnSeparadorDecimal";
             this.btnSeparadorDecimal.Size = new System.Drawing.Size(56, 40);
-            this.btnSeparadorDecimal.TabIndex = 135;
+            this.btnSeparadorDecimal.TabIndex = 11;
             this.btnSeparadorDecimal.UseVisualStyleBackColor = false;
             // 
             // btn4
             // 
             this.btn4.BackColor = System.Drawing.Color.Transparent;
+            this.btn4.BackgroundImage = global::InterfaceUsuario.Properties.Resources.QuatroTemaClaroNormal;
             this.btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn4.FlatAppearance.BorderSize = 0;
@@ -1064,12 +1098,13 @@ namespace InterfaceUsuario {
             this.btn4.Location = new System.Drawing.Point(12, 382);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(56, 40);
-            this.btn4.TabIndex = 128;
+            this.btn4.TabIndex = 4;
             this.btn4.UseVisualStyleBackColor = false;
             // 
             // btn1
             // 
             this.btn1.BackColor = System.Drawing.Color.Transparent;
+            this.btn1.BackgroundImage = global::InterfaceUsuario.Properties.Resources.UmTemaClaroNormal;
             this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn1.FlatAppearance.BorderSize = 0;
@@ -1080,12 +1115,13 @@ namespace InterfaceUsuario {
             this.btn1.Location = new System.Drawing.Point(12, 446);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(56, 40);
-            this.btn1.TabIndex = 125;
+            this.btn1.TabIndex = 1;
             this.btn1.UseVisualStyleBackColor = false;
             // 
             // btn0
             // 
             this.btn0.BackColor = System.Drawing.Color.Transparent;
+            this.btn0.BackgroundImage = global::InterfaceUsuario.Properties.Resources.ZeroTemaClaroNormal;
             this.btn0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn0.FlatAppearance.BorderSize = 0;
@@ -1096,12 +1132,12 @@ namespace InterfaceUsuario {
             this.btn0.Location = new System.Drawing.Point(12, 510);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(56, 40);
-            this.btn0.TabIndex = 134;
+            this.btn0.TabIndex = 10;
             this.btn0.UseVisualStyleBackColor = false;
             // 
             // btnSomaQuadradosValores
             // 
-            this.btnSomaQuadradosValores.BackColor = System.Drawing.Color.Transparent;
+            this.btnSomaQuadradosValores.BackColor = System.Drawing.Color.DarkBlue;
             this.btnSomaQuadradosValores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSomaQuadradosValores.Enabled = false;
             this.btnSomaQuadradosValores.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;

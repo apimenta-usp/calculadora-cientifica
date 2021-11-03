@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,906 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApagarVisorTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApagarVisorTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApagarVisorTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApagarVisorTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApagarVisorTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApagarVisorTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CincoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CincoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CincoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CincoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoInversoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoInversoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoInversoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoInversoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoInversoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoInversoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CossenoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DecimalCientificoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DecimalCientificoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DecimalCientificoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DecimalCientificoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DecimalCientificoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DecimalCientificoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioAmostralTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioAmostralTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioAmostralTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioAmostralTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioAmostralTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioAmostralTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioPopulacionalTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioPopulacionalTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioPopulacionalTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioPopulacionalTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioPopulacionalTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesvioPopulacionalTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DivisaoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DivisaoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DivisaoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DivisaoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoisTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoisTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoisTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoisTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcluirDadosTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcluirDadosTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcluirDadosTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcluirDadosTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcluirDadosTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcluirDadosTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExponencialTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExponencialTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExponencialTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExponencialTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExponencialTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExponencialTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FatorialTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FatorialTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FatorialTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FatorialTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FatorialTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FatorialTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IgualTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IgualTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IgualTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IgualTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InserirDadosTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InserirDadosTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InserirDadosTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InserirDadosTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InserirDadosTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InserirDadosTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InversaoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InversaoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InversaoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InversaoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InversaoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InversaoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimparTudoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimparTudoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimparTudoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimparTudoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimparTudoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimparTudoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoDecimalTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoDecimalTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoDecimalTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoDecimalTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoDecimalTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoDecimalTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoNeperianoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoNeperianoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoNeperianoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoNeperianoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoNeperianoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogaritmoNeperianoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MediaAritmeticaTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MediaAritmeticaTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MediaAritmeticaTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MediaAritmeticaTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MediaAritmeticaTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MediaAritmeticaTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaAdicionarTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaAdicionarTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaAdicionarTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaAdicionarTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaAdicionarTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaAdicionarTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaLimparTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaLimparTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaLimparTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaLimparTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaLimparTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaLimparTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaRecuperarTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaRecuperarTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaRecuperarTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaRecuperarTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaRecuperarTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaRecuperarTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubstituirTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubstituirTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubstituirTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubstituirTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubstituirTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubstituirTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubtrairTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubtrairTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubtrairTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubtrairTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubtrairTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoriaSubtrairTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiplicacaoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiplicacaoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiplicacaoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiplicacaoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoveTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoveTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoveTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoveTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumeroDadosTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumeroDadosTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumeroDadosTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumeroDadosTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumeroDadosTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumeroDadosTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OitoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OitoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OitoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OitoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OposicaoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OposicaoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OposicaoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OposicaoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PontoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PontoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PontoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PontoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PorcentagemTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PorcentagemTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PorcentagemTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PorcentagemTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PorcentagemTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PorcentagemTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciacaoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciacaoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciacaoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciacaoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciacaoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciacaoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaDecimalTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaDecimalTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaDecimalTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaDecimalTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaDecimalTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaDecimalTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaNeperianaTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaNeperianaTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaNeperianaTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaNeperianaTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaNeperianaTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PotenciaNeperianaTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuatroTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuatroTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuatroTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuatroTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiciacaoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiciacaoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiciacaoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiciacaoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiciacaoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiciacaoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizCubicaTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizCubicaTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizCubicaTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizCubicaTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizCubicaTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizCubicaTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizQuadradaTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizQuadradaTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizQuadradaTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizQuadradaTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizQuadradaTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RaizQuadradaTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RandomTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RandomTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RandomTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RandomTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RandomTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RandomTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoverTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoverTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoverTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoverTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoverTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoverTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeisTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeisTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeisTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeisTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoInversoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoInversoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoInversoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoInversoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoInversoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoInversoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeteTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeteTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeteTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeteTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaQuadradosValoresTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaQuadradosValoresTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaQuadradosValoresTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaQuadradosValoresTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaQuadradosValoresTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaQuadradosValoresTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaValoresTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaValoresTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaValoresTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaValoresTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaValoresTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomaValoresTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubtracaoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubtracaoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubtracaoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubtracaoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteInversaTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteInversaTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteInversaTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteInversaTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteInversaTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteInversaTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TangenteTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TresTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TresTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TresTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TresTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UmTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UmTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UmTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UmTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VirgulaTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VirgulaTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VirgulaTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VirgulaTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XQuadradoTemaClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XQuadradoTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XQuadradoTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XQuadradoTemaEscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XQuadradoTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XQuadradoTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZeroTemaClaroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZeroTemaClaroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZeroTemaEscuroNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZeroTemaEscuroRealce.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
