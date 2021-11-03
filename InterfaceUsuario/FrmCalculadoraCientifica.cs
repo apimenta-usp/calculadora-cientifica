@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InterfaceUsuario {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class FrmCalculadoraCientifica : Form {
+        public FrmCalculadoraCientifica() {
             InitializeComponent();
         }
     }
