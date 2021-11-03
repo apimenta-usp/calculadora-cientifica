@@ -90,6 +90,21 @@ namespace InterfaceUsuario {
             this.pcbPorcentagem = new System.Windows.Forms.PictureBox();
             this.pcbLimparTudo = new System.Windows.Forms.PictureBox();
             this.lblVisor = new System.Windows.Forms.Label();
+            this.mnsArquivo = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsCopiarVisor = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsPersonalizar = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsFixar2Funcao = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsSeparadorDecimal = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsTema = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsPonto = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsVirgula = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsClaro = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsEscuro = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsAjuda = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsManual = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsSobre = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsMenuPrincipal.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaSubtrair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaLimpar)).BeginInit();
@@ -114,6 +129,11 @@ namespace InterfaceUsuario {
             // 
             // mnsMenuPrincipal
             // 
+            this.mnsMenuPrincipal.BackColor = System.Drawing.Color.White;
+            this.mnsMenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsArquivo,
+            this.mnsPersonalizar,
+            this.mnsAjuda});
             this.mnsMenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mnsMenuPrincipal.Name = "mnsMenuPrincipal";
             this.mnsMenuPrincipal.Size = new System.Drawing.Size(391, 24);
@@ -1084,6 +1104,146 @@ namespace InterfaceUsuario {
             this.lblVisor.Text = "0.123456789";
             this.lblVisor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // mnsArquivo
+            // 
+            this.mnsArquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsCopiarVisor,
+            this.mnsSair});
+            this.mnsArquivo.Name = "mnsArquivo";
+            this.mnsArquivo.ShowShortcutKeys = false;
+            this.mnsArquivo.Size = new System.Drawing.Size(61, 20);
+            this.mnsArquivo.Text = "Arquivo";
+            // 
+            // mnsCopiarVisor
+            // 
+            this.mnsCopiarVisor.BackColor = System.Drawing.Color.White;
+            this.mnsCopiarVisor.ForeColor = System.Drawing.Color.Black;
+            this.mnsCopiarVisor.Name = "mnsCopiarVisor";
+            this.mnsCopiarVisor.ShowShortcutKeys = false;
+            this.mnsCopiarVisor.Size = new System.Drawing.Size(180, 22);
+            this.mnsCopiarVisor.Text = "Copiar Visor";
+            // 
+            // mnsSair
+            // 
+            this.mnsSair.BackColor = System.Drawing.Color.White;
+            this.mnsSair.ForeColor = System.Drawing.Color.Black;
+            this.mnsSair.Name = "mnsSair";
+            this.mnsSair.ShowShortcutKeys = false;
+            this.mnsSair.Size = new System.Drawing.Size(180, 22);
+            this.mnsSair.Text = "Sair";
+            // 
+            // mnsPersonalizar
+            // 
+            this.mnsPersonalizar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsFixar2Funcao,
+            this.mnsSeparadorDecimal,
+            this.mnsTema});
+            this.mnsPersonalizar.Name = "mnsPersonalizar";
+            this.mnsPersonalizar.ShowShortcutKeys = false;
+            this.mnsPersonalizar.Size = new System.Drawing.Size(82, 20);
+            this.mnsPersonalizar.Text = "Personalizar";
+            // 
+            // mnsFixar2Funcao
+            // 
+            this.mnsFixar2Funcao.BackColor = System.Drawing.Color.White;
+            this.mnsFixar2Funcao.ForeColor = System.Drawing.Color.Black;
+            this.mnsFixar2Funcao.Name = "mnsFixar2Funcao";
+            this.mnsFixar2Funcao.ShowShortcutKeys = false;
+            this.mnsFixar2Funcao.Size = new System.Drawing.Size(180, 22);
+            this.mnsFixar2Funcao.Text = "Fixar 2ª Função";
+            // 
+            // mnsSeparadorDecimal
+            // 
+            this.mnsSeparadorDecimal.BackColor = System.Drawing.Color.White;
+            this.mnsSeparadorDecimal.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsPonto,
+            this.mnsVirgula});
+            this.mnsSeparadorDecimal.ForeColor = System.Drawing.Color.Black;
+            this.mnsSeparadorDecimal.Name = "mnsSeparadorDecimal";
+            this.mnsSeparadorDecimal.ShowShortcutKeys = false;
+            this.mnsSeparadorDecimal.Size = new System.Drawing.Size(180, 22);
+            this.mnsSeparadorDecimal.Text = "Separador Decimal";
+            // 
+            // mnsTema
+            // 
+            this.mnsTema.BackColor = System.Drawing.Color.White;
+            this.mnsTema.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsClaro,
+            this.mnsEscuro});
+            this.mnsTema.ForeColor = System.Drawing.Color.Black;
+            this.mnsTema.Name = "mnsTema";
+            this.mnsTema.ShowShortcutKeys = false;
+            this.mnsTema.Size = new System.Drawing.Size(180, 22);
+            this.mnsTema.Text = "Tema";
+            // 
+            // mnsPonto
+            // 
+            this.mnsPonto.BackColor = System.Drawing.Color.White;
+            this.mnsPonto.Checked = true;
+            this.mnsPonto.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.mnsPonto.ForeColor = System.Drawing.Color.Black;
+            this.mnsPonto.Name = "mnsPonto";
+            this.mnsPonto.ShowShortcutKeys = false;
+            this.mnsPonto.Size = new System.Drawing.Size(180, 22);
+            this.mnsPonto.Text = "Ponto";
+            // 
+            // mnsVirgula
+            // 
+            this.mnsVirgula.BackColor = System.Drawing.Color.White;
+            this.mnsVirgula.ForeColor = System.Drawing.Color.Black;
+            this.mnsVirgula.Name = "mnsVirgula";
+            this.mnsVirgula.ShowShortcutKeys = false;
+            this.mnsVirgula.Size = new System.Drawing.Size(180, 22);
+            this.mnsVirgula.Text = "Vírgula";
+            // 
+            // mnsClaro
+            // 
+            this.mnsClaro.BackColor = System.Drawing.Color.White;
+            this.mnsClaro.Checked = true;
+            this.mnsClaro.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.mnsClaro.ForeColor = System.Drawing.Color.Black;
+            this.mnsClaro.Name = "mnsClaro";
+            this.mnsClaro.ShowShortcutKeys = false;
+            this.mnsClaro.Size = new System.Drawing.Size(180, 22);
+            this.mnsClaro.Text = "Claro";
+            // 
+            // mnsEscuro
+            // 
+            this.mnsEscuro.BackColor = System.Drawing.Color.White;
+            this.mnsEscuro.ForeColor = System.Drawing.Color.Black;
+            this.mnsEscuro.Name = "mnsEscuro";
+            this.mnsEscuro.ShowShortcutKeys = false;
+            this.mnsEscuro.Size = new System.Drawing.Size(180, 22);
+            this.mnsEscuro.Text = "Escuro";
+            // 
+            // mnsAjuda
+            // 
+            this.mnsAjuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsManual,
+            this.mnsSobre});
+            this.mnsAjuda.Name = "mnsAjuda";
+            this.mnsAjuda.ShowShortcutKeys = false;
+            this.mnsAjuda.Size = new System.Drawing.Size(50, 20);
+            this.mnsAjuda.Text = "Ajuda";
+            // 
+            // mnsManual
+            // 
+            this.mnsManual.BackColor = System.Drawing.Color.White;
+            this.mnsManual.ForeColor = System.Drawing.Color.Black;
+            this.mnsManual.Name = "mnsManual";
+            this.mnsManual.ShowShortcutKeys = false;
+            this.mnsManual.Size = new System.Drawing.Size(180, 22);
+            this.mnsManual.Text = "Manual";
+            // 
+            // mnsSobre
+            // 
+            this.mnsSobre.BackColor = System.Drawing.Color.White;
+            this.mnsSobre.ForeColor = System.Drawing.Color.Black;
+            this.mnsSobre.Name = "mnsSobre";
+            this.mnsSobre.ShowShortcutKeys = false;
+            this.mnsSobre.Size = new System.Drawing.Size(180, 22);
+            this.mnsSobre.Text = "Sobre";
+            // 
             // FrmCalculadoraCientifica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1159,6 +1319,8 @@ namespace InterfaceUsuario {
             this.Name = "FrmCalculadoraCientifica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora Científica by ACP";
+            this.mnsMenuPrincipal.ResumeLayout(false);
+            this.mnsMenuPrincipal.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaSubtrair)).EndInit();
@@ -1252,6 +1414,20 @@ namespace InterfaceUsuario {
         private System.Windows.Forms.PictureBox pcbPorcentagem;
         private System.Windows.Forms.PictureBox pcbLimparTudo;
         private System.Windows.Forms.Label lblVisor;
+        private System.Windows.Forms.ToolStripMenuItem mnsArquivo;
+        private System.Windows.Forms.ToolStripMenuItem mnsCopiarVisor;
+        private System.Windows.Forms.ToolStripMenuItem mnsSair;
+        private System.Windows.Forms.ToolStripMenuItem mnsPersonalizar;
+        private System.Windows.Forms.ToolStripMenuItem mnsFixar2Funcao;
+        private System.Windows.Forms.ToolStripMenuItem mnsSeparadorDecimal;
+        private System.Windows.Forms.ToolStripMenuItem mnsPonto;
+        private System.Windows.Forms.ToolStripMenuItem mnsTema;
+        private System.Windows.Forms.ToolStripMenuItem mnsVirgula;
+        private System.Windows.Forms.ToolStripMenuItem mnsClaro;
+        private System.Windows.Forms.ToolStripMenuItem mnsEscuro;
+        private System.Windows.Forms.ToolStripMenuItem mnsAjuda;
+        private System.Windows.Forms.ToolStripMenuItem mnsManual;
+        private System.Windows.Forms.ToolStripMenuItem mnsSobre;
     }
 }
 
