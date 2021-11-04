@@ -44,6 +44,13 @@ namespace InterfaceUsuario.Operacoes {
             }
         }
 
+        public static double NumeroAleatorio() {
+            Random random = new Random();
+            int aleatorio = random.Next(1, 1000);
+            double numero = aleatorio / 1000.0;
+            return numero;
+        }
+
         public static void LimparCampos(Label lblVisor) {
             lblVisor.Text = string.Empty;
             FrmCalculadoraCientifica.Numero1 = 0;

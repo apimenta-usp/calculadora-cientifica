@@ -229,7 +229,13 @@ namespace InterfaceUsuario {
                     PressionouMemoria = true;
                 }
             } else {
-
+                string valorAleatorio = Calcular.NumeroAleatorio().ToString("F3", CultureInfo.InvariantCulture);
+                if (Virgula) {
+                    valorAleatorio = valorAleatorio.Replace('.', ',');
+                }
+                lblVisor.Text = valorAleatorio;
+                if (!mnsFixar2Funcao.Checked)
+                    chk2Funcao.Checked = false;
             }
         }
 
@@ -307,7 +313,17 @@ namespace InterfaceUsuario {
                     byte tamanho = (byte)lblVisor.Text.Trim().Length;
                     lblVisor.Text = lblVisor.Text.Trim().Remove((tamanho - 1));
                 } else {
-
+                    if (PressionouIgual || PressionouPotenciacao) {
+                        Calcular.LimparCampos(lblVisor);
+                        return;
+                    }
+                    if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                        double porcentagem = Visor.Capturar(lblVisor.Text.Trim());
+                        porcentagem = porcentagem / 100;
+                        lblVisor.Text = Visor.Exibir(Numero1 * porcentagem);
+                    }
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
                 }
             }
         }
