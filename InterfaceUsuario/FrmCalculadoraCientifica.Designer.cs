@@ -26,6 +26,20 @@ namespace InterfaceUsuario {
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCalculadoraCientifica));
             this.mnsMenuPrincipal = new System.Windows.Forms.MenuStrip();
+            this.mnsArquivo = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsCopiarVisor = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsPersonalizar = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsFixar2Funcao = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsSeparadorDecimal = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsPonto = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsVirgula = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsTema = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsClaro = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsEscuro = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsAjuda = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsManual = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.btnInserirDados = new System.Windows.Forms.Button();
             this.btnDesvioAmostral = new System.Windows.Forms.Button();
             this.btnMediaAritmetica = new System.Windows.Forms.Button();
@@ -90,20 +104,6 @@ namespace InterfaceUsuario {
             this.pcbPorcentagem = new System.Windows.Forms.PictureBox();
             this.pcbLimparTudo = new System.Windows.Forms.PictureBox();
             this.lblVisor = new System.Windows.Forms.Label();
-            this.mnsArquivo = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsCopiarVisor = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsSair = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsPersonalizar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsFixar2Funcao = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsSeparadorDecimal = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsTema = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsPonto = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsVirgula = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsClaro = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsEscuro = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsAjuda = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsManual = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsMenuPrincipal.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMemoriaSubtrair)).BeginInit();
@@ -140,6 +140,154 @@ namespace InterfaceUsuario {
             this.mnsMenuPrincipal.TabIndex = 0;
             this.mnsMenuPrincipal.Text = "menuStrip1";
             // 
+            // mnsArquivo
+            // 
+            this.mnsArquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsCopiarVisor,
+            this.mnsSair});
+            this.mnsArquivo.Name = "mnsArquivo";
+            this.mnsArquivo.ShowShortcutKeys = false;
+            this.mnsArquivo.Size = new System.Drawing.Size(61, 20);
+            this.mnsArquivo.Text = "Arquivo";
+            // 
+            // mnsCopiarVisor
+            // 
+            this.mnsCopiarVisor.BackColor = System.Drawing.Color.White;
+            this.mnsCopiarVisor.ForeColor = System.Drawing.Color.Black;
+            this.mnsCopiarVisor.Name = "mnsCopiarVisor";
+            this.mnsCopiarVisor.ShowShortcutKeys = false;
+            this.mnsCopiarVisor.Size = new System.Drawing.Size(180, 22);
+            this.mnsCopiarVisor.Text = "Copiar Visor";
+            this.mnsCopiarVisor.Click += new System.EventHandler(this.mnsCopiarVisor_Click);
+            // 
+            // mnsSair
+            // 
+            this.mnsSair.BackColor = System.Drawing.Color.White;
+            this.mnsSair.ForeColor = System.Drawing.Color.Black;
+            this.mnsSair.Name = "mnsSair";
+            this.mnsSair.ShowShortcutKeys = false;
+            this.mnsSair.Size = new System.Drawing.Size(180, 22);
+            this.mnsSair.Text = "Sair";
+            this.mnsSair.Click += new System.EventHandler(this.mnsSair_Click);
+            // 
+            // mnsPersonalizar
+            // 
+            this.mnsPersonalizar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsFixar2Funcao,
+            this.mnsSeparadorDecimal,
+            this.mnsTema});
+            this.mnsPersonalizar.Name = "mnsPersonalizar";
+            this.mnsPersonalizar.ShowShortcutKeys = false;
+            this.mnsPersonalizar.Size = new System.Drawing.Size(82, 20);
+            this.mnsPersonalizar.Text = "Personalizar";
+            // 
+            // mnsFixar2Funcao
+            // 
+            this.mnsFixar2Funcao.BackColor = System.Drawing.Color.White;
+            this.mnsFixar2Funcao.ForeColor = System.Drawing.Color.Black;
+            this.mnsFixar2Funcao.Name = "mnsFixar2Funcao";
+            this.mnsFixar2Funcao.ShowShortcutKeys = false;
+            this.mnsFixar2Funcao.Size = new System.Drawing.Size(180, 22);
+            this.mnsFixar2Funcao.Text = "Fixar 2ª Função";
+            // 
+            // mnsSeparadorDecimal
+            // 
+            this.mnsSeparadorDecimal.BackColor = System.Drawing.Color.White;
+            this.mnsSeparadorDecimal.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsPonto,
+            this.mnsVirgula});
+            this.mnsSeparadorDecimal.ForeColor = System.Drawing.Color.Black;
+            this.mnsSeparadorDecimal.Name = "mnsSeparadorDecimal";
+            this.mnsSeparadorDecimal.ShowShortcutKeys = false;
+            this.mnsSeparadorDecimal.Size = new System.Drawing.Size(180, 22);
+            this.mnsSeparadorDecimal.Text = "Separador Decimal";
+            // 
+            // mnsPonto
+            // 
+            this.mnsPonto.BackColor = System.Drawing.Color.White;
+            this.mnsPonto.Checked = true;
+            this.mnsPonto.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.mnsPonto.ForeColor = System.Drawing.Color.Black;
+            this.mnsPonto.Name = "mnsPonto";
+            this.mnsPonto.ShowShortcutKeys = false;
+            this.mnsPonto.Size = new System.Drawing.Size(180, 22);
+            this.mnsPonto.Text = "Ponto";
+            this.mnsPonto.Click += new System.EventHandler(this.mnsPonto_Click);
+            // 
+            // mnsVirgula
+            // 
+            this.mnsVirgula.BackColor = System.Drawing.Color.White;
+            this.mnsVirgula.ForeColor = System.Drawing.Color.Black;
+            this.mnsVirgula.Name = "mnsVirgula";
+            this.mnsVirgula.ShowShortcutKeys = false;
+            this.mnsVirgula.Size = new System.Drawing.Size(180, 22);
+            this.mnsVirgula.Text = "Vírgula";
+            this.mnsVirgula.Click += new System.EventHandler(this.mnsVirgula_Click);
+            // 
+            // mnsTema
+            // 
+            this.mnsTema.BackColor = System.Drawing.Color.White;
+            this.mnsTema.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsClaro,
+            this.mnsEscuro});
+            this.mnsTema.ForeColor = System.Drawing.Color.Black;
+            this.mnsTema.Name = "mnsTema";
+            this.mnsTema.ShowShortcutKeys = false;
+            this.mnsTema.Size = new System.Drawing.Size(180, 22);
+            this.mnsTema.Text = "Tema";
+            // 
+            // mnsClaro
+            // 
+            this.mnsClaro.BackColor = System.Drawing.Color.White;
+            this.mnsClaro.Checked = true;
+            this.mnsClaro.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.mnsClaro.ForeColor = System.Drawing.Color.Black;
+            this.mnsClaro.Name = "mnsClaro";
+            this.mnsClaro.ShowShortcutKeys = false;
+            this.mnsClaro.Size = new System.Drawing.Size(180, 22);
+            this.mnsClaro.Text = "Claro";
+            this.mnsClaro.Click += new System.EventHandler(this.mnsClaro_Click);
+            // 
+            // mnsEscuro
+            // 
+            this.mnsEscuro.BackColor = System.Drawing.Color.White;
+            this.mnsEscuro.ForeColor = System.Drawing.Color.Black;
+            this.mnsEscuro.Name = "mnsEscuro";
+            this.mnsEscuro.ShowShortcutKeys = false;
+            this.mnsEscuro.Size = new System.Drawing.Size(180, 22);
+            this.mnsEscuro.Text = "Escuro";
+            this.mnsEscuro.Click += new System.EventHandler(this.mnsEscuro_Click);
+            // 
+            // mnsAjuda
+            // 
+            this.mnsAjuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsManual,
+            this.mnsSobre});
+            this.mnsAjuda.Name = "mnsAjuda";
+            this.mnsAjuda.ShowShortcutKeys = false;
+            this.mnsAjuda.Size = new System.Drawing.Size(50, 20);
+            this.mnsAjuda.Text = "Ajuda";
+            // 
+            // mnsManual
+            // 
+            this.mnsManual.BackColor = System.Drawing.Color.White;
+            this.mnsManual.ForeColor = System.Drawing.Color.Black;
+            this.mnsManual.Name = "mnsManual";
+            this.mnsManual.ShowShortcutKeys = false;
+            this.mnsManual.Size = new System.Drawing.Size(180, 22);
+            this.mnsManual.Text = "Manual";
+            this.mnsManual.Click += new System.EventHandler(this.mnsManual_Click);
+            // 
+            // mnsSobre
+            // 
+            this.mnsSobre.BackColor = System.Drawing.Color.White;
+            this.mnsSobre.ForeColor = System.Drawing.Color.Black;
+            this.mnsSobre.Name = "mnsSobre";
+            this.mnsSobre.ShowShortcutKeys = false;
+            this.mnsSobre.Size = new System.Drawing.Size(180, 22);
+            this.mnsSobre.Text = "Sobre";
+            this.mnsSobre.Click += new System.EventHandler(this.mnsSobre_Click);
+            // 
             // btnInserirDados
             // 
             this.btnInserirDados.BackColor = System.Drawing.Color.Transparent;
@@ -156,6 +304,7 @@ namespace InterfaceUsuario {
             this.btnInserirDados.Size = new System.Drawing.Size(56, 40);
             this.btnInserirDados.TabIndex = 21;
             this.btnInserirDados.UseVisualStyleBackColor = false;
+            this.btnInserirDados.Click += new System.EventHandler(this.btnInserirDados_Click);
             // 
             // btnDesvioAmostral
             // 
@@ -173,6 +322,7 @@ namespace InterfaceUsuario {
             this.btnDesvioAmostral.Size = new System.Drawing.Size(56, 40);
             this.btnDesvioAmostral.TabIndex = 22;
             this.btnDesvioAmostral.UseVisualStyleBackColor = false;
+            this.btnDesvioAmostral.Click += new System.EventHandler(this.btnDesvioAmostral_Click);
             // 
             // btnMediaAritmetica
             // 
@@ -190,6 +340,7 @@ namespace InterfaceUsuario {
             this.btnMediaAritmetica.Size = new System.Drawing.Size(56, 40);
             this.btnMediaAritmetica.TabIndex = 23;
             this.btnMediaAritmetica.UseVisualStyleBackColor = false;
+            this.btnMediaAritmetica.Click += new System.EventHandler(this.btnMediaAritmetica_Click);
             // 
             // btnNumeroDados
             // 
@@ -207,6 +358,7 @@ namespace InterfaceUsuario {
             this.btnNumeroDados.Size = new System.Drawing.Size(56, 40);
             this.btnNumeroDados.TabIndex = 24;
             this.btnNumeroDados.UseVisualStyleBackColor = false;
+            this.btnNumeroDados.Click += new System.EventHandler(this.btnNumeroDados_Click);
             // 
             // chk2Funcao
             // 
@@ -307,6 +459,7 @@ namespace InterfaceUsuario {
             this.btnApagarVisor.Size = new System.Drawing.Size(56, 40);
             this.btnApagarVisor.TabIndex = 36;
             this.btnApagarVisor.UseVisualStyleBackColor = false;
+            this.btnApagarVisor.Click += new System.EventHandler(this.btnApagarVisor_Click);
             // 
             // btnLogaritmoNeperiano
             // 
@@ -324,6 +477,7 @@ namespace InterfaceUsuario {
             this.btnLogaritmoNeperiano.Size = new System.Drawing.Size(56, 40);
             this.btnLogaritmoNeperiano.TabIndex = 25;
             this.btnLogaritmoNeperiano.UseVisualStyleBackColor = false;
+            this.btnLogaritmoNeperiano.Click += new System.EventHandler(this.btnLogaritmoNeperiano_Click);
             // 
             // btnRemover
             // 
@@ -341,6 +495,7 @@ namespace InterfaceUsuario {
             this.btnRemover.Size = new System.Drawing.Size(56, 40);
             this.btnRemover.TabIndex = 35;
             this.btnRemover.UseVisualStyleBackColor = false;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // btnLogaritmoDecimal
             // 
@@ -358,6 +513,7 @@ namespace InterfaceUsuario {
             this.btnLogaritmoDecimal.Size = new System.Drawing.Size(56, 40);
             this.btnLogaritmoDecimal.TabIndex = 26;
             this.btnLogaritmoDecimal.UseVisualStyleBackColor = false;
+            this.btnLogaritmoDecimal.Click += new System.EventHandler(this.btnLogaritmoDecimal_Click);
             // 
             // btnMemoriaSubstituir
             // 
@@ -375,6 +531,7 @@ namespace InterfaceUsuario {
             this.btnMemoriaSubstituir.Size = new System.Drawing.Size(56, 40);
             this.btnMemoriaSubstituir.TabIndex = 20;
             this.btnMemoriaSubstituir.UseVisualStyleBackColor = false;
+            this.btnMemoriaSubstituir.Click += new System.EventHandler(this.btnMemoriaSubstituir_Click);
             // 
             // btnTangente
             // 
@@ -392,6 +549,7 @@ namespace InterfaceUsuario {
             this.btnTangente.Size = new System.Drawing.Size(56, 40);
             this.btnTangente.TabIndex = 34;
             this.btnTangente.UseVisualStyleBackColor = false;
+            this.btnTangente.Click += new System.EventHandler(this.btnTangente_Click);
             // 
             // btnInversao
             // 
@@ -409,6 +567,7 @@ namespace InterfaceUsuario {
             this.btnInversao.Size = new System.Drawing.Size(56, 40);
             this.btnInversao.TabIndex = 27;
             this.btnInversao.UseVisualStyleBackColor = false;
+            this.btnInversao.Click += new System.EventHandler(this.btnInversao_Click);
             // 
             // btnDivisao
             // 
@@ -426,6 +585,7 @@ namespace InterfaceUsuario {
             this.btnDivisao.Size = new System.Drawing.Size(56, 40);
             this.btnDivisao.TabIndex = 16;
             this.btnDivisao.UseVisualStyleBackColor = false;
+            this.btnDivisao.Click += new System.EventHandler(this.btnDivisao_Click);
             // 
             // btnCosseno
             // 
@@ -443,6 +603,7 @@ namespace InterfaceUsuario {
             this.btnCosseno.Size = new System.Drawing.Size(56, 40);
             this.btnCosseno.TabIndex = 33;
             this.btnCosseno.UseVisualStyleBackColor = false;
+            this.btnCosseno.Click += new System.EventHandler(this.btnCosseno_Click);
             // 
             // btnRaizQuadrada
             // 
@@ -460,6 +621,7 @@ namespace InterfaceUsuario {
             this.btnRaizQuadrada.Size = new System.Drawing.Size(56, 40);
             this.btnRaizQuadrada.TabIndex = 28;
             this.btnRaizQuadrada.UseVisualStyleBackColor = false;
+            this.btnRaizQuadrada.Click += new System.EventHandler(this.btnRaizQuadrada_Click);
             // 
             // btn9
             // 
@@ -477,6 +639,7 @@ namespace InterfaceUsuario {
             this.btn9.Size = new System.Drawing.Size(56, 40);
             this.btn9.TabIndex = 9;
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btnSeno
             // 
@@ -494,6 +657,7 @@ namespace InterfaceUsuario {
             this.btnSeno.Size = new System.Drawing.Size(56, 40);
             this.btnSeno.TabIndex = 32;
             this.btnSeno.UseVisualStyleBackColor = false;
+            this.btnSeno.Click += new System.EventHandler(this.btnSeno_Click);
             // 
             // btnPotenciacao
             // 
@@ -511,6 +675,7 @@ namespace InterfaceUsuario {
             this.btnPotenciacao.Size = new System.Drawing.Size(56, 40);
             this.btnPotenciacao.TabIndex = 29;
             this.btnPotenciacao.UseVisualStyleBackColor = false;
+            this.btnPotenciacao.Click += new System.EventHandler(this.btnPotenciacao_Click);
             // 
             // btn8
             // 
@@ -528,6 +693,7 @@ namespace InterfaceUsuario {
             this.btn8.Size = new System.Drawing.Size(56, 40);
             this.btn8.TabIndex = 8;
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btnDecimalCientifico
             // 
@@ -545,6 +711,7 @@ namespace InterfaceUsuario {
             this.btnDecimalCientifico.Size = new System.Drawing.Size(56, 40);
             this.btnDecimalCientifico.TabIndex = 31;
             this.btnDecimalCientifico.UseVisualStyleBackColor = false;
+            this.btnDecimalCientifico.Click += new System.EventHandler(this.btnDecimalCientifico_Click);
             // 
             // btnExponencial
             // 
@@ -562,6 +729,7 @@ namespace InterfaceUsuario {
             this.btnExponencial.Size = new System.Drawing.Size(56, 40);
             this.btnExponencial.TabIndex = 30;
             this.btnExponencial.UseVisualStyleBackColor = false;
+            this.btnExponencial.Click += new System.EventHandler(this.btnExponencial_Click);
             // 
             // btn7
             // 
@@ -579,6 +747,7 @@ namespace InterfaceUsuario {
             this.btn7.Size = new System.Drawing.Size(56, 40);
             this.btn7.TabIndex = 7;
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btnMemoriaRecuperar
             // 
@@ -596,6 +765,7 @@ namespace InterfaceUsuario {
             this.btnMemoriaRecuperar.Size = new System.Drawing.Size(56, 40);
             this.btnMemoriaRecuperar.TabIndex = 19;
             this.btnMemoriaRecuperar.UseVisualStyleBackColor = false;
+            this.btnMemoriaRecuperar.Click += new System.EventHandler(this.btnMemoriaRecuperar_Click);
             // 
             // btnMemoriaAdicionar
             // 
@@ -613,6 +783,7 @@ namespace InterfaceUsuario {
             this.btnMemoriaAdicionar.Size = new System.Drawing.Size(56, 40);
             this.btnMemoriaAdicionar.TabIndex = 18;
             this.btnMemoriaAdicionar.UseVisualStyleBackColor = false;
+            this.btnMemoriaAdicionar.Click += new System.EventHandler(this.btnMemoriaAdicionar_Click);
             // 
             // btnIgual
             // 
@@ -630,6 +801,7 @@ namespace InterfaceUsuario {
             this.btnIgual.Size = new System.Drawing.Size(56, 40);
             this.btnIgual.TabIndex = 17;
             this.btnIgual.UseVisualStyleBackColor = false;
+            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
             // 
             // btnMultiplicacao
             // 
@@ -647,6 +819,7 @@ namespace InterfaceUsuario {
             this.btnMultiplicacao.Size = new System.Drawing.Size(56, 40);
             this.btnMultiplicacao.TabIndex = 15;
             this.btnMultiplicacao.UseVisualStyleBackColor = false;
+            this.btnMultiplicacao.Click += new System.EventHandler(this.btnMultiplicacao_Click);
             // 
             // btnSubtracao
             // 
@@ -664,6 +837,7 @@ namespace InterfaceUsuario {
             this.btnSubtracao.Size = new System.Drawing.Size(56, 40);
             this.btnSubtracao.TabIndex = 14;
             this.btnSubtracao.UseVisualStyleBackColor = false;
+            this.btnSubtracao.Click += new System.EventHandler(this.btnSubtracao_Click);
             // 
             // btnSoma
             // 
@@ -681,6 +855,7 @@ namespace InterfaceUsuario {
             this.btnSoma.Size = new System.Drawing.Size(56, 40);
             this.btnSoma.TabIndex = 13;
             this.btnSoma.UseVisualStyleBackColor = false;
+            this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
             // 
             // btn6
             // 
@@ -698,6 +873,7 @@ namespace InterfaceUsuario {
             this.btn6.Size = new System.Drawing.Size(56, 40);
             this.btn6.TabIndex = 6;
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn3
             // 
@@ -715,6 +891,7 @@ namespace InterfaceUsuario {
             this.btn3.Size = new System.Drawing.Size(56, 40);
             this.btn3.TabIndex = 3;
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btnOposicao
             // 
@@ -732,6 +909,7 @@ namespace InterfaceUsuario {
             this.btnOposicao.Size = new System.Drawing.Size(56, 40);
             this.btnOposicao.TabIndex = 12;
             this.btnOposicao.UseVisualStyleBackColor = false;
+            this.btnOposicao.Click += new System.EventHandler(this.btnOposicao_Click);
             // 
             // btn5
             // 
@@ -749,6 +927,7 @@ namespace InterfaceUsuario {
             this.btn5.Size = new System.Drawing.Size(56, 40);
             this.btn5.TabIndex = 5;
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn2
             // 
@@ -766,6 +945,7 @@ namespace InterfaceUsuario {
             this.btn2.Size = new System.Drawing.Size(56, 40);
             this.btn2.TabIndex = 2;
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btnSeparadorDecimal
             // 
@@ -783,6 +963,7 @@ namespace InterfaceUsuario {
             this.btnSeparadorDecimal.Size = new System.Drawing.Size(56, 40);
             this.btnSeparadorDecimal.TabIndex = 11;
             this.btnSeparadorDecimal.UseVisualStyleBackColor = false;
+            this.btnSeparadorDecimal.Click += new System.EventHandler(this.btnSeparadorDecimal_Click);
             // 
             // btn4
             // 
@@ -800,6 +981,7 @@ namespace InterfaceUsuario {
             this.btn4.Size = new System.Drawing.Size(56, 40);
             this.btn4.TabIndex = 4;
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn1
             // 
@@ -817,6 +999,7 @@ namespace InterfaceUsuario {
             this.btn1.Size = new System.Drawing.Size(56, 40);
             this.btn1.TabIndex = 1;
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn0
             // 
@@ -834,6 +1017,7 @@ namespace InterfaceUsuario {
             this.btn0.Size = new System.Drawing.Size(56, 40);
             this.btn0.TabIndex = 10;
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // panel2
             // 
@@ -1103,146 +1287,6 @@ namespace InterfaceUsuario {
             this.lblVisor.TabIndex = 100;
             this.lblVisor.Text = "0.123456789";
             this.lblVisor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // mnsArquivo
-            // 
-            this.mnsArquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsCopiarVisor,
-            this.mnsSair});
-            this.mnsArquivo.Name = "mnsArquivo";
-            this.mnsArquivo.ShowShortcutKeys = false;
-            this.mnsArquivo.Size = new System.Drawing.Size(61, 20);
-            this.mnsArquivo.Text = "Arquivo";
-            // 
-            // mnsCopiarVisor
-            // 
-            this.mnsCopiarVisor.BackColor = System.Drawing.Color.White;
-            this.mnsCopiarVisor.ForeColor = System.Drawing.Color.Black;
-            this.mnsCopiarVisor.Name = "mnsCopiarVisor";
-            this.mnsCopiarVisor.ShowShortcutKeys = false;
-            this.mnsCopiarVisor.Size = new System.Drawing.Size(180, 22);
-            this.mnsCopiarVisor.Text = "Copiar Visor";
-            // 
-            // mnsSair
-            // 
-            this.mnsSair.BackColor = System.Drawing.Color.White;
-            this.mnsSair.ForeColor = System.Drawing.Color.Black;
-            this.mnsSair.Name = "mnsSair";
-            this.mnsSair.ShowShortcutKeys = false;
-            this.mnsSair.Size = new System.Drawing.Size(180, 22);
-            this.mnsSair.Text = "Sair";
-            // 
-            // mnsPersonalizar
-            // 
-            this.mnsPersonalizar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsFixar2Funcao,
-            this.mnsSeparadorDecimal,
-            this.mnsTema});
-            this.mnsPersonalizar.Name = "mnsPersonalizar";
-            this.mnsPersonalizar.ShowShortcutKeys = false;
-            this.mnsPersonalizar.Size = new System.Drawing.Size(82, 20);
-            this.mnsPersonalizar.Text = "Personalizar";
-            // 
-            // mnsFixar2Funcao
-            // 
-            this.mnsFixar2Funcao.BackColor = System.Drawing.Color.White;
-            this.mnsFixar2Funcao.ForeColor = System.Drawing.Color.Black;
-            this.mnsFixar2Funcao.Name = "mnsFixar2Funcao";
-            this.mnsFixar2Funcao.ShowShortcutKeys = false;
-            this.mnsFixar2Funcao.Size = new System.Drawing.Size(180, 22);
-            this.mnsFixar2Funcao.Text = "Fixar 2ª Função";
-            // 
-            // mnsSeparadorDecimal
-            // 
-            this.mnsSeparadorDecimal.BackColor = System.Drawing.Color.White;
-            this.mnsSeparadorDecimal.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsPonto,
-            this.mnsVirgula});
-            this.mnsSeparadorDecimal.ForeColor = System.Drawing.Color.Black;
-            this.mnsSeparadorDecimal.Name = "mnsSeparadorDecimal";
-            this.mnsSeparadorDecimal.ShowShortcutKeys = false;
-            this.mnsSeparadorDecimal.Size = new System.Drawing.Size(180, 22);
-            this.mnsSeparadorDecimal.Text = "Separador Decimal";
-            // 
-            // mnsTema
-            // 
-            this.mnsTema.BackColor = System.Drawing.Color.White;
-            this.mnsTema.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsClaro,
-            this.mnsEscuro});
-            this.mnsTema.ForeColor = System.Drawing.Color.Black;
-            this.mnsTema.Name = "mnsTema";
-            this.mnsTema.ShowShortcutKeys = false;
-            this.mnsTema.Size = new System.Drawing.Size(180, 22);
-            this.mnsTema.Text = "Tema";
-            // 
-            // mnsPonto
-            // 
-            this.mnsPonto.BackColor = System.Drawing.Color.White;
-            this.mnsPonto.Checked = true;
-            this.mnsPonto.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.mnsPonto.ForeColor = System.Drawing.Color.Black;
-            this.mnsPonto.Name = "mnsPonto";
-            this.mnsPonto.ShowShortcutKeys = false;
-            this.mnsPonto.Size = new System.Drawing.Size(180, 22);
-            this.mnsPonto.Text = "Ponto";
-            // 
-            // mnsVirgula
-            // 
-            this.mnsVirgula.BackColor = System.Drawing.Color.White;
-            this.mnsVirgula.ForeColor = System.Drawing.Color.Black;
-            this.mnsVirgula.Name = "mnsVirgula";
-            this.mnsVirgula.ShowShortcutKeys = false;
-            this.mnsVirgula.Size = new System.Drawing.Size(180, 22);
-            this.mnsVirgula.Text = "Vírgula";
-            // 
-            // mnsClaro
-            // 
-            this.mnsClaro.BackColor = System.Drawing.Color.White;
-            this.mnsClaro.Checked = true;
-            this.mnsClaro.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.mnsClaro.ForeColor = System.Drawing.Color.Black;
-            this.mnsClaro.Name = "mnsClaro";
-            this.mnsClaro.ShowShortcutKeys = false;
-            this.mnsClaro.Size = new System.Drawing.Size(180, 22);
-            this.mnsClaro.Text = "Claro";
-            // 
-            // mnsEscuro
-            // 
-            this.mnsEscuro.BackColor = System.Drawing.Color.White;
-            this.mnsEscuro.ForeColor = System.Drawing.Color.Black;
-            this.mnsEscuro.Name = "mnsEscuro";
-            this.mnsEscuro.ShowShortcutKeys = false;
-            this.mnsEscuro.Size = new System.Drawing.Size(180, 22);
-            this.mnsEscuro.Text = "Escuro";
-            // 
-            // mnsAjuda
-            // 
-            this.mnsAjuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsManual,
-            this.mnsSobre});
-            this.mnsAjuda.Name = "mnsAjuda";
-            this.mnsAjuda.ShowShortcutKeys = false;
-            this.mnsAjuda.Size = new System.Drawing.Size(50, 20);
-            this.mnsAjuda.Text = "Ajuda";
-            // 
-            // mnsManual
-            // 
-            this.mnsManual.BackColor = System.Drawing.Color.White;
-            this.mnsManual.ForeColor = System.Drawing.Color.Black;
-            this.mnsManual.Name = "mnsManual";
-            this.mnsManual.ShowShortcutKeys = false;
-            this.mnsManual.Size = new System.Drawing.Size(180, 22);
-            this.mnsManual.Text = "Manual";
-            // 
-            // mnsSobre
-            // 
-            this.mnsSobre.BackColor = System.Drawing.Color.White;
-            this.mnsSobre.ForeColor = System.Drawing.Color.Black;
-            this.mnsSobre.Name = "mnsSobre";
-            this.mnsSobre.ShowShortcutKeys = false;
-            this.mnsSobre.Size = new System.Drawing.Size(180, 22);
-            this.mnsSobre.Text = "Sobre";
             // 
             // FrmCalculadoraCientifica
             // 
