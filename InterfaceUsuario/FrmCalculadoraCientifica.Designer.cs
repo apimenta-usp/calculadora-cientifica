@@ -156,7 +156,7 @@ namespace InterfaceUsuario {
             this.mnsCopiarVisor.ForeColor = System.Drawing.Color.Black;
             this.mnsCopiarVisor.Name = "mnsCopiarVisor";
             this.mnsCopiarVisor.ShowShortcutKeys = false;
-            this.mnsCopiarVisor.Size = new System.Drawing.Size(180, 22);
+            this.mnsCopiarVisor.Size = new System.Drawing.Size(131, 22);
             this.mnsCopiarVisor.Text = "Copiar Visor";
             this.mnsCopiarVisor.Click += new System.EventHandler(this.mnsCopiarVisor_Click);
             // 
@@ -166,7 +166,7 @@ namespace InterfaceUsuario {
             this.mnsSair.ForeColor = System.Drawing.Color.Black;
             this.mnsSair.Name = "mnsSair";
             this.mnsSair.ShowShortcutKeys = false;
-            this.mnsSair.Size = new System.Drawing.Size(180, 22);
+            this.mnsSair.Size = new System.Drawing.Size(131, 22);
             this.mnsSair.Text = "Sair";
             this.mnsSair.Click += new System.EventHandler(this.mnsSair_Click);
             // 
@@ -187,7 +187,7 @@ namespace InterfaceUsuario {
             this.mnsFixar2Funcao.ForeColor = System.Drawing.Color.Black;
             this.mnsFixar2Funcao.Name = "mnsFixar2Funcao";
             this.mnsFixar2Funcao.ShowShortcutKeys = false;
-            this.mnsFixar2Funcao.Size = new System.Drawing.Size(180, 22);
+            this.mnsFixar2Funcao.Size = new System.Drawing.Size(166, 22);
             this.mnsFixar2Funcao.Text = "Fixar 2ª Função";
             // 
             // mnsSeparadorDecimal
@@ -199,7 +199,7 @@ namespace InterfaceUsuario {
             this.mnsSeparadorDecimal.ForeColor = System.Drawing.Color.Black;
             this.mnsSeparadorDecimal.Name = "mnsSeparadorDecimal";
             this.mnsSeparadorDecimal.ShowShortcutKeys = false;
-            this.mnsSeparadorDecimal.Size = new System.Drawing.Size(180, 22);
+            this.mnsSeparadorDecimal.Size = new System.Drawing.Size(166, 22);
             this.mnsSeparadorDecimal.Text = "Separador Decimal";
             // 
             // mnsPonto
@@ -210,7 +210,7 @@ namespace InterfaceUsuario {
             this.mnsPonto.ForeColor = System.Drawing.Color.Black;
             this.mnsPonto.Name = "mnsPonto";
             this.mnsPonto.ShowShortcutKeys = false;
-            this.mnsPonto.Size = new System.Drawing.Size(180, 22);
+            this.mnsPonto.Size = new System.Drawing.Size(104, 22);
             this.mnsPonto.Text = "Ponto";
             this.mnsPonto.Click += new System.EventHandler(this.mnsPonto_Click);
             // 
@@ -220,7 +220,7 @@ namespace InterfaceUsuario {
             this.mnsVirgula.ForeColor = System.Drawing.Color.Black;
             this.mnsVirgula.Name = "mnsVirgula";
             this.mnsVirgula.ShowShortcutKeys = false;
-            this.mnsVirgula.Size = new System.Drawing.Size(180, 22);
+            this.mnsVirgula.Size = new System.Drawing.Size(104, 22);
             this.mnsVirgula.Text = "Vírgula";
             this.mnsVirgula.Click += new System.EventHandler(this.mnsVirgula_Click);
             // 
@@ -233,7 +233,7 @@ namespace InterfaceUsuario {
             this.mnsTema.ForeColor = System.Drawing.Color.Black;
             this.mnsTema.Name = "mnsTema";
             this.mnsTema.ShowShortcutKeys = false;
-            this.mnsTema.Size = new System.Drawing.Size(180, 22);
+            this.mnsTema.Size = new System.Drawing.Size(166, 22);
             this.mnsTema.Text = "Tema";
             // 
             // mnsClaro
@@ -244,7 +244,7 @@ namespace InterfaceUsuario {
             this.mnsClaro.ForeColor = System.Drawing.Color.Black;
             this.mnsClaro.Name = "mnsClaro";
             this.mnsClaro.ShowShortcutKeys = false;
-            this.mnsClaro.Size = new System.Drawing.Size(180, 22);
+            this.mnsClaro.Size = new System.Drawing.Size(102, 22);
             this.mnsClaro.Text = "Claro";
             this.mnsClaro.Click += new System.EventHandler(this.mnsClaro_Click);
             // 
@@ -254,7 +254,7 @@ namespace InterfaceUsuario {
             this.mnsEscuro.ForeColor = System.Drawing.Color.Black;
             this.mnsEscuro.Name = "mnsEscuro";
             this.mnsEscuro.ShowShortcutKeys = false;
-            this.mnsEscuro.Size = new System.Drawing.Size(180, 22);
+            this.mnsEscuro.Size = new System.Drawing.Size(102, 22);
             this.mnsEscuro.Text = "Escuro";
             this.mnsEscuro.Click += new System.EventHandler(this.mnsEscuro_Click);
             // 
@@ -274,7 +274,7 @@ namespace InterfaceUsuario {
             this.mnsManual.ForeColor = System.Drawing.Color.Black;
             this.mnsManual.Name = "mnsManual";
             this.mnsManual.ShowShortcutKeys = false;
-            this.mnsManual.Size = new System.Drawing.Size(180, 22);
+            this.mnsManual.Size = new System.Drawing.Size(107, 22);
             this.mnsManual.Text = "Manual";
             this.mnsManual.Click += new System.EventHandler(this.mnsManual_Click);
             // 
@@ -284,7 +284,7 @@ namespace InterfaceUsuario {
             this.mnsSobre.ForeColor = System.Drawing.Color.Black;
             this.mnsSobre.Name = "mnsSobre";
             this.mnsSobre.ShowShortcutKeys = false;
-            this.mnsSobre.Size = new System.Drawing.Size(180, 22);
+            this.mnsSobre.Size = new System.Drawing.Size(107, 22);
             this.mnsSobre.Text = "Sobre";
             this.mnsSobre.Click += new System.EventHandler(this.mnsSobre_Click);
             // 
@@ -1279,14 +1279,14 @@ namespace InterfaceUsuario {
             // 
             this.lblVisor.BackColor = System.Drawing.Color.White;
             this.lblVisor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblVisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVisor.Location = new System.Drawing.Point(12, 38);
             this.lblVisor.Name = "lblVisor";
             this.lblVisor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblVisor.Size = new System.Drawing.Size(366, 75);
+            this.lblVisor.Size = new System.Drawing.Size(366, 65);
             this.lblVisor.TabIndex = 100;
             this.lblVisor.Text = "0.123456789";
-            this.lblVisor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblVisor.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // FrmCalculadoraCientifica
             // 
@@ -1457,7 +1457,6 @@ namespace InterfaceUsuario {
         private System.Windows.Forms.PictureBox pcbTangenteInversa;
         private System.Windows.Forms.PictureBox pcbPorcentagem;
         private System.Windows.Forms.PictureBox pcbLimparTudo;
-        private System.Windows.Forms.Label lblVisor;
         private System.Windows.Forms.ToolStripMenuItem mnsArquivo;
         private System.Windows.Forms.ToolStripMenuItem mnsCopiarVisor;
         private System.Windows.Forms.ToolStripMenuItem mnsSair;
@@ -1472,6 +1471,7 @@ namespace InterfaceUsuario {
         private System.Windows.Forms.ToolStripMenuItem mnsAjuda;
         private System.Windows.Forms.ToolStripMenuItem mnsManual;
         private System.Windows.Forms.ToolStripMenuItem mnsSobre;
+        private System.Windows.Forms.Label lblVisor;
     }
 }
 

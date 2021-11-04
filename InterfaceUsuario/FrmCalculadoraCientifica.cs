@@ -238,11 +238,39 @@ namespace InterfaceUsuario {
         }
 
         private void btnRemover_Click(object sender, EventArgs e) {
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                if (!chk2Funcao.Checked) {
+                    if (PressionouIgual) {
+                        Calcular.LimparCampos(lblVisor);
+                        return;
+                    }
+                    if ((lblVisor.Text.Trim().Length == 2 && lblVisor.Text.Trim().Contains("-")) ||
+                        (lblVisor.Text.Trim() == "-0." || lblVisor.Text.Trim() == "-0,")) {
+                        lblVisor.Text = string.Empty;
+                        return;
+                    }
+                    byte tamanho = (byte)lblVisor.Text.Trim().Length;
+                    lblVisor.Text = lblVisor.Text.Trim().Remove((tamanho - 1));
+                } else {
 
+                }
+            }
         }
 
         private void btnApagarVisor_Click(object sender, EventArgs e) {
-
+            if (!chk2Funcao.Checked) {
+                if (Operacao.Equals(string.Empty) || PressionouIgual)
+                    Calcular.LimparCampos(lblVisor);
+                else
+                    lblVisor.Text = string.Empty;
+            } else {
+                Calcular.LimparCampos(lblVisor);
+                if (!mnsFixar2Funcao.Checked)
+                    chk2Funcao.Checked = false;
+            }
         }
         #endregion
     }
