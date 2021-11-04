@@ -324,15 +324,66 @@ namespace InterfaceUsuario {
         }
 
         private void btnInversao_Click(object sender, EventArgs e) {
-
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                numero = Visor.Capturar(lblVisor.Text.Trim());
+                if (!chk2Funcao.Checked) {
+                    if (numero == 0) {
+                        MessageBox.Show("Divisão por zero!", "Erro!",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        lblVisor.Text = string.Empty;
+                    } else {
+                        lblVisor.Text = Visor.Exibir(1 / numero);
+                    }
+                } else {
+                    double radicando = 1.0 / 3.0;
+                    lblVisor.Text = Visor.Exibir(Math.Pow(numero, radicando));
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
+                }
+                PressionouIgual = true;
+            }
         }
 
         private void btnRaizQuadrada_Click(object sender, EventArgs e) {
-
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                numero = Visor.Capturar(lblVisor.Text.Trim());
+                if (!chk2Funcao.Checked) {
+                    if (numero < 0) {
+                        MessageBox.Show("Raiz quadrada de número negativo!", "Erro!",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        lblVisor.Text = string.Empty;
+                    } else {
+                        lblVisor.Text = Visor.Exibir(Math.Sqrt(numero));
+                    }
+                } else {
+                    lblVisor.Text = Visor.Exibir(Math.Pow(numero, 2));
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
+                }
+                PressionouIgual = true;
+            }
         }
 
         private void btnPotenciacao_Click(object sender, EventArgs e) {
-
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                if (!chk2Funcao.Checked) {
+                    AdicionarCaracter.Operacao("^", lblVisor);
+                } else {
+                    AdicionarCaracter.Operacao("~", lblVisor);
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
+                }
+                PressionouPotenciacao = true;
+            }
         }
 
         private void btnExponencial_Click(object sender, EventArgs e) {
