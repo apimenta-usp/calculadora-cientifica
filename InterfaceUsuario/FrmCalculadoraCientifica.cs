@@ -1,15 +1,33 @@
-﻿using System;
+﻿using InterfaceUsuario.Personalizacao;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using static InterfaceUsuario.Properties.Resources;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+//using Utilities;
+using System.Globalization;
+//using InterfaceUsuario.Operacoes;
+//using InterfaceUsuario.Ajuda;
+using System.Reflection;
 
 namespace InterfaceUsuario {
     public partial class FrmCalculadoraCientifica : Form {
+        public static bool Virgula { get; private set; }
+        private bool Claro { get; set; }
+        //private List<double> Estatistica { get; set; }
+        //private FrmManual Manual { get; set; }
+        public static double Numero1 { get; set; }
+        public static double Numero2 { get; set; }
+        public static double Memoria { get; set; }
+        public static string Operacao { get; set; }
+        public static bool PressionouIgual { get; set; }
+        public static bool PressionouPotenciacao { get; set; }
+        public static bool PressionouExponencial { get; set; }
+        public static bool PressionouMemoria { get; set; }
+        public const double Pi = 3.14159265359;
+        //globalKeyboardHook gkh = new globalKeyboardHook();
+
         public FrmCalculadoraCientifica() {
             InitializeComponent();
         }
