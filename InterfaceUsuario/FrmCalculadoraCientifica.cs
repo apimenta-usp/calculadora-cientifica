@@ -66,43 +66,57 @@ namespace InterfaceUsuario {
         }
 
         private void btn0_Click(object sender, EventArgs e) {
-
+            byte tamanho;
+            if (lblVisor.Text.Trim().Contains(",") || lblVisor.Text.Trim().Contains("."))
+                tamanho = 11;
+            else
+                tamanho = 10;
+            if (PressionouIgual || PressionouMemoria) {
+                //lblVisor.Clear();
+                lblVisor.Text = string.Empty;
+                PressionouIgual = false;
+                PressionouMemoria = false;
+            }
+            if (lblVisor.Text.Trim().Equals("0") || lblVisor.Text.Trim().Equals("-0"))
+                lblVisor.Text = "0";
+            else if (lblVisor.Text.Trim().Length < tamanho)
+                lblVisor.Text += "0";
         }
 
         private void btn1_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Numerico("1", lblVisor);
         }
 
         private void btn2_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Numerico("2", lblVisor);
         }
 
         private void btn3_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Numerico("3", lblVisor);
         }
 
         private void btn4_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Numerico("4", lblVisor);
         }
 
         private void btn5_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Numerico("5", lblVisor);
         }
 
         private void btn6_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Numerico("6", lblVisor);
         }
 
         private void btn7_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Numerico("7", lblVisor);
         }
 
         private void btn8_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Numerico("8", lblVisor);
         }
 
         private void btn9_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Numerico("9", lblVisor);
         }
 
         private void btnSeparadorDecimal_Click(object sender, EventArgs e) {
