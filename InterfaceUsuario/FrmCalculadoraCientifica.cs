@@ -256,11 +256,71 @@ namespace InterfaceUsuario {
         }
 
         private void btnLogaritmoNeperiano_Click(object sender, EventArgs e) {
-
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                double resultado = Visor.Capturar(lblVisor.Text.Trim());
+                string visor;
+                if (!chk2Funcao.Checked) {
+                    visor = Math.Log(resultado).ToString();
+                    if (resultado <= 0 || visor.Contains('∞')
+                        || double.IsNaN(resultado) || double.IsInfinity(resultado)
+                        || double.IsPositiveInfinity(resultado) || double.IsNegativeInfinity(resultado)) {
+                        MessageBox.Show("Logaritmo inexistente!", "Erro!",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        lblVisor.Text = string.Empty;
+                    } else
+                        lblVisor.Text = Visor.Exibir(Math.Log(resultado));
+                } else {
+                    visor = Math.Exp(resultado).ToString();
+                    if (visor.Contains('∞')
+                        || double.IsNaN(resultado) || double.IsInfinity(resultado)
+                        || double.IsPositiveInfinity(resultado) || double.IsNegativeInfinity(resultado)) {
+                        MessageBox.Show("Número muito grande!", "Aviso!",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        lblVisor.Text = string.Empty;
+                    } else
+                        lblVisor.Text = Visor.Exibir(Math.Exp(resultado));
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
+                }
+                PressionouIgual = true;
+            }
         }
 
         private void btnLogaritmoDecimal_Click(object sender, EventArgs e) {
-
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                double resultado = Visor.Capturar(lblVisor.Text.Trim());
+                string visor;
+                if (!chk2Funcao.Checked) {
+                    visor = Math.Log10(resultado).ToString();
+                    if (resultado <= 0 || visor.Contains('∞')
+                        || double.IsNaN(resultado) || double.IsInfinity(resultado)
+                        || double.IsPositiveInfinity(resultado) || double.IsNegativeInfinity(resultado)) {
+                        MessageBox.Show("Logaritmo inexistente!", "Erro!",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        lblVisor.Text = string.Empty;
+                    } else
+                        lblVisor.Text = Visor.Exibir(Math.Log10(resultado));
+                } else {
+                    visor = Math.Pow(10, resultado).ToString();
+                    if (visor.Contains('∞')
+                        || double.IsNaN(resultado) || double.IsInfinity(resultado)
+                        || double.IsPositiveInfinity(resultado) || double.IsNegativeInfinity(resultado)) {
+                        MessageBox.Show("Número muito grande!", "Aviso!",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        lblVisor.Text = string.Empty;
+                    } else
+                        lblVisor.Text = Visor.Exibir(Math.Pow(10, resultado));
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
+                }
+                PressionouIgual = true;
+            }
         }
 
         private void btnInversao_Click(object sender, EventArgs e) {
