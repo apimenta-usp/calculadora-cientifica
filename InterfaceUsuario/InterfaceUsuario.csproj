@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Operacoes\AdicionarCaracter.cs" />
     <Compile Include="Operacoes\Calcular.cs" />
+    <Compile Include="Personalizacao\ControleDeImagens.cs" />
     <Compile Include="Personalizacao\Visor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
