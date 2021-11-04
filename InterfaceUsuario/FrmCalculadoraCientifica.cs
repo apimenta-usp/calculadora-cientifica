@@ -120,11 +120,33 @@ namespace InterfaceUsuario {
         }
 
         private void btnSeparadorDecimal_Click(object sender, EventArgs e) {
-
+            if (PressionouIgual || PressionouMemoria) {
+                lblVisor.Text = string.Empty;
+                PressionouIgual = false;
+                PressionouMemoria = false;
+            }
+            if (lblVisor.Text.Trim().Equals(string.Empty) || lblVisor.Text.Trim() == "-") {
+                if (!Virgula)
+                    lblVisor.Text = "0.";
+                else
+                    lblVisor.Text = "0,";
+                return;
+            }
+            if (lblVisor.Text.Contains(".") || lblVisor.Text.Contains(","))
+                return;
+            if (lblVisor.Text.Trim().Length > 9)
+                return;
+            if (!Virgula)
+                lblVisor.Text += ".";
+            else
+                lblVisor.Text += ",";
         }
 
         private void btnOposicao_Click(object sender, EventArgs e) {
-
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                double visor = (Visor.Capturar(lblVisor.Text.Trim())) * (-1);
+                lblVisor.Text = Visor.Exibir(visor);
+            }
         }
 
         private void btnSoma_Click(object sender, EventArgs e) {
