@@ -168,23 +168,28 @@ namespace InterfaceUsuario {
         }
 
         private void btnSoma_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Operacao("+", lblVisor);
         }
 
         private void btnSubtracao_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Operacao("-", lblVisor);
         }
 
         private void btnMultiplicacao_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Operacao("*", lblVisor);
         }
 
         private void btnDivisao_Click(object sender, EventArgs e) {
-
+            AdicionarCaracter.Operacao("/", lblVisor);
         }
 
         private void btnIgual_Click(object sender, EventArgs e) {
-
+            if (!lblVisor.Text.Trim().Equals(string.Empty)
+                && double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                Numero2 = Visor.Capturar(lblVisor.Text.Trim());
+                Calcular.Operacao(Operacao, lblVisor, Numero1, Numero2);
+                PressionouIgual = true;
+            }
         }
 
         private void btnMemoriaAdicionar_Click(object sender, EventArgs e) {
