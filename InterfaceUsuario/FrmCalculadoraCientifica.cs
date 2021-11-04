@@ -297,6 +297,22 @@ namespace InterfaceUsuario {
         }
         #endregion
 
+        #region Eventos CheckedChanged
+        private void chk2Funcao_CheckedChanged(object sender, EventArgs e) {
+            bool assinalado = chk2Funcao.Checked;
+            TemaBotoesMemoria(Claro, assinalado);
+            TemaBotoesEstatistica(Claro, assinalado);
+            TemaBotoesFuncoes(Claro, assinalado);
+            TemaBotaoLimpeza(Claro, assinalado);
+            if (!assinalado)
+                mnsFixar2Funcao.Checked = false;
+        }
+
+        private void mnsFixar2Funcao_CheckedChanged(object sender, EventArgs e) {
+            chk2Funcao.Checked = mnsFixar2Funcao.Checked;
+        }
+        #endregion
+
         #region Outros Métodos
         //private void gkh_KeyDown(object sender, KeyEventArgs e) {
         //    e.Handled = true;

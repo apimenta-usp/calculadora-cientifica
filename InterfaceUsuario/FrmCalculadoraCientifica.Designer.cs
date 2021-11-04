@@ -184,11 +184,13 @@ namespace InterfaceUsuario {
             // mnsFixar2Funcao
             // 
             this.mnsFixar2Funcao.BackColor = System.Drawing.Color.White;
+            this.mnsFixar2Funcao.CheckOnClick = true;
             this.mnsFixar2Funcao.ForeColor = System.Drawing.Color.Black;
             this.mnsFixar2Funcao.Name = "mnsFixar2Funcao";
             this.mnsFixar2Funcao.ShowShortcutKeys = false;
-            this.mnsFixar2Funcao.Size = new System.Drawing.Size(166, 22);
+            this.mnsFixar2Funcao.Size = new System.Drawing.Size(180, 22);
             this.mnsFixar2Funcao.Text = "Fixar 2ª Função";
+            this.mnsFixar2Funcao.CheckedChanged += new System.EventHandler(this.mnsFixar2Funcao_CheckedChanged);
             // 
             // mnsSeparadorDecimal
             // 
@@ -199,7 +201,7 @@ namespace InterfaceUsuario {
             this.mnsSeparadorDecimal.ForeColor = System.Drawing.Color.Black;
             this.mnsSeparadorDecimal.Name = "mnsSeparadorDecimal";
             this.mnsSeparadorDecimal.ShowShortcutKeys = false;
-            this.mnsSeparadorDecimal.Size = new System.Drawing.Size(166, 22);
+            this.mnsSeparadorDecimal.Size = new System.Drawing.Size(180, 22);
             this.mnsSeparadorDecimal.Text = "Separador Decimal";
             // 
             // mnsPonto
@@ -233,7 +235,7 @@ namespace InterfaceUsuario {
             this.mnsTema.ForeColor = System.Drawing.Color.Black;
             this.mnsTema.Name = "mnsTema";
             this.mnsTema.ShowShortcutKeys = false;
-            this.mnsTema.Size = new System.Drawing.Size(166, 22);
+            this.mnsTema.Size = new System.Drawing.Size(180, 22);
             this.mnsTema.Text = "Tema";
             // 
             // mnsClaro
@@ -371,6 +373,7 @@ namespace InterfaceUsuario {
             this.chk2Funcao.TabIndex = 161;
             this.chk2Funcao.Text = "2ª Função";
             this.chk2Funcao.UseVisualStyleBackColor = false;
+            this.chk2Funcao.CheckedChanged += new System.EventHandler(this.chk2Funcao_CheckedChanged);
             // 
             // lblAngulo
             // 
