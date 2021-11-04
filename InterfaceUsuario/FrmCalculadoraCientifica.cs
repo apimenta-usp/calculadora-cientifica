@@ -193,15 +193,44 @@ namespace InterfaceUsuario {
         }
 
         private void btnMemoriaAdicionar_Click(object sender, EventArgs e) {
-
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                if (!chk2Funcao.Checked) {
+                    Memoria += Visor.Capturar(lblVisor.Text.Trim());
+                } else {
+                    Memoria -= Visor.Capturar(lblVisor.Text.Trim());
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
+                }
+                PressionouMemoria = true;
+            }
         }
 
         private void btnMemoriaRecuperar_Click(object sender, EventArgs e) {
-
+            if (!chk2Funcao.Checked) {
+                lblVisor.Text = Visor.Exibir(Memoria);
+                PressionouMemoria = true;
+            } else {
+                Memoria = 0;
+                if (!mnsFixar2Funcao.Checked)
+                    chk2Funcao.Checked = false;
+            }
         }
 
         private void btnMemoriaSubstituir_Click(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                    lblVisor.Text = string.Empty;
+                }
+                if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                    Memoria = Visor.Capturar(lblVisor.Text.Trim());
+                    PressionouMemoria = true;
+                }
+            } else {
 
+            }
         }
 
         private void btnInserirDados_Click(object sender, EventArgs e) {
