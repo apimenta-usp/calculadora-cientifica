@@ -7,7 +7,7 @@ using System.Linq;
 using System.Windows.Forms;
 //using Utilities;
 using System.Globalization;
-//using InterfaceUsuario.Operacoes;
+using InterfaceUsuario.Operacoes;
 //using InterfaceUsuario.Ajuda;
 using System.Reflection;
 

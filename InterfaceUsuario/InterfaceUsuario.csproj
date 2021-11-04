@@ -52,6 +52,7 @@
     <Compile Include="FrmCalculadoraCientifica.Designer.cs">
       <DependentUpon>FrmCalculadoraCientifica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Operacoes\AdicionarCaracter.cs" />
     <Compile Include="Personalizacao\Visor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
