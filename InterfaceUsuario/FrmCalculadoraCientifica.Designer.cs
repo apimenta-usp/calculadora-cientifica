@@ -365,7 +365,7 @@ namespace InterfaceUsuario {
             this.chk2Funcao.AutoSize = true;
             this.chk2Funcao.BackColor = System.Drawing.Color.Transparent;
             this.chk2Funcao.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk2Funcao.Location = new System.Drawing.Point(12, 134);
+            this.chk2Funcao.Location = new System.Drawing.Point(12, 131);
             this.chk2Funcao.Name = "chk2Funcao";
             this.chk2Funcao.Size = new System.Drawing.Size(112, 28);
             this.chk2Funcao.TabIndex = 161;
@@ -377,7 +377,7 @@ namespace InterfaceUsuario {
             this.lblAngulo.AutoSize = true;
             this.lblAngulo.BackColor = System.Drawing.Color.Transparent;
             this.lblAngulo.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAngulo.Location = new System.Drawing.Point(154, 119);
+            this.lblAngulo.Location = new System.Drawing.Point(154, 116);
             this.lblAngulo.Name = "lblAngulo";
             this.lblAngulo.Size = new System.Drawing.Size(47, 17);
             this.lblAngulo.TabIndex = 183;
@@ -391,7 +391,7 @@ namespace InterfaceUsuario {
             this.panel3.Controls.Add(this.optRadiano);
             this.panel3.Controls.Add(this.optGrau);
             this.panel3.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(133, 128);
+            this.panel3.Location = new System.Drawing.Point(133, 125);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(245, 38);
             this.panel3.TabIndex = 185;
@@ -1363,6 +1363,7 @@ namespace InterfaceUsuario {
             this.Name = "FrmCalculadoraCientifica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora Científica by ACP";
+            this.Load += new System.EventHandler(this.FrmCalculadoraCientifica_Load);
             this.mnsMenuPrincipal.ResumeLayout(false);
             this.mnsMenuPrincipal.PerformLayout();
             this.panel3.ResumeLayout(false);

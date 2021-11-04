@@ -32,6 +32,24 @@ namespace InterfaceUsuario {
             InitializeComponent();
         }
 
+        private void FrmCalculadoraCientifica_Load(object sender, EventArgs e) {
+            Claro = true;
+            Virgula = false;
+            //Claro = Properties.Settings.Default.TemaClaro;
+            //Virgula = Properties.Settings.Default.SeparadorVirgula;
+            //Estatistica.Clear();
+            mnsFixar2Funcao.Checked = false;
+            mnsClaro.Checked = true;
+            mnsPonto.Checked = true;
+            chk2Funcao.Checked = false;
+            Calcular.LimparCampos(lblVisor);
+            Memoria = 0;
+            PressionouMemoria = false;
+            //TemaPrincipal(Claro, Virgula);
+            //gkh.HookedKeys.Add(Keys.Enter);
+            //gkh.KeyDown += new KeyEventHandler(gkh_KeyDown);
+        }
+
         #region Eventos Click
         private void mnsCopiarVisor_Click(object sender, EventArgs e) {
 
