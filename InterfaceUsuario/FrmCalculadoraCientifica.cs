@@ -1001,5 +1001,297 @@ namespace InterfaceUsuario {
             }
         }
         #endregion
+
+        #region Eventos MouseEnter
+        private void btn0_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btn1_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btn2_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btn3_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btn4_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btn5_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btn6_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btn7_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btn8_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btn9_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnSeparadorDecimal_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnOposicao_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnSoma_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnSubtracao_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnMultiplicacao_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnDivisao_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnIgual_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnMemoriaAdicionar_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnMemoriaRecuperar_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnMemoriaSubstituir_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnInserirDados_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnDesvioAmostral_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnMediaAritmetica_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnNumeroDados_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnLogaritmoNeperiano_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnLogaritmoDecimal_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnInversao_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnRaizQuadrada_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnPotenciacao_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnExponencial_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnDecimalCientifico_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnSeno_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnCosseno_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnTangente_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnRemover_MouseEnter(object sender, EventArgs e) {
+
+        }
+
+        private void btnApagarVisor_MouseEnter(object sender, EventArgs e) {
+
+        }
+        #endregion
+
+        #region Eventos MouseLeave
+        private void btn0_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btn1_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btn2_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btn3_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btn4_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btn5_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btn6_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btn7_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btn8_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btn9_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnSeparadorDecimal_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnOposicao_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnSoma_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnSubtracao_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnMultiplicacao_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnDivisao_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnIgual_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnMemoriaAdicionar_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnMemoriaRecuperar_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnMemoriaSubstituir_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnInserirDados_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnDesvioAmostral_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnMediaAritmetica_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnNumeroDados_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnLogaritmoNeperiano_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnLogaritmoDecimal_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnInversao_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnRaizQuadrada_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnPotenciacao_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnExponencial_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnDecimalCientifico_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnSeno_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnCosseno_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnTangente_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnRemover_MouseLeave(object sender, EventArgs e) {
+
+        }
+
+        private void btnApagarVisor_MouseLeave(object sender, EventArgs e) {
+
+        }
+        #endregion
     }
 }
