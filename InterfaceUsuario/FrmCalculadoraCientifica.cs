@@ -50,6 +50,7 @@ namespace InterfaceUsuario {
             TemaPrincipal(Claro, Virgula);
             //gkh.HookedKeys.Add(Keys.Enter);
             //gkh.KeyDown += new KeyEventHandler(gkh_KeyDown);
+            mnsMenuPrincipal.Select();
         }
 
         #region Eventos Click

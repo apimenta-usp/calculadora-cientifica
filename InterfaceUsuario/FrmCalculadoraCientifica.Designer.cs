@@ -138,7 +138,6 @@ namespace InterfaceUsuario {
             this.mnsMenuPrincipal.Name = "mnsMenuPrincipal";
             this.mnsMenuPrincipal.Size = new System.Drawing.Size(391, 24);
             this.mnsMenuPrincipal.TabIndex = 0;
-            this.mnsMenuPrincipal.Text = "menuStrip1";
             // 
             // mnsArquivo
             // 
@@ -156,7 +155,7 @@ namespace InterfaceUsuario {
             this.mnsCopiarVisor.ForeColor = System.Drawing.Color.Black;
             this.mnsCopiarVisor.Name = "mnsCopiarVisor";
             this.mnsCopiarVisor.ShowShortcutKeys = false;
-            this.mnsCopiarVisor.Size = new System.Drawing.Size(131, 22);
+            this.mnsCopiarVisor.Size = new System.Drawing.Size(180, 22);
             this.mnsCopiarVisor.Text = "Copiar Visor";
             this.mnsCopiarVisor.Click += new System.EventHandler(this.mnsCopiarVisor_Click);
             // 
@@ -166,7 +165,7 @@ namespace InterfaceUsuario {
             this.mnsSair.ForeColor = System.Drawing.Color.Black;
             this.mnsSair.Name = "mnsSair";
             this.mnsSair.ShowShortcutKeys = false;
-            this.mnsSair.Size = new System.Drawing.Size(131, 22);
+            this.mnsSair.Size = new System.Drawing.Size(180, 22);
             this.mnsSair.Text = "Sair";
             this.mnsSair.Click += new System.EventHandler(this.mnsSair_Click);
             // 
