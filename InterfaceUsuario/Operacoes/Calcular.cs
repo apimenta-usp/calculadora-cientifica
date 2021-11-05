@@ -38,9 +38,9 @@ namespace InterfaceUsuario.Operacoes {
                 case "^":
                     Potencia(numero1, numero2, lblVisor);
                     break;
-                    //case "&":
-                    //    Exponencial(numero1, numero2, lblVisor);
-                    //    break;
+                case "&":
+                    Exponencial(numero1, numero2, lblVisor);
+                    break;
             }
         }
 
@@ -120,6 +120,82 @@ namespace InterfaceUsuario.Operacoes {
             ulong denominador = (ulong)Math.Round(inferior);
 
             return new Tuple<ulong, ulong>(numerador, denominador);
+        }
+
+        private static void Exponencial(double valorMultiplicando, double valorExpoente, Label lblVisor) {
+            int valorExpoenteInteiro = (int)Math.Floor(valorExpoente);
+            if (valorExpoenteInteiro != valorExpoente) {
+                MessageBox.Show("Use apenas expoentes inteiros!", "Aviso",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                LimparCampos(lblVisor);
+                return;
+            }
+            if (valorExpoente < -300.0) {
+                lblVisor.Text = "0E+0";
+                return;
+            }
+            double resultado = valorMultiplicando * Math.Pow(10, valorExpoenteInteiro);
+            if (double.IsInfinity(resultado)) {
+                MessageBox.Show("Número muito grande!", "Aviso!",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                lblVisor.Text = string.Empty;
+            } else {
+                string visor = resultado.ToString("0.####E+0", CultureInfo.InvariantCulture);
+                if (FrmCalculadoraCientifica.Virgula) {
+                    visor = visor.Replace('.', ',');
+                }
+                lblVisor.Text = visor;
+            }
+        }
+        
+        public static string DecimalCientifico(string visor) {
+            if (visor.Contains('e')) {
+                visor = visor.Replace('e', 'E');
+            }
+
+            if (visor.Contains('E')) {
+                string[] particao = visor.Split('E');
+                double valorMultiplicando = Visor.Capturar(particao[0]);
+                int valorExpoente = Convert.ToInt32(particao[1]);
+                double numero = valorMultiplicando * Math.Pow(10, valorExpoente);
+                if (numero > 9_999_999_999 || numero < 0.000_000_001) {
+                    return visor;
+                } else
+                    return Visor.Exibir(numero);
+            } else {
+                double numero = Visor.Capturar(visor);
+                visor = numero.ToString("0.####E+0", CultureInfo.InvariantCulture);
+                if (FrmCalculadoraCientifica.Virgula) {
+                    visor = visor.Replace('.', ',');
+                }
+                return visor;
+            }
+        }
+
+        public static string Fatorial(string visor) {
+            double dNumero = Visor.Capturar(visor);
+            int iNumero = (int)Math.Floor(dNumero);
+            if (iNumero != dNumero || dNumero < 0) {
+                MessageBox.Show("Fatorial somente para números naturais!", "Aviso",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return string.Empty;
+            } else {
+                if (dNumero == 0 || dNumero == 1) {
+                    return "1";
+                } else {
+                    while (iNumero > 1) {
+                        double antecessor = iNumero - 1;
+                        dNumero *= antecessor;
+                        iNumero--;
+                    }
+                    if (double.IsInfinity(dNumero)) {
+                        MessageBox.Show("Número muito grande!", "Aviso!",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return string.Empty;
+                    } else
+                        return Visor.Exibir(dNumero);
+                }
+            }
         }
 
         public static void LimparCampos(Label lblVisor) {

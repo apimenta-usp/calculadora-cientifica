@@ -387,11 +387,36 @@ namespace InterfaceUsuario {
         }
 
         private void btnExponencial_Click(object sender, EventArgs e) {
-
+            if (!chk2Funcao.Checked) {
+                if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                    lblVisor.Text = string.Empty;
+                }
+                if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                    AdicionarCaracter.Operacao("&", lblVisor);
+                    PressionouExponencial = true;
+                }
+            } else {
+                lblVisor.Text = Visor.Exibir(Pi);
+                PressionouIgual = true;
+                if (!mnsFixar2Funcao.Checked)
+                    chk2Funcao.Checked = false;
+            }
         }
 
         private void btnDecimalCientifico_Click(object sender, EventArgs e) {
-
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                if (!chk2Funcao.Checked) {
+                    lblVisor.Text = Calcular.DecimalCientifico(lblVisor.Text.Trim());
+                } else {
+                    lblVisor.Text = Calcular.Fatorial(lblVisor.Text.Trim());
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
+                }
+                PressionouIgual = true;
+            }
         }
 
         private void btnSeno_Click(object sender, EventArgs e) {
