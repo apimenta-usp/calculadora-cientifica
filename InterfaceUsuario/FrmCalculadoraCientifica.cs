@@ -8,7 +8,7 @@ using System.Windows.Forms;
 //using Utilities;
 using System.Globalization;
 using InterfaceUsuario.Operacoes;
-//using InterfaceUsuario.Ajuda;
+using InterfaceUsuario.Ajuda;
 using System.Reflection;
 
 namespace InterfaceUsuario {
@@ -16,7 +16,7 @@ namespace InterfaceUsuario {
         public static bool Virgula { get; private set; }
         private bool Claro { get; set; }
         private List<double> Estatistica { get; set; }
-        //private FrmManual Manual { get; set; }
+        private FrmManual Manual { get; set; }
         public static double Numero1 { get; set; }
         public static double Numero2 { get; set; }
         public static double Memoria { get; set; }
@@ -31,7 +31,7 @@ namespace InterfaceUsuario {
         public FrmCalculadoraCientifica() {
             InitializeComponent();
             Estatistica = new List<double>();
-            //Manual = new FrmManual();
+            Manual = new FrmManual();
         }
 
         private void FrmCalculadoraCientifica_Load(object sender, EventArgs e) {
@@ -54,35 +54,76 @@ namespace InterfaceUsuario {
 
         #region Eventos Click
         private void mnsCopiarVisor_Click(object sender, EventArgs e) {
-
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                Clipboard.SetText(lblVisor.Text.Trim());
+            }
         }
 
         private void mnsSair_Click(object sender, EventArgs e) {
-
+            Application.Exit();
         }
 
         private void mnsPonto_Click(object sender, EventArgs e) {
-
+            Virgula = false;
+            //Properties.Settings.Default.SeparadorVirgula = false;
+            //Properties.Settings.Default.Save();
+            lblVisor.Text = lblVisor.Text.Trim().Replace(',', '.');
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnSeparadorDecimal, PontoTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btnSeparadorDecimal, PontoTemaEscuroNormal);
+            mnsPonto.Checked = !Virgula;
+            mnsVirgula.Checked = Virgula;
         }
 
         private void mnsVirgula_Click(object sender, EventArgs e) {
-
+            Virgula = true;
+            //Properties.Settings.Default.SeparadorVirgula = true;
+            //Properties.Settings.Default.Save();
+            lblVisor.Text = lblVisor.Text.Trim().Replace('.', ',');
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnSeparadorDecimal, VirgulaTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btnSeparadorDecimal, VirgulaTemaEscuroNormal);
+            mnsPonto.Checked = !Virgula;
+            mnsVirgula.Checked = Virgula;
         }
 
         private void mnsClaro_Click(object sender, EventArgs e) {
-
+            Claro = true;
+            //Properties.Settings.Default.TemaClaro = true;
+            //Properties.Settings.Default.Save();
+            TemaPrincipal(Claro, Virgula);
         }
 
         private void mnsEscuro_Click(object sender, EventArgs e) {
-
+            Claro = false;
+            //Properties.Settings.Default.TemaClaro = false;
+            //Properties.Settings.Default.Save();
+            TemaPrincipal(Claro, Virgula);
         }
 
         private void mnsManual_Click(object sender, EventArgs e) {
-
+            if (Manual.IsDisposed) {
+                Manual = new FrmManual();
+            }
+            Manual.Show();
         }
 
         private void mnsSobre_Click(object sender, EventArgs e) {
+            var version = Assembly.GetExecutingAssembly().GetName().Version;
+            string revision = "." + version.Revision.ToString();
+            string build = "." + version.Build.ToString();
+            if (version.Revision == 0) {
+                revision = string.Empty;
+                if (version.Build == 0) {
+                    build = string.Empty;
+                }
+            }
 
+            string versao = $"Versão {version.Major}.{version.Minor}{build}{revision}";
+            MessageBox.Show("Calculadora Científica\n" + versao +
+                "\nCopyright Adriano Pimenta", "Versão", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btn0_Click(object sender, EventArgs e) {
