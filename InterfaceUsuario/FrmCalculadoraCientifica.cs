@@ -307,15 +307,19 @@ namespace InterfaceUsuario {
                     } else
                         lblVisor.Text = Visor.Exibir(Math.Log10(resultado));
                 } else {
-                    visor = Math.Pow(10, resultado).ToString();
-                    if (visor.Contains('∞')
-                        || double.IsNaN(resultado) || double.IsInfinity(resultado)
-                        || double.IsPositiveInfinity(resultado) || double.IsNegativeInfinity(resultado)) {
-                        MessageBox.Show("Número muito grande!", "Aviso!",
-                                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        lblVisor.Text = string.Empty;
-                    } else
-                        lblVisor.Text = Visor.Exibir(Math.Pow(10, resultado));
+                    if (resultado < -300.0) {
+                        lblVisor.Text = "0";
+                    } else {
+                        visor = Math.Pow(10, resultado).ToString();
+                        if (visor.Contains('∞')
+                            || double.IsNaN(resultado) || double.IsInfinity(resultado)
+                            || double.IsPositiveInfinity(resultado) || double.IsNegativeInfinity(resultado)) {
+                            MessageBox.Show("Número muito grande!", "Aviso!",
+                                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            lblVisor.Text = string.Empty;
+                        } else
+                            lblVisor.Text = Visor.Exibir(Math.Pow(10, resultado));
+                    }
                     if (!mnsFixar2Funcao.Checked)
                         chk2Funcao.Checked = false;
                 }
@@ -420,15 +424,45 @@ namespace InterfaceUsuario {
         }
 
         private void btnSeno_Click(object sender, EventArgs e) {
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                if (!chk2Funcao.Checked) {
+                    lblVisor.Text = Calcular.AnguloDireto("seno", lblVisor.Text.Trim(), optGrau, optGrado);
+                } else {
 
+                }
+                PressionouIgual = true;
+            }
         }
 
         private void btnCosseno_Click(object sender, EventArgs e) {
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                if (!chk2Funcao.Checked) {
+                    lblVisor.Text = Calcular.AnguloDireto("cosseno", lblVisor.Text.Trim(), optGrau, optGrado);
+                } else {
 
+                }
+                PressionouIgual = true;
+            }
         }
 
         private void btnTangente_Click(object sender, EventArgs e) {
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                if (!chk2Funcao.Checked) {
+                    lblVisor.Text = Calcular.AnguloDireto("tangente", lblVisor.Text.Trim(), optGrau, optGrado);
+                } else {
 
+                }
+                PressionouIgual = true;
+            }
         }
 
         private void btnRemover_Click(object sender, EventArgs e) {

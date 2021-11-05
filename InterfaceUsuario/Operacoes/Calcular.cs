@@ -198,6 +198,204 @@ namespace InterfaceUsuario.Operacoes {
             }
         }
 
+        public static string AnguloDireto(string angulo, string visor, RadioButton optGrau, RadioButton optGrado) {
+            double seno = SenoDoAngulo(visor, optGrau, optGrado);
+            double cosseno = CossenoDoAngulo(visor, optGrau, optGrado);
+            double numero = Visor.Capturar(visor);
+            if (optGrau.Checked) {
+                if (numero == 90.0) {
+                    cosseno = 0.0;
+                }
+            }
+            if (optGrado.Checked) {
+                if (numero == 300.0) {
+                    cosseno = 0.0;
+                }
+            }
+            if (numero == Visor.Capturar(((FrmCalculadoraCientifica.Pi * 3) / 2).ToString())) {
+                cosseno = 0.0;
+            }
+            if (angulo == "seno") {
+                return Visor.Exibir(seno);
+            } else if (angulo == "cosseno") {
+                return Visor.Exibir(cosseno);
+            } else {
+                if (cosseno == 0.0) {
+                    MessageBox.Show("Valor infinito de tangente!", "Aviso",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return string.Empty;
+                } else {
+                    double tangente = TangenteDoAngulo(visor, optGrau, optGrado);
+                    return Visor.Exibir(tangente);
+                }
+            }
+        }
+
+        private static double SenoDoAngulo(string visor, RadioButton optGrau, RadioButton optGrado) {
+            double numero = Visor.Capturar(visor);
+            if (optGrau.Checked) {
+                numero = (numero * FrmCalculadoraCientifica.Pi) / 180.0;
+            }
+            if (optGrado.Checked) {
+                numero = (numero * FrmCalculadoraCientifica.Pi) / 200.0;
+            }
+            if (numero > (FrmCalculadoraCientifica.Pi * 2)) {
+                numero %= (FrmCalculadoraCientifica.Pi * 2);
+            }
+            double seno;
+
+            switch (numero) {
+                case 0:
+                case FrmCalculadoraCientifica.Pi:
+                case (FrmCalculadoraCientifica.Pi * 2):
+                    seno = 0.0;
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 6):
+                case ((FrmCalculadoraCientifica.Pi * 5) / 6):
+                    seno = 0.5;
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 7) / 6):
+                case ((FrmCalculadoraCientifica.Pi * 11) / 6):
+                    seno = -0.5;
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 4):
+                case ((FrmCalculadoraCientifica.Pi * 3) / 4):
+                    seno = (Math.Sqrt(2) / 2);
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 5) / 4):
+                case ((FrmCalculadoraCientifica.Pi * 7) / 4):
+                    seno = -(Math.Sqrt(2) / 2);
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 3):
+                case ((FrmCalculadoraCientifica.Pi * 2) / 3):
+                    seno = (Math.Sqrt(3) / 2);
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 4) / 3):
+                case ((FrmCalculadoraCientifica.Pi * 5) / 3):
+                    seno = -(Math.Sqrt(3) / 2);
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 2):
+                    seno = 1.0;
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 3) / 2):
+                    seno = -1.0;
+                    break;
+                default:
+                    seno = Math.Sin(numero);
+                    break;
+            }
+
+            return seno;
+        }
+
+        private static double CossenoDoAngulo(string visor, RadioButton optGrau, RadioButton optGrado) {
+            double numero = Visor.Capturar(visor);
+            if (optGrau.Checked) {
+                numero = (numero * FrmCalculadoraCientifica.Pi) / 180.0;
+            }
+            if (optGrado.Checked) {
+                numero = (numero * FrmCalculadoraCientifica.Pi) / 200.0;
+            }
+            if (numero > (FrmCalculadoraCientifica.Pi * 2)) {
+                numero %= (FrmCalculadoraCientifica.Pi * 2);
+            }
+            double cosseno;
+
+            switch (numero) {
+                case 0:
+                case (FrmCalculadoraCientifica.Pi * 2):
+                    cosseno = 1.0;
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 6):
+                case ((FrmCalculadoraCientifica.Pi * 11) / 6):
+                    cosseno = (Math.Sqrt(3) / 2);
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 5) / 6):
+                case ((FrmCalculadoraCientifica.Pi * 7) / 6):
+                    cosseno = -(Math.Sqrt(3) / 2);
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 4):
+                case ((FrmCalculadoraCientifica.Pi * 7) / 4):
+                    cosseno = (Math.Sqrt(2) / 2);
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 3) / 4):
+                case ((FrmCalculadoraCientifica.Pi * 5) / 4):
+                    cosseno = -(Math.Sqrt(2) / 2);
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 3):
+                case ((FrmCalculadoraCientifica.Pi * 5) / 3):
+                    cosseno = 0.5;
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 2) / 3):
+                case ((FrmCalculadoraCientifica.Pi * 4) / 3):
+                    cosseno = -0.5;
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 2):
+                case ((FrmCalculadoraCientifica.Pi * 3) / 2):
+                    cosseno = 0.0;
+                    break;
+                case FrmCalculadoraCientifica.Pi:
+                    cosseno = -1.0;
+                    break;
+                default:
+                    cosseno = Math.Cos(numero);
+                    break;
+            }
+
+            return cosseno;
+        }
+
+        private static double TangenteDoAngulo(string visor, RadioButton optGrau, RadioButton optGrado) {
+            double numero = Visor.Capturar(visor);
+            if (optGrau.Checked) {
+                numero = (numero * FrmCalculadoraCientifica.Pi) / 180.0;
+            }
+            if (optGrado.Checked) {
+                numero = (numero * FrmCalculadoraCientifica.Pi) / 200.0;
+            }
+            if (numero > (FrmCalculadoraCientifica.Pi * 2)) {
+                numero %= (FrmCalculadoraCientifica.Pi * 2);
+            }
+            double tangente;
+
+            switch (numero) {
+                case 0:
+                case FrmCalculadoraCientifica.Pi:
+                case (FrmCalculadoraCientifica.Pi * 2):
+                    tangente = 0.0;
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 6):
+                case ((FrmCalculadoraCientifica.Pi * 7) / 6):
+                    tangente = (Math.Sqrt(3) / 3);
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 5) / 6):
+                case ((FrmCalculadoraCientifica.Pi * 11) / 6):
+                    tangente = -(Math.Sqrt(3) / 3);
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 4):
+                case ((FrmCalculadoraCientifica.Pi * 5) / 4):
+                    tangente = 1.0;
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 3) / 4):
+                case ((FrmCalculadoraCientifica.Pi * 7) / 4):
+                    tangente = -1.0;
+                    break;
+                case (FrmCalculadoraCientifica.Pi / 3):
+                case ((FrmCalculadoraCientifica.Pi * 4) / 3):
+                    tangente = Math.Sqrt(3);
+                    break;
+                case ((FrmCalculadoraCientifica.Pi * 2) / 3):
+                case ((FrmCalculadoraCientifica.Pi * 5) / 3):
+                    tangente = -Math.Sqrt(3);
+                    break;
+                default:
+                    tangente = Math.Tan(numero);
+                    break;
+            }
+
+            return tangente;
+        }
+
         public static void LimparCampos(Label lblVisor) {
             lblVisor.Text = string.Empty;
             FrmCalculadoraCientifica.Numero1 = 0;
