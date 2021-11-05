@@ -15,7 +15,7 @@ namespace InterfaceUsuario {
     public partial class FrmCalculadoraCientifica : Form {
         public static bool Virgula { get; private set; }
         private bool Claro { get; set; }
-        //private List<double> Estatistica { get; set; }
+        private List<double> Estatistica { get; set; }
         //private FrmManual Manual { get; set; }
         public static double Numero1 { get; set; }
         public static double Numero2 { get; set; }
@@ -30,6 +30,8 @@ namespace InterfaceUsuario {
 
         public FrmCalculadoraCientifica() {
             InitializeComponent();
+            Estatistica = new List<double>();
+            //Manual = new FrmManual();
         }
 
         private void FrmCalculadoraCientifica_Load(object sender, EventArgs e) {
@@ -37,7 +39,7 @@ namespace InterfaceUsuario {
             Virgula = false;
             //Claro = Properties.Settings.Default.TemaClaro;
             //Virgula = Properties.Settings.Default.SeparadorVirgula;
-            //Estatistica.Clear();
+            Estatistica.Clear();
             mnsFixar2Funcao.Checked = false;
             mnsClaro.Checked = true;
             mnsPonto.Checked = true;
@@ -240,19 +242,97 @@ namespace InterfaceUsuario {
         }
 
         private void btnInserirDados_Click(object sender, EventArgs e) {
-
+            if (!double.TryParse(lblVisor.Text.Trim(), out double numero)) {
+                lblVisor.Text = string.Empty;
+            }
+            if (!lblVisor.Text.Trim().Equals(string.Empty)) {
+                double valor = Visor.Capturar(lblVisor.Text.Trim());
+                if (!chk2Funcao.Checked) {
+                    Estatistica.Add(valor);
+                } else {
+                    if (Estatistica.Count == 0) {
+                        MessageBox.Show("Não há dados inseridos!", "Aviso",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    } else if (Estatistica.Contains(valor)) {
+                        Estatistica.Remove(valor);
+                    } else
+                        MessageBox.Show("Valor não encontrado!", "Aviso",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
+                }
+            }
+            PressionouIgual = true;
         }
 
         private void btnDesvioAmostral_Click(object sender, EventArgs e) {
-
+            if (!chk2Funcao.Checked) {
+                lblVisor.Text = Calcular.DesvioAmostral(Estatistica);
+            } else {
+                lblVisor.Text = Calcular.DesvioPopulacional(Estatistica);
+                if (!mnsFixar2Funcao.Checked)
+                    chk2Funcao.Checked = false;
+            }
+            PressionouIgual = true;
         }
 
         private void btnMediaAritmetica_Click(object sender, EventArgs e) {
-
+            if (!chk2Funcao.Checked) {
+                double somaValores = 0;
+                if (Estatistica.Count == 0) {
+                    MessageBox.Show("Não há dados inseridos!", "Aviso",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    lblVisor.Text = string.Empty;
+                } else {
+                    foreach (double valor in Estatistica) {
+                        somaValores += valor;
+                    }
+                    double mediaAritmetica = somaValores / Estatistica.Count;
+                    lblVisor.Text = Visor.Exibir(mediaAritmetica);
+                }
+            } else {
+                double somaQuadrado = 0;
+                if (Estatistica.Count == 0) {
+                    MessageBox.Show("Não há dados inseridos!", "Aviso",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    lblVisor.Text = string.Empty;
+                } else {
+                    foreach (double valor in Estatistica) {
+                        somaQuadrado += valor * valor;
+                    }
+                    lblVisor.Text = Visor.Exibir(somaQuadrado);
+                }
+                if (!mnsFixar2Funcao.Checked)
+                    chk2Funcao.Checked = false;
+            }
+            PressionouIgual = true;
         }
 
         private void btnNumeroDados_Click(object sender, EventArgs e) {
-
+            if (!chk2Funcao.Checked) {
+                if (Estatistica.Count == 0) {
+                    MessageBox.Show("Não há dados inseridos!", "Aviso",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    lblVisor.Text = string.Empty;
+                } else {
+                    lblVisor.Text = Visor.Exibir(Estatistica.Count);
+                }
+            } else {
+                double somaSimples = 0;
+                if (Estatistica.Count == 0) {
+                    MessageBox.Show("Não há dados inseridos!", "Aviso",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    lblVisor.Text = string.Empty;
+                } else {
+                    foreach (double valor in Estatistica) {
+                        somaSimples += valor;
+                    }
+                    lblVisor.Text = Visor.Exibir(somaSimples);
+                }
+                if (!mnsFixar2Funcao.Checked)
+                    chk2Funcao.Checked = false;
+            }
+            PressionouIgual = true;
         }
 
         private void btnLogaritmoNeperiano_Click(object sender, EventArgs e) {

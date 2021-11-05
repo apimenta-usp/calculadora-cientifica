@@ -51,6 +51,51 @@ namespace InterfaceUsuario.Operacoes {
             return numero;
         }
 
+        public static string DesvioAmostral(List<double> dados) {
+            double resultado;
+            double somatoriaDesvio;
+            if (dados.Count == 0) {
+                MessageBox.Show("Não há dados inseridos!", "Aviso",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return string.Empty;
+            } else if (dados.Count == 1) {
+                MessageBox.Show("Dados insuficientes para o cálculo!", "Aviso",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return string.Empty;
+            } else {
+                somatoriaDesvio = SomatoriaDesvioQuadrado(dados);
+                resultado = Math.Sqrt(somatoriaDesvio / (dados.Count - 1));
+                return Visor.Exibir(resultado);
+            }
+        }
+
+        public static string DesvioPopulacional(List<double> dados) {
+            double resultado;
+            double somatoriaDesvio;
+            if (dados.Count == 0) {
+                MessageBox.Show("Não há dados inseridos!", "Aviso",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return string.Empty;
+            } else {
+                somatoriaDesvio = SomatoriaDesvioQuadrado(dados);
+                resultado = Math.Sqrt(somatoriaDesvio / dados.Count);
+                return Visor.Exibir(resultado);
+            }
+        }
+
+        private static double SomatoriaDesvioQuadrado(List<double> dados) {
+            double somatoriaDesvio = 0;
+            double somaValores = 0;
+            foreach (double valor in dados) {
+                somaValores += valor;
+            }
+            double mediaAritmetica = somaValores / dados.Count;
+            foreach (double valor in dados) {
+                somatoriaDesvio += (valor - mediaAritmetica) * (valor - mediaAritmetica);
+            }
+            return somatoriaDesvio;
+        }
+
         private static void Radiciacao(double valorRadicando, double valorIndice, Label lblVisor) {
             if (valorIndice <= 0) {
                 MessageBox.Show("Raiz inexistente!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
