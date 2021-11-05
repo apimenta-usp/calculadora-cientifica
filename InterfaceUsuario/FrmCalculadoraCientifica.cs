@@ -614,6 +614,794 @@ namespace InterfaceUsuario {
         }
         #endregion
 
+        #region Eventos MouseEnter
+        private void btn0_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn0, ZeroTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn0, ZeroTemaEscuroRealce);
+        }
+
+        private void btn1_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn1, UmTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn1, UmTemaEscuroRealce);
+        }
+
+        private void btn2_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn2, DoisTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn2, DoisTemaEscuroRealce);
+        }
+
+        private void btn3_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn3, TresTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn3, TresTemaEscuroRealce);
+        }
+
+        private void btn4_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn4, QuatroTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn4, QuatroTemaEscuroRealce);
+        }
+
+        private void btn5_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn5, CincoTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn5, CincoTemaEscuroRealce);
+        }
+
+        private void btn6_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn6, SeisTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn6, SeisTemaEscuroRealce);
+        }
+
+        private void btn7_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn7, SeteTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn7, SeteTemaEscuroRealce);
+        }
+
+        private void btn8_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn8, OitoTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn8, OitoTemaEscuroRealce);
+        }
+
+        private void btn9_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn9, NoveTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btn9, NoveTemaEscuroRealce);
+        }
+
+        private void btnSeparadorDecimal_MouseEnter(object sender, EventArgs e) {
+            if (!Virgula) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnSeparadorDecimal, PontoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnSeparadorDecimal, PontoTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnSeparadorDecimal, VirgulaTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnSeparadorDecimal, VirgulaTemaEscuroRealce);
+            }
+        }
+
+        private void btnOposicao_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnOposicao, OposicaoTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btnOposicao, OposicaoTemaEscuroRealce);
+        }
+
+        private void btnSoma_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnSoma, SomaTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btnSoma, SomaTemaEscuroRealce);
+        }
+
+        private void btnSubtracao_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnSubtracao, SubtracaoTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btnSubtracao, SubtracaoTemaEscuroRealce);
+        }
+
+        private void btnMultiplicacao_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnMultiplicacao, MultiplicacaoTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btnMultiplicacao, MultiplicacaoTemaEscuroRealce);
+        }
+
+        private void btnDivisao_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnDivisao, DivisaoTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btnDivisao, DivisaoTemaEscuroRealce);
+        }
+
+        private void btnIgual_MouseEnter(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnIgual, IgualTemaClaroRealce);
+            else
+                ControleDeImagens.UmaImagem(btnIgual, IgualTemaEscuroRealce);
+        }
+
+        private void btnMemoriaAdicionar_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaAdicionar, MemoriaAdicionarTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaAdicionar, MemoriaAdicionarTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaAdicionar, MemoriaSubtrairTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaAdicionar, MemoriaSubtrairTemaEscuroRealce);
+            }
+        }
+
+        private void btnMemoriaRecuperar_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaRecuperar, MemoriaRecuperarTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaRecuperar, MemoriaRecuperarTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaRecuperar, MemoriaLimparTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaRecuperar, MemoriaLimparTemaEscuroRealce);
+            }
+        }
+
+        private void btnMemoriaSubstituir_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaSubstituir, MemoriaSubstituirTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaSubstituir, MemoriaSubstituirTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaSubstituir, RandomTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaSubstituir, RandomTemaEscuroRealce);
+            }
+        }
+
+        private void btnInserirDados_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnInserirDados, InserirDadosTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnInserirDados, InserirDadosTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnInserirDados, ExcluirDadosTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnInserirDados, ExcluirDadosTemaEscuroRealce);
+            }
+        }
+
+        private void btnDesvioAmostral_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnDesvioAmostral, DesvioAmostralTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnDesvioAmostral, DesvioAmostralTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnDesvioAmostral, DesvioPopulacionalTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnDesvioAmostral, DesvioPopulacionalTemaEscuroRealce);
+            }
+        }
+
+        private void btnMediaAritmetica_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMediaAritmetica, MediaAritmeticaTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnMediaAritmetica, MediaAritmeticaTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMediaAritmetica, SomaQuadradosValoresTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnMediaAritmetica, SomaQuadradosValoresTemaEscuroRealce);
+            }
+        }
+
+        private void btnNumeroDados_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnNumeroDados, NumeroDadosTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnNumeroDados, NumeroDadosTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnNumeroDados, SomaValoresTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnNumeroDados, SomaValoresTemaEscuroRealce);
+            }
+        }
+
+        private void btnLogaritmoNeperiano_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnLogaritmoNeperiano, LogaritmoNeperianoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnLogaritmoNeperiano, LogaritmoNeperianoTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnLogaritmoNeperiano, PotenciaNeperianaTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnLogaritmoNeperiano, PotenciaNeperianaTemaEscuroRealce);
+            }
+        }
+
+        private void btnLogaritmoDecimal_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnLogaritmoDecimal, LogaritmoDecimalTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnLogaritmoDecimal, LogaritmoDecimalTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnLogaritmoDecimal, PotenciaDecimalTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnLogaritmoDecimal, PotenciaDecimalTemaEscuroRealce);
+            }
+        }
+
+        private void btnInversao_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnInversao, InversaoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnInversao, InversaoTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnInversao, RaizCubicaTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnInversao, RaizCubicaTemaEscuroRealce);
+            }
+        }
+
+        private void btnRaizQuadrada_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnRaizQuadrada, RaizQuadradaTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnRaizQuadrada, RaizQuadradaTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnRaizQuadrada, XQuadradoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnRaizQuadrada, XQuadradoTemaEscuroRealce);
+            }
+        }
+
+        private void btnPotenciacao_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnPotenciacao, PotenciacaoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnPotenciacao, PotenciacaoTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnPotenciacao, RadiciacaoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnPotenciacao, RadiciacaoTemaEscuroRealce);
+            }
+        }
+
+        private void btnExponencial_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnExponencial, ExponencialTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnExponencial, ExponencialTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnExponencial, PiTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnExponencial, PiTemaEscuroRealce);
+            }
+        }
+
+        private void btnDecimalCientifico_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnDecimalCientifico, DecimalCientificoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnDecimalCientifico, DecimalCientificoTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnDecimalCientifico, FatorialTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnDecimalCientifico, FatorialTemaEscuroRealce);
+            }
+        }
+
+        private void btnSeno_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnSeno, SenoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnSeno, SenoTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnSeno, SenoInversoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnSeno, SenoInversoTemaEscuroRealce);
+            }
+        }
+
+        private void btnCosseno_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnCosseno, CossenoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnCosseno, CossenoTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnCosseno, CossenoInversoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnCosseno, CossenoInversoTemaEscuroRealce);
+            }
+        }
+
+        private void btnTangente_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnTangente, TangenteTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnTangente, TangenteTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnTangente, TangenteInversaTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnTangente, TangenteInversaTemaEscuroRealce);
+            }
+        }
+
+        private void btnRemover_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnRemover, RemoverTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnRemover, RemoverTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnRemover, PorcentagemTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnRemover, PorcentagemTemaEscuroRealce);
+            }
+        }
+
+        private void btnApagarVisor_MouseEnter(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnApagarVisor, ApagarVisorTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnApagarVisor, ApagarVisorTemaEscuroRealce);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnApagarVisor, LimparTudoTemaClaroRealce);
+                else
+                    ControleDeImagens.UmaImagem(btnApagarVisor, LimparTudoTemaEscuroRealce);
+            }
+        }
+        #endregion
+
+        #region Eventos MouseLeave
+        private void btn0_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn0, ZeroTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn0, ZeroTemaEscuroNormal);
+        }
+
+        private void btn1_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn1, UmTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn1, UmTemaEscuroNormal);
+        }
+
+        private void btn2_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn2, DoisTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn2, DoisTemaEscuroNormal);
+        }
+
+        private void btn3_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn3, TresTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn3, TresTemaEscuroNormal);
+        }
+
+        private void btn4_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn4, QuatroTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn4, QuatroTemaEscuroNormal);
+        }
+
+        private void btn5_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn5, CincoTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn5, CincoTemaEscuroNormal);
+        }
+
+        private void btn6_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn6, SeisTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn6, SeisTemaEscuroNormal);
+        }
+
+        private void btn7_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn7, SeteTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn7, SeteTemaEscuroNormal);
+        }
+
+        private void btn8_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn8, OitoTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn8, OitoTemaEscuroNormal);
+        }
+
+        private void btn9_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btn9, NoveTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btn9, NoveTemaEscuroNormal);
+        }
+
+        private void btnSeparadorDecimal_MouseLeave(object sender, EventArgs e) {
+            if (!Virgula) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnSeparadorDecimal, PontoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnSeparadorDecimal, PontoTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnSeparadorDecimal, VirgulaTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnSeparadorDecimal, VirgulaTemaEscuroNormal);
+            }
+        }
+
+        private void btnOposicao_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnOposicao, OposicaoTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btnOposicao, OposicaoTemaEscuroNormal);
+        }
+
+        private void btnSoma_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnSoma, SomaTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btnSoma, SomaTemaEscuroNormal);
+        }
+
+        private void btnSubtracao_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnSubtracao, SubtracaoTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btnSubtracao, SubtracaoTemaEscuroNormal);
+        }
+
+        private void btnMultiplicacao_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnMultiplicacao, MultiplicacaoTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btnMultiplicacao, MultiplicacaoTemaEscuroNormal);
+        }
+
+        private void btnDivisao_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnDivisao, DivisaoTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btnDivisao, DivisaoTemaEscuroNormal);
+        }
+
+        private void btnIgual_MouseLeave(object sender, EventArgs e) {
+            if (Claro)
+                ControleDeImagens.UmaImagem(btnIgual, IgualTemaClaroNormal);
+            else
+                ControleDeImagens.UmaImagem(btnIgual, IgualTemaEscuroNormal);
+        }
+
+        private void btnMemoriaAdicionar_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaAdicionar, MemoriaAdicionarTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaAdicionar, MemoriaAdicionarTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaAdicionar, MemoriaSubtrairTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaAdicionar, MemoriaSubtrairTemaEscuroNormal);
+            }
+        }
+
+        private void btnMemoriaRecuperar_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaRecuperar, MemoriaRecuperarTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaRecuperar, MemoriaRecuperarTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaRecuperar, MemoriaLimparTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaRecuperar, MemoriaLimparTemaEscuroNormal);
+            }
+        }
+
+        private void btnMemoriaSubstituir_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaSubstituir, MemoriaSubstituirTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaSubstituir, MemoriaSubstituirTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMemoriaSubstituir, RandomTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnMemoriaSubstituir, RandomTemaEscuroNormal);
+            }
+        }
+
+        private void btnInserirDados_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnInserirDados, InserirDadosTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnInserirDados, InserirDadosTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnInserirDados, ExcluirDadosTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnInserirDados, ExcluirDadosTemaEscuroNormal);
+            }
+        }
+
+        private void btnDesvioAmostral_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnDesvioAmostral, DesvioAmostralTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnDesvioAmostral, DesvioAmostralTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnDesvioAmostral, DesvioPopulacionalTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnDesvioAmostral, DesvioPopulacionalTemaEscuroNormal);
+            }
+        }
+
+        private void btnMediaAritmetica_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMediaAritmetica, MediaAritmeticaTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnMediaAritmetica, MediaAritmeticaTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnMediaAritmetica, SomaQuadradosValoresTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnMediaAritmetica, SomaQuadradosValoresTemaEscuroNormal);
+            }
+        }
+
+        private void btnNumeroDados_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnNumeroDados, NumeroDadosTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnNumeroDados, NumeroDadosTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnNumeroDados, SomaValoresTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnNumeroDados, SomaValoresTemaEscuroNormal);
+            }
+        }
+
+        private void btnLogaritmoNeperiano_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnLogaritmoNeperiano, LogaritmoNeperianoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnLogaritmoNeperiano, LogaritmoNeperianoTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnLogaritmoNeperiano, PotenciaNeperianaTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnLogaritmoNeperiano, PotenciaNeperianaTemaEscuroNormal);
+            }
+        }
+
+        private void btnLogaritmoDecimal_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnLogaritmoDecimal, LogaritmoDecimalTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnLogaritmoDecimal, LogaritmoDecimalTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnLogaritmoDecimal, PotenciaDecimalTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnLogaritmoDecimal, PotenciaDecimalTemaEscuroNormal);
+            }
+        }
+
+        private void btnInversao_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnInversao, InversaoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnInversao, InversaoTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnInversao, RaizCubicaTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnInversao, RaizCubicaTemaEscuroNormal);
+            }
+        }
+
+        private void btnRaizQuadrada_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnRaizQuadrada, RaizQuadradaTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnRaizQuadrada, RaizQuadradaTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnRaizQuadrada, XQuadradoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnRaizQuadrada, XQuadradoTemaEscuroNormal);
+            }
+        }
+
+        private void btnPotenciacao_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnPotenciacao, PotenciacaoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnPotenciacao, PotenciacaoTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnPotenciacao, RadiciacaoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnPotenciacao, RadiciacaoTemaEscuroNormal);
+            }
+        }
+
+        private void btnExponencial_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnExponencial, ExponencialTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnExponencial, ExponencialTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnExponencial, PiTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnExponencial, PiTemaEscuroNormal);
+            }
+        }
+
+        private void btnDecimalCientifico_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnDecimalCientifico, DecimalCientificoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnDecimalCientifico, DecimalCientificoTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnDecimalCientifico, FatorialTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnDecimalCientifico, FatorialTemaEscuroNormal);
+            }
+        }
+
+        private void btnSeno_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnSeno, SenoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnSeno, SenoTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnSeno, SenoInversoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnSeno, SenoInversoTemaEscuroNormal);
+            }
+        }
+
+        private void btnCosseno_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnCosseno, CossenoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnCosseno, CossenoTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnCosseno, CossenoInversoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnCosseno, CossenoInversoTemaEscuroNormal);
+            }
+        }
+
+        private void btnTangente_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnTangente, TangenteTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnTangente, TangenteTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnTangente, TangenteInversaTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnTangente, TangenteInversaTemaEscuroNormal);
+            }
+        }
+
+        private void btnRemover_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnRemover, RemoverTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnRemover, RemoverTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnRemover, PorcentagemTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnRemover, PorcentagemTemaEscuroNormal);
+            }
+        }
+
+        private void btnApagarVisor_MouseLeave(object sender, EventArgs e) {
+            if (!chk2Funcao.Checked) {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnApagarVisor, ApagarVisorTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnApagarVisor, ApagarVisorTemaEscuroNormal);
+            } else {
+                if (Claro)
+                    ControleDeImagens.UmaImagem(btnApagarVisor, LimparTudoTemaClaroNormal);
+                else
+                    ControleDeImagens.UmaImagem(btnApagarVisor, LimparTudoTemaEscuroNormal);
+            }
+        }
+        #endregion
+
         #region Outros Métodos
         //private void gkh_KeyDown(object sender, KeyEventArgs e) {
         //    e.Handled = true;
@@ -999,298 +1787,6 @@ namespace InterfaceUsuario {
                                                     pcbLimparTudo, ApagarVisorTemaEscuro);
                 }
             }
-        }
-        #endregion
-
-        #region Eventos MouseEnter
-        private void btn0_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btn1_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btn2_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btn3_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btn4_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btn5_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btn6_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btn7_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btn8_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btn9_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnSeparadorDecimal_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnOposicao_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnSoma_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnSubtracao_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnMultiplicacao_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnDivisao_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnIgual_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnMemoriaAdicionar_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnMemoriaRecuperar_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnMemoriaSubstituir_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnInserirDados_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnDesvioAmostral_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnMediaAritmetica_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnNumeroDados_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnLogaritmoNeperiano_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnLogaritmoDecimal_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnInversao_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnRaizQuadrada_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnPotenciacao_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnExponencial_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnDecimalCientifico_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnSeno_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnCosseno_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnTangente_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnRemover_MouseEnter(object sender, EventArgs e) {
-
-        }
-
-        private void btnApagarVisor_MouseEnter(object sender, EventArgs e) {
-
-        }
-        #endregion
-
-        #region Eventos MouseLeave
-        private void btn0_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btn1_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btn2_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btn3_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btn4_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btn5_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btn6_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btn7_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btn8_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btn9_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnSeparadorDecimal_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnOposicao_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnSoma_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnSubtracao_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnMultiplicacao_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnDivisao_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnIgual_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnMemoriaAdicionar_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnMemoriaRecuperar_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnMemoriaSubstituir_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnInserirDados_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnDesvioAmostral_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnMediaAritmetica_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnNumeroDados_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnLogaritmoNeperiano_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnLogaritmoDecimal_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnInversao_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnRaizQuadrada_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnPotenciacao_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnExponencial_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnDecimalCientifico_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnSeno_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnCosseno_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnTangente_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnRemover_MouseLeave(object sender, EventArgs e) {
-
-        }
-
-        private void btnApagarVisor_MouseLeave(object sender, EventArgs e) {
-
         }
         #endregion
     }
