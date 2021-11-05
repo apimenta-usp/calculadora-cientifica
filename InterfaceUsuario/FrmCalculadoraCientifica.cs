@@ -431,7 +431,9 @@ namespace InterfaceUsuario {
                 if (!chk2Funcao.Checked) {
                     lblVisor.Text = Calcular.AnguloDireto("seno", lblVisor.Text.Trim(), optGrau, optGrado);
                 } else {
-
+                    lblVisor.Text = Calcular.AnguloInverso("seno", lblVisor.Text.Trim(), optGrau, optGrado);
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
                 }
                 PressionouIgual = true;
             }
@@ -445,7 +447,9 @@ namespace InterfaceUsuario {
                 if (!chk2Funcao.Checked) {
                     lblVisor.Text = Calcular.AnguloDireto("cosseno", lblVisor.Text.Trim(), optGrau, optGrado);
                 } else {
-
+                    lblVisor.Text = Calcular.AnguloInverso("cosseno", lblVisor.Text.Trim(), optGrau, optGrado);
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
                 }
                 PressionouIgual = true;
             }
@@ -459,7 +463,9 @@ namespace InterfaceUsuario {
                 if (!chk2Funcao.Checked) {
                     lblVisor.Text = Calcular.AnguloDireto("tangente", lblVisor.Text.Trim(), optGrau, optGrado);
                 } else {
-
+                    lblVisor.Text = Calcular.AnguloInverso("tangente", lblVisor.Text.Trim(), optGrau, optGrado);
+                    if (!mnsFixar2Funcao.Checked)
+                        chk2Funcao.Checked = false;
                 }
                 PressionouIgual = true;
             }
