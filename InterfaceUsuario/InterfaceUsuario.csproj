@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajuda\FrmManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajuda\FrmManual.Designer.cs">
+      <DependentUpon>FrmManual.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCalculadoraCientifica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,9 @@
     <Compile Include="Personalizacao\Visor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ajuda\FrmManual.resx">
+      <DependentUpon>FrmManual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCalculadoraCientifica.resx">
       <DependentUpon>FrmCalculadoraCientifica.cs</DependentUpon>
     </EmbeddedResource>
@@ -983,6 +992,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ZeroTemaEscuroRealce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
