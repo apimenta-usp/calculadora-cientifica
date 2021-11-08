@@ -464,7 +464,7 @@ namespace InterfaceUsuario {
                     }
                 } else {
                     double radicando = 1.0 / 3.0;
-                    lblVisor.Text = Visor.Exibir(Math.Pow(numero, radicando));
+                    Calcular.Operacao("^", lblVisor, numero, radicando);
                     if (!mnsFixar2Funcao.Checked)
                         chk2Funcao.Checked = false;
                 }
@@ -503,7 +503,7 @@ namespace InterfaceUsuario {
                 if (!chk2Funcao.Checked) {
                     AdicionarCaracter.Operacao("^", lblVisor);
                 } else {
-                    AdicionarCaracter.Operacao("~", lblVisor);
+                    AdicionarCaracter.Operacao("~", lblVisor);                    
                     if (!mnsFixar2Funcao.Checked)
                         chk2Funcao.Checked = false;
                 }
