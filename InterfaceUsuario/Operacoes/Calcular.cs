@@ -209,7 +209,10 @@ namespace InterfaceUsuario.Operacoes {
                     return Visor.Exibir(numero);
             } else {
                 double numero = Visor.Capturar(visor);
-                visor = numero.ToString("0.####E+0", CultureInfo.InvariantCulture);
+                if (numero >= 1 && numero < 10) {
+                    visor = numero.ToString(CultureInfo.InvariantCulture);
+                } else 
+                    visor = numero.ToString("0.####E+0", CultureInfo.InvariantCulture);
                 if (FrmCalculadoraCientifica.Virgula) {
                     visor = visor.Replace('.', ',');
                 }
