@@ -155,7 +155,7 @@ namespace InterfaceUsuario {
             this.mnsCopiarVisor.ForeColor = System.Drawing.Color.Black;
             this.mnsCopiarVisor.Name = "mnsCopiarVisor";
             this.mnsCopiarVisor.ShowShortcutKeys = false;
-            this.mnsCopiarVisor.Size = new System.Drawing.Size(180, 22);
+            this.mnsCopiarVisor.Size = new System.Drawing.Size(131, 22);
             this.mnsCopiarVisor.Text = "Copiar Visor";
             this.mnsCopiarVisor.Click += new System.EventHandler(this.mnsCopiarVisor_Click);
             // 
@@ -165,7 +165,7 @@ namespace InterfaceUsuario {
             this.mnsSair.ForeColor = System.Drawing.Color.Black;
             this.mnsSair.Name = "mnsSair";
             this.mnsSair.ShowShortcutKeys = false;
-            this.mnsSair.Size = new System.Drawing.Size(180, 22);
+            this.mnsSair.Size = new System.Drawing.Size(131, 22);
             this.mnsSair.Text = "Sair";
             this.mnsSair.Click += new System.EventHandler(this.mnsSair_Click);
             // 
@@ -1437,6 +1437,7 @@ namespace InterfaceUsuario {
             this.Name = "FrmCalculadoraCientifica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora Científica by ACP";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCalculadoraCientifica_FormClosing);
             this.Load += new System.EventHandler(this.FrmCalculadoraCientifica_Load);
             this.mnsMenuPrincipal.ResumeLayout(false);
             this.mnsMenuPrincipal.PerformLayout();
