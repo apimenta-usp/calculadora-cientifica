@@ -479,16 +479,11 @@ namespace InterfaceUsuario.Operacoes {
                 } else if (numero == 0.5) {
                     senoInverso = 30.0;
                 } else if (44.99999999 < senoInverso && senoInverso < 45.000000001) {
-                    //} else if (numero == (Visor.Capturar((Math.Sqrt(2) / 2).ToString()))) {
                     senoInverso = 45.0;
                 } else if (59.99999999 < senoInverso && senoInverso < 60.000000001) {
-                    //} else if (numero == (Visor.Capturar((Math.Sqrt(3) / 2).ToString()))) {
                     senoInverso = 60.0;
                 } else if (numero == 1.0) {
                     senoInverso = 90.0;
-                    //} else {
-                    //    senoInverso = senoInverso;
-                    //senoInverso = (senoInverso * 180.0) / FrmCalculadoraCientifica.Pi;
                 }
             }
             if (optGrado.Checked) {
@@ -498,14 +493,11 @@ namespace InterfaceUsuario.Operacoes {
                 } else if (numero == 0.5) {
                     senoInverso = (100.0 / 3.0);
                 } else if (49.99999999 < senoInverso && senoInverso < 50.000000001) {
-                    //} else if (numero == (Visor.Capturar((Math.Sqrt(2) / 2).ToString()))) {
                     senoInverso = 50.0;
                 } else if (numero == (Visor.Capturar((Math.Sqrt(3) / 2).ToString()))) {
                     senoInverso = (200.0 / 3.0);
                 } else if (numero == 1.0) {
                     senoInverso = 100.0;
-                    //} else {
-                    //    senoInverso = (senoInverso * 200.0) / FrmCalculadoraCientifica.Pi;
                 }
             }
 
@@ -525,17 +517,13 @@ namespace InterfaceUsuario.Operacoes {
                 if (numero == 1.0) {
                     cossenoInverso = 0.0;
                 } else if (29.99999999 < cossenoInverso && cossenoInverso < 30.000000001) {
-                    //} else if (numero == (Math.Sqrt(3) / 2)) {
                     cossenoInverso = 30.0;
                 } else if (44.99999999 < cossenoInverso && cossenoInverso < 45.000000001) {
-                    //} else if (numero == (Math.Sqrt(2) / 2)) {
                     cossenoInverso = 45.0;
                 } else if (numero == 0.5) {
                     cossenoInverso = 60.0;
                 } else if (numero == 0) {
                     cossenoInverso = 90.0;
-                    //} else {
-                    //    cossenoInverso = (cossenoInverso * 180.0) / FrmCalculadoraCientifica.Pi;
                 }
             }
             if (optGrado.Checked) {
@@ -545,14 +533,11 @@ namespace InterfaceUsuario.Operacoes {
                 } else if (numero == (Math.Sqrt(3) / 2)) {
                     cossenoInverso = (100.0 / 3.0);
                 } else if (49.99999999 < cossenoInverso && cossenoInverso < 50.000000001) {
-                    //} else if (numero == (Math.Sqrt(2) / 2)) {
                     cossenoInverso = 50.0;
                 } else if (numero == 0.5) {
                     cossenoInverso = (200.0 / 3.0);
                 } else if (numero == 0) {
                     cossenoInverso = 100.0;
-                    //} else {
-                    //    cossenoInverso = (cossenoInverso * 200.0) / FrmCalculadoraCientifica.Pi;
                 }
             }
 
@@ -572,10 +557,7 @@ namespace InterfaceUsuario.Operacoes {
                 } else if (numero == 1.0) {
                     tangenteInversa = 45.0;
                 } else if (59.99999999 < tangenteInversa && tangenteInversa < 60.000000001) {
-                    //} else if (numero == Math.Sqrt(3)) {
                     tangenteInversa = 60.0;
-                    //} else {
-                    //    tangenteInversa = (tangenteInversa * 180.0) / FrmCalculadoraCientifica.Pi;
                 }
             }
             if (optGrado.Checked) {
@@ -588,8 +570,6 @@ namespace InterfaceUsuario.Operacoes {
                     tangenteInversa = 50.0;
                 } else if (numero == Math.Sqrt(3)) {
                     tangenteInversa = (200.0 / 3.0);
-                    //} else {
-                    //    tangenteInversa = (tangenteInversa * 200.0) / FrmCalculadoraCientifica.Pi;
                 }
             }
 

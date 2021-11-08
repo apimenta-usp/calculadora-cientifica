@@ -35,8 +35,6 @@ namespace InterfaceUsuario {
         }
 
         private void FrmCalculadoraCientifica_Load(object sender, EventArgs e) {
-            //Claro = true;
-            //Virgula = false;
             Claro = Properties.Settings.Default.TemaClaro;
             Virgula = Properties.Settings.Default.SeparadorVirgula;
             Estatistica.Clear();
@@ -45,8 +43,6 @@ namespace InterfaceUsuario {
             mnsEscuro.Checked = !Claro;
             mnsPonto.Checked = !Virgula;
             mnsVirgula.Checked = Virgula;
-            //mnsClaro.Checked = true;
-            //mnsPonto.Checked = true;
             chk2Funcao.Checked = false;
             Calcular.LimparCampos(lblVisor);
             Memoria = 0;
@@ -75,15 +71,11 @@ namespace InterfaceUsuario {
         private void mnsPonto_Click(object sender, EventArgs e) {
             Virgula = false;
             Properties.Settings.Default.SeparadorVirgula = Virgula;
-            //Properties.Settings.Default.SeparadorVirgula = false;
-            //Properties.Settings.Default.Save();
             lblVisor.Text = lblVisor.Text.Trim().Replace(',', '.');
             if (Claro)
                 ControleDeImagens.UmaImagem(btnSeparadorDecimal, PontoTemaClaroNormal);
             else
                 ControleDeImagens.UmaImagem(btnSeparadorDecimal, PontoTemaEscuroNormal);
-            //mnsPonto.Checked = !Properties.Settings.Default.SeparadorVirgula;
-            //mnsVirgula.Checked = Properties.Settings.Default.SeparadorVirgula;
             mnsPonto.Checked = !Virgula;
             mnsVirgula.Checked = Virgula;
         }
@@ -91,15 +83,11 @@ namespace InterfaceUsuario {
         private void mnsVirgula_Click(object sender, EventArgs e) {
             Virgula = true;
             Properties.Settings.Default.SeparadorVirgula = Virgula;
-            //Properties.Settings.Default.SeparadorVirgula = true;
-            //Properties.Settings.Default.Save();
             lblVisor.Text = lblVisor.Text.Trim().Replace('.', ',');
             if (Claro)
                 ControleDeImagens.UmaImagem(btnSeparadorDecimal, VirgulaTemaClaroNormal);
             else
                 ControleDeImagens.UmaImagem(btnSeparadorDecimal, VirgulaTemaEscuroNormal);
-            //mnsPonto.Checked = !Properties.Settings.Default.SeparadorVirgula;
-            //mnsVirgula.Checked = Properties.Settings.Default.SeparadorVirgula;
             mnsPonto.Checked = !Virgula;
             mnsVirgula.Checked = Virgula;
         }
@@ -107,16 +95,12 @@ namespace InterfaceUsuario {
         private void mnsClaro_Click(object sender, EventArgs e) {
             Claro = true;
             Properties.Settings.Default.TemaClaro = Claro;
-            //Properties.Settings.Default.TemaClaro = true;
-            //Properties.Settings.Default.Save();
             TemaPrincipal(Claro, Virgula);
         }
 
         private void mnsEscuro_Click(object sender, EventArgs e) {
             Claro = false;
             Properties.Settings.Default.TemaClaro = Claro;
-            //Properties.Settings.Default.TemaClaro = false;
-            //Properties.Settings.Default.Save();
             TemaPrincipal(Claro, Virgula);
         }
 
@@ -150,7 +134,6 @@ namespace InterfaceUsuario {
             else
                 tamanho = 10;
             if (PressionouIgual || PressionouMemoria) {
-                //lblVisor.Clear();
                 lblVisor.Text = string.Empty;
                 PressionouIgual = false;
                 PressionouMemoria = false;
